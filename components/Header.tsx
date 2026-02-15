@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
-import { Menu, X, Globe } from "lucide-react";
+import { Menu, X, Globe, Lightbulb } from "lucide-react";
 import { locales, type Locale } from "@/i18n";
 
 const localeNames: Record<Locale, string> = {
@@ -55,9 +55,20 @@ export default function Header() {
     >
       <nav className="container mx-auto px-4 w-full">
         <div className="flex items-center justify-between min-h-[72px] py-3">
-          <Link href={locale === 'tr' ? '/' : `/${locale}`} className="flex items-center shrink-0">
-            <span className={`text-2xl font-display font-bold ${isScrolled ? "text-primary-600" : "text-primary-400"}`}>
-              ASIALUX
+          <Link
+            href={locale === 'tr' ? '/' : `/${locale}`}
+            className="flex items-center gap-2 shrink-0 group"
+          >
+            <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-primary-500/20 text-primary-500 group-hover:bg-primary-500/30 transition-colors duration-300">
+              <Lightbulb className="w-5 h-5" strokeWidth={1.5} />
+            </span>
+            <span className="flex items-baseline tracking-tight">
+              <span className={`text-xl font-semibold tracking-wide ${isScrolled ? "text-dark-900" : "text-white"}`}>
+                ASIA
+              </span>
+              <span className={`text-xl font-extralight tracking-[0.2em] uppercase ml-0.5 ${isScrolled ? "text-primary-600" : "text-primary-400"}`}>
+                LUX
+              </span>
             </span>
           </Link>
 
@@ -80,6 +91,24 @@ export default function Header() {
               className={`font-medium transition-colors ${isScrolled ? "text-gray-700 hover:text-primary-600" : "text-gray-200 hover:text-white"}`}
             >
               {t("applications")}
+            </Link>
+            <Link
+              href={locale === 'tr' ? '/projects' : `/${locale}/projects`}
+              className={`font-medium transition-colors ${isScrolled ? "text-gray-700 hover:text-primary-600" : "text-gray-200 hover:text-white"}`}
+            >
+              {t("projects")}
+            </Link>
+            <Link
+              href={locale === 'tr' ? '/about' : `/${locale}/about`}
+              className={`font-medium transition-colors ${isScrolled ? "text-gray-700 hover:text-primary-600" : "text-gray-200 hover:text-white"}`}
+            >
+              {t("about")}
+            </Link>
+            <Link
+              href={locale === 'tr' ? '/blog' : `/${locale}/blog`}
+              className={`font-medium transition-colors ${isScrolled ? "text-gray-700 hover:text-primary-600" : "text-gray-200 hover:text-white"}`}
+            >
+              {t("blog")}
             </Link>
             <Link
               href={locale === 'tr' ? '/contact' : `/${locale}/contact`}
@@ -147,6 +176,27 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               {t("applications")}
+            </Link>
+            <Link
+              href={locale === 'tr' ? '/projects' : `/${locale}/projects`}
+              className="block py-2 text-gray-700 hover:text-primary-600"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {t("projects")}
+            </Link>
+            <Link
+              href={locale === 'tr' ? '/about' : `/${locale}/about`}
+              className="block py-2 text-gray-700 hover:text-primary-600"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {t("about")}
+            </Link>
+            <Link
+              href={locale === 'tr' ? '/blog' : `/${locale}/blog`}
+              className="block py-2 text-gray-700 hover:text-primary-600"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {t("blog")}
             </Link>
             <Link
               href={locale === 'tr' ? '/contact' : `/${locale}/contact`}

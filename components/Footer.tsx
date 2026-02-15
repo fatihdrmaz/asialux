@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin } from "lucide-react";
+import Newsletter from "./Newsletter";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -12,8 +13,9 @@ export default function Footer() {
     <footer className="bg-dark-950 text-white mt-20">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Brand */}
-          <div className="col-span-1 md:col-span-2">
+          {/* Brand + Newsletter */}
+          <div className="col-span-1 md:col-span-2 space-y-8">
+            <div>
             <h3 className="text-2xl font-display font-bold mb-4">ASIALUX</h3>
             <p className="text-gray-400 mb-4 max-w-md">
               Premium aydınlatma çözümleri ile mekanlarınızı dönüştürün. 
@@ -46,8 +48,32 @@ export default function Footer() {
               </a>
             </div>
           </div>
+          <Newsletter />
+          </div>
 
-          {/* Quick Links */}
+          {/* Company / Quick Links */}
+          <div>
+            <h4 className="font-semibold mb-4">{t("about")}</h4>
+            <ul className="space-y-2 text-gray-400">
+              <li>
+                <Link href={locale === 'tr' ? '/about' : `/${locale}/about`} className="hover:text-white transition-colors">
+                  {t("about")}
+                </Link>
+              </li>
+              <li>
+                <Link href={locale === 'tr' ? '/blog' : `/${locale}/blog`} className="hover:text-white transition-colors">
+                  {t("blog")}
+                </Link>
+              </li>
+              <li>
+                <Link href={locale === 'tr' ? '/projects' : `/${locale}/projects`} className="hover:text-white transition-colors">
+                  {t("projects")}
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Products */}
           <div>
             <h4 className="font-semibold mb-4">{t("products")}</h4>
             <ul className="space-y-2 text-gray-400">

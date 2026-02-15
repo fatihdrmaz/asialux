@@ -5,6 +5,7 @@
     "applications": "Applications",
     "projects": "Projects",
     "about": "About",
+    "blog": "Blog",
     "contact": "Contact"
   },
   "hero": {
@@ -68,8 +69,41 @@
   },
   "footer": {
     "about": "About",
+    "blog": "Blog",
+    "projects": "Projects",
     "products": "Products",
     "contact": "Contact",
-    "rights": "All rights reserved"
+    "rights": "All rights reserved",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Stay updated",
+    "subscribe": "Subscribe"
+  },
+  "stats": {
+    "countries": "Export countries",
+    "projects": "Completed projects",
+    "years": "Years experience",
+    "products": "Product varieties"
+  },
+  "references": {
+    "title": "Our References",
+    "subtitle": "Brands we work with"
+  },
+  "certificates": {
+    "title": "Our Certificates",
+    "subtitle": "Quality and trust"
+  },
+  "projects": {
+    "title": "Reference Projects",
+    "subtitle": "Sample completed projects",
+    "project1": "Residential Lighting",
+    "location1": "Istanbul, Turkey",
+    "project2": "Office Project",
+    "location2": "Ankara, Turkey",
+    "project3": "Landscape Lighting",
+    "location3": "Izmir, Turkey"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "News and articles"
   }
 }

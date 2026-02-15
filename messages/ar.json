@@ -5,6 +5,7 @@
     "applications": "التطبيقات",
     "projects": "المشاريع",
     "about": "من نحن",
+    "blog": "المدونة",
     "contact": "اتصل بنا"
   },
   "hero": {
@@ -68,8 +69,13 @@
   },
   "footer": {
     "about": "من نحن",
+    "blog": "المدونة",
+    "projects": "المشاريع",
     "products": "المنتجات",
     "contact": "اتصل بنا",
-    "rights": "جميع الحقوق محفوظة"
+    "rights": "جميع الحقوق محفوظة",
+    "newsletter": "النشرة",
+    "newsletterDesc": "ابق على اطلاع",
+    "subscribe": "اشترك"
   }
 }

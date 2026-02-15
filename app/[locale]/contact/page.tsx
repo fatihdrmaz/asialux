@@ -1,5 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import ContactForm from "@/components/ContactForm";
+import ContactMap from "@/components/ContactMap";
+import Faq from "@/components/Faq";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -19,6 +21,10 @@ export default async function ContactPage({ params }: Props) {
           </p>
         </div>
         <ContactForm />
+        <ContactMap />
+        <div className="max-w-3xl mx-auto mt-20">
+          <Faq />
+        </div>
       </div>
     </div>
   );

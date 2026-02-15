@@ -5,6 +5,7 @@
     "applications": "Uygulamalar",
     "projects": "Projeler",
     "about": "Hakkımızda",
+    "blog": "Blog",
     "contact": "İletişim"
   },
   "hero": {
@@ -68,8 +69,41 @@
   },
   "footer": {
     "about": "Hakkımızda",
+    "blog": "Blog",
+    "projects": "Projeler",
     "products": "Ürünler",
     "contact": "İletişim",
-    "rights": "Tüm hakları saklıdır"
+    "rights": "Tüm hakları saklıdır",
+    "newsletter": "Bülten",
+    "newsletterDesc": "Yeniliklerden haberdar olun",
+    "subscribe": "Abone Ol"
+  },
+  "stats": {
+    "countries": "Ülkeye ihracat",
+    "projects": "Tamamlanan proje",
+    "years": "Yıllık tecrübe",
+    "products": "Ürün çeşidi"
+  },
+  "references": {
+    "title": "Referanslarımız",
+    "subtitle": "Birlikte çalıştığımız markalar"
+  },
+  "certificates": {
+    "title": "Sertifikalarımız",
+    "subtitle": "Kalite ve güvenin belgesi"
+  },
+  "projects": {
+    "title": "Referans Projeler",
+    "subtitle": "Tamamladığımız projelerden örnekler",
+    "project1": "Rezidans Aydınlatma",
+    "location1": "İstanbul, Türkiye",
+    "project2": "Ofis Projesi",
+    "location2": "Ankara, Türkiye",
+    "project3": "Peyzaj Aydınlatma",
+    "location3": "İzmir, Türkiye"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Haberler ve yazılar"
   }
 }

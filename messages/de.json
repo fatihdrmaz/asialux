@@ -5,6 +5,7 @@
     "applications": "Anwendungen",
     "projects": "Projekte",
     "about": "Über uns",
+    "blog": "Blog",
     "contact": "Kontakt"
   },
   "hero": {
@@ -68,8 +69,13 @@
   },
   "footer": {
     "about": "Über uns",
+    "blog": "Blog",
+    "projects": "Projekte",
     "products": "Produkte",
     "contact": "Kontakt",
-    "rights": "Alle Rechte vorbehalten"
+    "rights": "Alle Rechte vorbehalten",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Bleiben Sie auf dem Laufenden",
+    "subscribe": "Abonnieren"
   }
 }

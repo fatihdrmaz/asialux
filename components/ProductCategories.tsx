@@ -85,7 +85,7 @@ export default function ProductCategories() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link
-                  href={locale === 'tr' ? `/products#${category.id}` : `/${locale}/products#${category.id}`}
+                  href={locale === 'tr' ? (category.id === 'ray-spot' ? '/products/ray-spot' : `/products#${category.id}`) : (category.id === 'ray-spot' ? `/${locale}/products/ray-spot` : `/${locale}/products#${category.id}`)}
                   className="group block overflow-hidden rounded-xl border border-gray-200 hover:border-primary-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-white"
                 >
                   <div className="relative h-[212px] overflow-hidden">

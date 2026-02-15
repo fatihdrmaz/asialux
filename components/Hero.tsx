@@ -8,7 +8,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 
-const LightRays = dynamic(() => import("./LightRays"), { ssr: false });
+const Prism = dynamic(() => import("./Prism"), { ssr: false });
 
 const HERO_IMAGE_LOCAL = "/images/hero/hero.png";
 const HERO_IMAGE_FALLBACK = "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
@@ -36,22 +36,19 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-dark-950/30 to-transparent" />
       </div>
 
-      {/* Light Rays WebGL Effect */}
-      <div className="absolute inset-0 z-[1]" style={{ width: "100%", height: "100%" }}>
-        <LightRays
-          raysOrigin="top-center"
-          raysColor="#ffffff"
-          raysSpeed={1.2}
-          lightSpread={1.9}
-          rayLength={3}
-          followMouse={true}
-          mouseInfluence={0.1}
-          noiseAmount={0}
-          distortion={0.3}
-          className="custom-rays"
-          pulsating={false}
-          fadeDistance={1}
-          saturation={1}
+      {/* Prism WebGL Effect */}
+      <div className="absolute inset-0 z-[1] opacity-90" style={{ width: "100%", height: "100%" }}>
+        <Prism
+          animationType="rotate"
+          timeScale={0.5}
+          height={3.5}
+          baseWidth={5.5}
+          scale={3.6}
+          hueShift={0}
+          colorFrequency={1}
+          noise={0}
+          glow={1}
+          transparent={true}
         />
       </div>
 
@@ -61,7 +58,7 @@ export default function Hero() {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary-400/10 rounded-full blur-3xl animate-pulse delay-1000" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10 pt-24 md:pt-32">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
