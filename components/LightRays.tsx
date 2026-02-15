@@ -328,7 +328,7 @@ void main() {
         }
 
         try {
-          renderer.render({ scene: mesh, camera: null });
+          renderer.render({ scene: mesh, camera: undefined });
           animationIdRef.current = requestAnimationFrame(loop);
         } catch (error) {
           console.warn("WebGL rendering error:", error);
