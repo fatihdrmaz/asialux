@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "products": "Produkte",
+    "applications": "Anwendungen",
+    "projects": "Projekte",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Premium Beleuchtungslösungen",
+    "subtitle": "Erhellen Sie Ihre Räume mit modernem Design und höchster Qualität",
+    "cta": "Produkte entdecken",
+    "ctaSecondary": "Unsere Projekte"
+  },
+  "products": {
+    "title": "Unsere Produktgruppen",
+    "subtitle": "Spezielle Lösungen für jeden Raum",
+    "raySpot": "Ray Spot",
+    "surfaceMounted": "Oberflächenmontiert",
+    "recessed": "Einbau",
+    "wallLight": "Wandleuchte",
+    "pendant": "Pendelleuchte",
+    "outdoor": "Außenbereich",
+    "linear": "Linear",
+    "magnet": "Magnet"
+  },
+  "applications": {
+    "title": "Anwendungsbereiche",
+    "subtitle": "Professionelle Beleuchtungslösungen",
+    "residential": "Wohnräume",
+    "cafe": "Café & Bistro",
+    "office": "Plaza & Büro",
+    "industrial": "Industrieanlagen",
+    "outdoor": "Außenbereich",
+    "custom": "Individuelles Design"
+  },
+  "features": {
+    "title": "Warum Asialux?",
+    "quality": {
+      "title": "Höchste Qualität",
+      "description": "LED-Produkte aus hochwertigsten Materialien"
+    },
+    "design": {
+      "title": "Modernes Design",
+      "description": "Verwandeln Sie Ihre Räume mit zeitlosen und eleganten Designs"
+    },
+    "export": {
+      "title": "Exportorientiert",
+      "description": "Zuverlässiger Lieferant weltweit"
+    },
+    "energy": {
+      "title": "Energieeffizient",
+      "description": "Umweltfreundliche Lösungen mit niedrigem Stromverbrauch"
+    }
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Erhalten Sie professionelle Unterstützung für Ihre Projekte",
+    "name": "Vollständiger Name",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "message": "Ihre Nachricht",
+    "send": "Senden",
+    "address": "Adresse",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-Mail"
+  },
+  "footer": {
+    "about": "Über uns",
+    "products": "Produkte",
+    "contact": "Kontakt",
+    "rights": "Alle Rechte vorbehalten"
+  }
+}

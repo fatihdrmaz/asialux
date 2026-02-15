@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "applications": "Applications",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Premium Lighting Solutions",
+    "subtitle": "Illuminate your spaces with modern design and superior quality",
+    "cta": "Explore Products",
+    "ctaSecondary": "Our Projects"
+  },
+  "products": {
+    "title": "Our Product Groups",
+    "subtitle": "Special solutions for every space",
+    "raySpot": "Ray Spot",
+    "surfaceMounted": "Surface Mounted",
+    "recessed": "Recessed",
+    "wallLight": "Wall Light",
+    "pendant": "Pendant",
+    "outdoor": "Outdoor",
+    "linear": "Linear",
+    "magnet": "Magnet"
+  },
+  "applications": {
+    "title": "Application Areas",
+    "subtitle": "Professional lighting solutions",
+    "residential": "Residential Spaces",
+    "cafe": "Cafe & Bistro",
+    "office": "Plaza & Office",
+    "industrial": "Industrial Facilities",
+    "outdoor": "Outdoor",
+    "custom": "Custom Design"
+  },
+  "features": {
+    "title": "Why Asialux?",
+    "quality": {
+      "title": "Superior Quality",
+      "description": "LED products made from the highest quality materials"
+    },
+    "design": {
+      "title": "Modern Design",
+      "description": "Transform your spaces with timeless and elegant designs"
+    },
+    "export": {
+      "title": "Export Focused",
+      "description": "Reliable supplier worldwide"
+    },
+    "energy": {
+      "title": "Energy Efficient",
+      "description": "Environmentally friendly solutions with low power consumption"
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Get professional support for your projects",
+    "name": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Your Message",
+    "send": "Send",
+    "address": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email"
+  },
+  "footer": {
+    "about": "About",
+    "products": "Products",
+    "contact": "Contact",
+    "rights": "All rights reserved"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "products": "Ürünler",
+    "applications": "Uygulamalar",
+    "projects": "Projeler",
+    "about": "Hakkımızda",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Premium Aydınlatma Çözümleri",
+    "subtitle": "Modern tasarım ve üstün kalite ile mekanlarınızı aydınlatın",
+    "cta": "Ürünleri Keşfet",
+    "ctaSecondary": "Projelerimiz"
+  },
+  "products": {
+    "title": "Ürün Gruplarımız",
+    "subtitle": "Her mekan için özel çözümler",
+    "raySpot": "Ray Spot",
+    "surfaceMounted": "Sıva Üstü",
+    "recessed": "Sıva Altı",
+    "wallLight": "Aplik",
+    "pendant": "Sarkıt",
+    "outdoor": "Dış Mekan",
+    "linear": "Linear",
+    "magnet": "Magnet"
+  },
+  "applications": {
+    "title": "Uygulama Alanlarımız",
+    "subtitle": "Profesyonel aydınlatma çözümleri",
+    "residential": "Yaşam Alanları",
+    "cafe": "Kafe ve Bistro",
+    "office": "Plaza ve Ofis",
+    "industrial": "Üretim Tesisleri",
+    "outdoor": "Dış Mekan",
+    "custom": "Özel Tasarım"
+  },
+  "features": {
+    "title": "Neden Asialux?",
+    "quality": {
+      "title": "Üstün Kalite",
+      "description": "En kaliteli malzemelerden üretilmiş LED ürünler"
+    },
+    "design": {
+      "title": "Modern Tasarım",
+      "description": "Zamansız ve şık tasarımlarla mekanlarınızı dönüştürün"
+    },
+    "export": {
+      "title": "İhracat Odaklı",
+      "description": "Dünya çapında güvenilir tedarikçi"
+    },
+    "energy": {
+      "title": "Enerji Tasarrufu",
+      "description": "Düşük elektrik tüketimi ile çevre dostu çözümler"
+    }
+  },
+  "contact": {
+    "title": "İletişime Geçin",
+    "subtitle": "Projeleriniz için profesyonel destek alın",
+    "name": "Ad Soyad",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "message": "Mesajınız",
+    "send": "Gönder",
+    "address": "Adres",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-posta"
+  },
+  "footer": {
+    "about": "Hakkımızda",
+    "products": "Ürünler",
+    "contact": "İletişim",
+    "rights": "Tüm hakları saklıdır"
+  }
+}
