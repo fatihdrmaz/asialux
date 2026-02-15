@@ -1,6 +1,12 @@
+import { setRequestLocale } from "next-intl/server";
 import ContactForm from "@/components/ContactForm";
 
-export default function ContactPage() {
+type Props = { params: Promise<{ locale: string }> };
+
+export default async function ContactPage({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <div className="pt-24 pb-16">
       <div className="container mx-auto px-4">
