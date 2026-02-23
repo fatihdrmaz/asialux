@@ -17,6 +17,7 @@
   "products": {
     "title": "Наши группы продуктов",
     "subtitle": "Специальные решения для каждого пространства",
+    "productCount": "{count} продуктов",
     "raySpot": "Ray Spot",
     "surfaceMounted": "Накладные",
     "recessed": "Встраиваемые",
@@ -24,7 +25,11 @@
     "pendant": "Подвесные",
     "outdoor": "Уличное",
     "linear": "Линейные",
-    "magnet": "Магнитные"
+    "magnet": "Магнитные",
+    "lampShade": "Абажуры и напольные лампы",
+    "bronzeCollection": "Бронзовая коллекция",
+    "industrialLighting": "Промышленное освещение",
+    "emergencyLighting": "Аварийное освещение и указатели"
   },
   "applications": {
     "title": "Области применения",

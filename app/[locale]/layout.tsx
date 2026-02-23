@@ -15,9 +15,9 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }) {
-  const { locale } = await params;
+  const { locale } = params;
 
   if (!locales.includes(locale as any)) {
     notFound();
@@ -25,13 +25,16 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
   const messages = await getMessages();
+  const isRtl = locale === "ar";
 
   return (
-    <NextIntlClientProvider messages={messages}>
-      <Header />
-      <main className="min-h-screen">{children}</main>
-      <Footer />
-      <WhatsAppButton />
+    <NextIntlClientProvider key={locale} locale={locale} messages={messages}>
+      <div dir={isRtl ? "rtl" : "ltr"} lang={locale} className="min-h-screen">
+        <Header />
+        <main className="min-h-screen">{children}</main>
+        <Footer />
+        <WhatsAppButton />
+      </div>
     </NextIntlClientProvider>
   );
 }

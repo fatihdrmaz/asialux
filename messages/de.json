@@ -17,6 +17,7 @@
   "products": {
     "title": "Unsere Produktgruppen",
     "subtitle": "Spezielle Lösungen für jeden Raum",
+    "productCount": "{count} Produkte",
     "raySpot": "Ray Spot",
     "surfaceMounted": "Oberflächenmontiert",
     "recessed": "Einbau",
@@ -24,7 +25,11 @@
     "pendant": "Pendelleuchte",
     "outdoor": "Außenbereich",
     "linear": "Linear",
-    "magnet": "Magnet"
+    "magnet": "Magnet",
+    "lampShade": "Lampenschirme & Stehlampen",
+    "bronzeCollection": "Bronze Kollektion",
+    "industrialLighting": "Industriebeleuchtung",
+    "emergencyLighting": "Notbeleuchtung & Beschilderung"
   },
   "applications": {
     "title": "Anwendungsbereiche",

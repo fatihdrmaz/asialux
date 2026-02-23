@@ -1,0 +1,43 @@
+# Masialux ürün sayfası linkleri — collect-masialux-category-urls.mjs ile toplandı
+# Kategori: https://masialux.com/urun-category/siva-ustu-aydinlatma/
+# Toplam: 36 ürün
+#
+# Güncellemek için: node scripts/collect-masialux-category-urls.mjs "<kategori-url>" [çıktı-dosyası]
+# Ardından: node scripts/sync-masialux-details.mjs [urls-dosyası]
+#
+https://masialux.com/urun/bruna-serisi-ms-624-siva-ustu
+https://masialux.com/urun/carla-serisi-ms-612-1-100-siva-ustu
+https://masialux.com/urun/carla-serisi-ms-612-1-118-siva-ustu
+https://masialux.com/urun/carla-serisi-ms-612-1-60-siva-ustu
+https://masialux.com/urun/carla-serisi-ms-612-1-85-siva-ustu
+https://masialux.com/urun/carla-serisi-ms-612-2-100-siva-ustu
+https://masialux.com/urun/carla-serisi-ms-612-2-118-siva-ustu
+https://masialux.com/urun/carla-serisi-ms-612-2-60-siva-ustu
+https://masialux.com/urun/carla-serisi-ms-612-2-85-siva-ustu
+https://masialux.com/urun/carla-serisi-ms-612-3-118-siva-ustu
+https://masialux.com/urun/carla-serisi-ms-612-3-60-siva-ustu
+https://masialux.com/urun/nora-serisi-ms-500-1-siva-ustu
+https://masialux.com/urun/nora-serisi-ms-500-2-siva-ustu
+https://masialux.com/urun/nora-serisi-ms-500-3-siva-ustu
+https://masialux.com/urun/orna-serisi-ms-700-110-siva-ustu
+https://masialux.com/urun/orna-serisi-ms-700-130-siva-ustu
+https://masialux.com/urun/orna-serisi-ms-700-70-siva-ustu
+https://masialux.com/urun/orna-serisi-ms-700-90-siva-ustu
+https://masialux.com/urun/orna-serisi-ms-701-110-siva-ustu
+https://masialux.com/urun/orna-serisi-ms-701-70-siva-ustu
+https://masialux.com/urun/orna-serisi-ms-701-90-siva-ustu
+https://masialux.com/urun/puto-serisi-ms-613-siva-ustu
+https://masialux.com/urun/puto-serisi-ms-614-siva-ustu
+https://masialux.com/urun/puto-serisi-ms-615-1-siva-ustu
+https://masialux.com/urun/puto-serisi-ms-615-siva-ustu
+https://masialux.com/urun/shana-serisi-ms-1000-118-siva-ustu
+https://masialux.com/urun/shana-serisi-ms-1000-150-siva-ustu
+https://masialux.com/urun/shana-serisi-ms-1000-85-siva-ustu
+https://masialux.com/urun/tina-serisi-ms-605-1-85-siva-ustu
+https://masialux.com/urun/tina-serisi-ms-605-100-siva-ustu
+https://masialux.com/urun/tina-serisi-ms-605-2-118-siva-ustu
+https://masialux.com/urun/tina-serisi-ms-605-60-siva-ustu
+https://masialux.com/urun/tinta-serisi-ms-616-1-siva-ustu
+https://masialux.com/urun/tinta-serisi-ms-616-2-siva-ustu
+https://masialux.com/urun/tinta-serisi-ms-617-1-siva-ustu
+https://masialux.com/urun/tinta-serisi-ms-617-2-siva-ustu

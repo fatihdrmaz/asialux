@@ -17,6 +17,7 @@
   "products": {
     "title": "Our Product Groups",
     "subtitle": "Special solutions for every space",
+    "productCount": "{count} products",
     "raySpot": "Ray Spot",
     "surfaceMounted": "Surface Mounted",
     "recessed": "Recessed",
@@ -24,7 +25,11 @@
     "pendant": "Pendant",
     "outdoor": "Outdoor",
     "linear": "Linear",
-    "magnet": "Magnet"
+    "magnet": "Magnet",
+    "lampShade": "Lamp Shade & Floor Lamp",
+    "bronzeCollection": "Bronze Collection",
+    "industrialLighting": "Industrial Lighting",
+    "emergencyLighting": "Emergency Lighting & Signage"
   },
   "applications": {
     "title": "Application Areas",
@@ -104,6 +109,65 @@
   },
   "blog": {
     "title": "Blog",
-    "subtitle": "News and articles"
+    "subtitle": "News and articles from the world of lighting",
+    "readMore": "Read more",
+    "backToBlog": "Back to blog"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "What is the minimum order quantity?",
+    "a1": "It varies according to project size; please contact us for details.",
+    "q2": "What is the delivery time?",
+    "a2": "It can vary between 2-6 weeks depending on stock and order volume. We offer special solutions for urgent projects.",
+    "q3": "Do you export?",
+    "a3": "Yes. We export to many countries worldwide. We provide support on payment and logistics.",
+    "q4": "What are your warranty terms?",
+    "a4": "Our products are covered by standard warranty. Duration and scope vary by product group."
+  },
+  "productDetail": {
+    "productsBreadcrumb": "Products",
+    "model": "Model",
+    "stockCode": "Stock code",
+    "about": "About",
+    "description": "Description",
+    "features": "Features",
+    "usageAreasTitle": "Areas of Use",
+    "product": "Product",
+    "technical": "Technical",
+    "technicalSpecs": "Technical Specs",
+    "application": "Application",
+    "documents": "Documents",
+    "downloadableMedia": "Downloadable Product Media",
+    "mountingWarnings": "Mounting and Safety Warnings",
+    "importantWarnings": "Important Warnings",
+    "warrantyTerms": "Warranty Terms",
+    "suggestions": "Suggestions",
+    "relatedProducts": "Related Products",
+    "similarProducts": "Similar Products",
+    "whatsappProduct": "I would like to get information about the product",
+    "whatsappQuote": "I would like to get a quote for the product or my project",
+    "ctaQuote": "Would you like a custom quote for this product or your project?",
+    "ctaWhatsApp": "Contact via WhatsApp",
+    "ctaRequestQuote": "Quote / Enquiry"
+  },
+  "aboutPage": {
+    "title": "About Us",
+    "subtitle": "Same experience, same quality, sister brand assurance",
+    "storyTitle": "Our Story",
+    "storyIntro": "Asialux is a sister company established in 2002 after separating from Masialux, offering the same experience and the same product portfolio.",
+    "storyP1": "The lighting family that Masialux brought to professional identity in 2005 has over the years offered designs where light meets aesthetics. Born from the same roots, Asialux has made the same quality approach and European standards a core principle from production to sales. We support our wide product portfolio with strong technical infrastructure and product warranty.",
+    "storyP2": "Every detail is guided by a balance of flawless design, functionality and longevity. This approach is not just lighting; it creates light experiences that touch the soul of the space and transform living environments. Our team, which closely follows global trends and technological developments, offers sector-leading solutions by combining energy efficiency with aesthetics.",
+    "qualityTitle": "Our Quality Policy",
+    "qualityIntro": "For Asialux, quality is not just a standard; it is a value where light, design and engineering meet in perfect balance.",
+    "qualityP1": "Care for time and commitment to quality form the foundation of our production policy. Quality is a journey that begins at the R&D stage and continues with a rigorous chain of control until product assembly. Every material we use is selected not only for aesthetics and durability but also for its sensitivity to human health and the environment.",
+    "qualityP2": "Asialux sees lighting not only as a technical element but as an art form that shapes the soul of the space, and this understanding is reflected with quiet elegance in every product we make.",
+    "productionTitle": "Production and Our Vision",
+    "productionP1": "Our goal is not only to manufacture products but to develop sector-leading solutions by combining the quality, aesthetics and efficiency of light with advanced technology. We strengthen our integrated production approach with innovative engineering and an evolving design vision.",
+    "productionP2": "Each product brings together durability, elegance and functionality, representing the quality philosophy of the same family. As Asialux, we are moving forward with confident steps towards being a trusted sister brand in the lighting sector, advancing on the axis of design, technology and sustainability.",
+    "sisterBrand": "Sister brand",
+    "since": "Established",
+    "sameQuality": "Same quality approach",
+    "sameProducts": "Same product portfolio",
+    "sameProductsSubtitle": "Same product range as Masialux"
   }
 }

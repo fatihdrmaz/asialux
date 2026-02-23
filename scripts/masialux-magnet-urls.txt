@@ -1,0 +1,25 @@
+# Masialux ürün sayfası linkleri — collect-masialux-category-urls.mjs ile toplandı
+# Kategori: https://masialux.com/urun-category/magnet-ray-spot/
+# Toplam: 18 ürün
+#
+# Güncellemek için: node scripts/collect-masialux-category-urls.mjs "<kategori-url>" [çıktı-dosyası]
+# Ardından: node scripts/sync-masialux-details.mjs [urls-dosyası]
+#
+https://masialux.com/urun/magnet-serisi-mrm-100-magnet-ray-spot
+https://masialux.com/urun/magnet-serisi-mrm-101-magnet-ray-spot
+https://masialux.com/urun/magnet-serisi-mrm-102-300-magnet-ray-spot
+https://masialux.com/urun/magnet-serisi-mrm-102-450-magnet-ray-spot
+https://masialux.com/urun/magnet-serisi-mrm-102-600-magnet-ray-spot
+https://masialux.com/urun/magnet-serisi-mrm-102-900-magnet-ray-spot
+https://masialux.com/urun/magnet-serisi-mrm-102-magnet-ray-spot
+https://masialux.com/urun/magnet-serisi-mrm-103-118-magnet-ray-spot
+https://masialux.com/urun/magnet-serisi-mrm-103-219-magnet-ray-spot
+https://masialux.com/urun/magnet-serisi-mrm-103-326-magnet-ray-spot
+https://masialux.com/urun/magnet-serisi-mrm-103-438-magnet-ray-spot
+https://masialux.com/urun/magnet-serisi-mrm-104-118-magnet-ray-spot
+https://masialux.com/urun/magnet-serisi-mrm-105-118-magnet-ray-spot
+https://masialux.com/urun/magnet-serisi-mrm-105-219-magnet-ray-spot
+https://masialux.com/urun/magnet-serisi-mrm-106-magnet-ray-spot
+https://masialux.com/urun/magnet-serisi-mrm-107-magnet-ray-sarkit
+https://masialux.com/urun/magnet-serisi-mrm-109-1-magnet-ray-sarkit
+https://masialux.com/urun/magnet-serisi-mrm-300-60-magnet-ray-sarkit

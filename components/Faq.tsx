@@ -1,35 +1,25 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
-const faqs = [
-  {
-    q: "Minimum sipariş miktarı nedir?",
-    a: "Proje büyüklüğüne göre değişmekle birlikte, detaylı bilgi için bizimle iletişime geçebilirsiniz.",
-  },
-  {
-    q: "Teslimat süresi ne kadardır?",
-    a: "Stok durumuna ve sipariş hacmine bağlı olarak 2-6 hafta arasında değişebilir. Acil projeler için özel çözümler sunuyoruz.",
-  },
-  {
-    q: "İhracat yapıyor musunuz?",
-    a: "Evet. Dünya çapında birçok ülkeye ihracat yapıyoruz. Ödeme ve lojistik konularında destek sağlıyoruz.",
-  },
-  {
-    q: "Garanti koşullarınız nelerdir?",
-    a: "Ürünlerimiz standart garanti kapsamındadır. Süre ve kapsam ürün grubuna göre değişir.",
-  },
-];
-
 export default function Faq() {
+  const t = useTranslations("faq");
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+  const faqs = [
+    { q: t("q1"), a: t("a1") },
+    { q: t("q2"), a: t("a2") },
+    { q: t("q3"), a: t("a3") },
+    { q: t("q4"), a: t("a4") },
+  ];
 
   return (
     <section className="py-16 border-t border-gray-200">
       <h3 className="text-2xl font-display font-bold text-dark-950 mb-8">
-        Sıkça Sorulan Sorular
+        {t("title")}
       </h3>
       <div className="space-y-2">
         {faqs.map((faq, index) => (

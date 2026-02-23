@@ -1,0 +1,27 @@
+# Masialux ürün sayfası linkleri — collect-masialux-category-urls.mjs ile toplandı
+# Kategori: https://masialux.com/urun-category/product-category-endustriyel-aydinlatma/
+# Toplam: 20 ürün
+#
+# Güncellemek için: node scripts/collect-masialux-category-urls.mjs "<kategori-url>" [çıktı-dosyası]
+# Ardından: node scripts/sync-masialux-details.mjs [urls-dosyası]
+#
+https://masialux.com/urun/belinda-serisi-mj-108-yuksek-tavan-armatur
+https://masialux.com/urun/belinda-serisi-mj-109-yuksek-tavan-armatur
+https://masialux.com/urun/dosia-serisi-mp-200-30-clip-in-panel-aydinlatma
+https://masialux.com/urun/dosia-serisi-mp-200-60-clip-in-panel-aydinlatma
+https://masialux.com/urun/dosia-serisi-mp-300-30-siva-alti-panel-aydinlatma
+https://masialux.com/urun/dosia-serisi-mp-300-60-siva-alti-panel-aydinlatma
+https://masialux.com/urun/dosia-serisi-mps-100-30-siva-ustu-panel-armatur
+https://masialux.com/urun/dosia-serisi-mps-100-60-siva-ustu-panel-aydinlatma
+https://masialux.com/urun/endi-serisi-mj-106-yuksek-tavan-armatur
+https://masialux.com/urun/endi-serisi-mj-107-yuksek-tavan-armatur-2
+https://masialux.com/urun/endi-serisi-mj-107e-yuksek-tavan-armatur
+https://masialux.com/urun/eta-serisi-mj-100-aluminyum-etanj-armatur
+https://masialux.com/urun/eta-serisi-mj-101-aluminyum-etanj-armatur
+https://masialux.com/urun/eta-serisi-mj-102-polikarbon-etanj-armatur
+https://masialux.com/urun/eta-serisi-mj-103-etanj-armatur
+https://masialux.com/urun/led-bar-serisi-mjl-100-led-bar
+https://masialux.com/urun/led-bar-serisi-mjl-101-led-bar
+https://masialux.com/urun/led-bar-serisi-mjl-102-led-bar
+https://masialux.com/urun/ronda-serisi-mj-110-yuksek-tavan-armatur
+https://masialux.com/urun/ronda-serisi-mj-111-yuksek-tavan-armatur

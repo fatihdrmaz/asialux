@@ -1,0 +1,19 @@
+# Masialux ürün sayfası linkleri — collect-masialux-category-urls.mjs ile toplandı
+# Kategori: https://masialux.com/urun-category/lineer/
+# Toplam: 12 ürün
+#
+# Güncellemek için: node scripts/collect-masialux-category-urls.mjs "<kategori-url>" [çıktı-dosyası]
+# Ardından: node scripts/sync-masialux-details.mjs [urls-dosyası]
+#
+https://masialux.com/urun/lena-serisi-md-605-siva-alti
+https://masialux.com/urun/nora-serisi-ms-501-1-305-siva-ustu-sarkit-ve-lineer
+https://masialux.com/urun/nora-serisi-ms-503-3-500-siva-ustu-sarkit-ve-lineer
+https://masialux.com/urun/nora-serisi-ms-503-4-645-siva-ustu-sarkit-ve-lineer
+https://masialux.com/urun/nora-serisi-ms-504-1-470-siva-ustu-sarkit-ve-lineer
+https://masialux.com/urun/nora-serisi-ms-504-2-600-siva-ustu-sarkit-ve-lineer
+https://masialux.com/urun/nora-serisi-ms-504-3-700-siva-ustu-sarkit-ve-lineer
+https://masialux.com/urun/nora-serisi-ms-619-siva-ustu-sarkit-ve-lineer
+https://masialux.com/urun/nora-serisi-ms-622-siva-ustu-sarkit-ve-lineer
+https://masialux.com/urun/nora-serisi-ms-623-siva-ustu-sarkit-ve-lineer
+https://masialux.com/urun/nora-serisi-ms-660-siva-ustu-sarkit-ve-lineer
+https://masialux.com/urun/nora-serisi-ms-670-siva-ustu-sarkit-ve-lineer

@@ -8,7 +8,7 @@ const features = [
   { id: "quality", icon: Award, gradient: "from-blue-500 to-indigo-600" },
   { id: "design", icon: Palette, gradient: "from-violet-500 to-fuchsia-500" },
   { id: "export", icon: Globe, gradient: "from-emerald-500 to-teal-600" },
-  { id: "energy", icon: Battery, gradient: "from-amber-500 to-orange-500" },
+  { id: "energy", icon: Battery, gradient: "from-blue-600 to-indigo-700" },
 ];
 
 export default function Features() {
@@ -17,7 +17,7 @@ export default function Features() {
   return (
     <section className="py-24 md:py-28 bg-white relative overflow-hidden">
       {/* Subtle background accent */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(251,146,60,0.08),transparent)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(29,78,216,0.08),transparent)] pointer-events-none" />
 
       <div className="container mx-auto px-4 relative">
         <motion.div

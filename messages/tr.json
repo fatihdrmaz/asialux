@@ -17,6 +17,7 @@
   "products": {
     "title": "Ürün Gruplarımız",
     "subtitle": "Her mekan için özel çözümler",
+    "productCount": "{count} ürün",
     "raySpot": "Ray Spot",
     "surfaceMounted": "Sıva Üstü",
     "recessed": "Sıva Altı",
@@ -24,7 +25,11 @@
     "pendant": "Sarkıt",
     "outdoor": "Dış Mekan",
     "linear": "Linear",
-    "magnet": "Magnet"
+    "magnet": "Magnet",
+    "lampShade": "Abajur ve Lambader",
+    "bronzeCollection": "Bronz Koleksiyon",
+    "industrialLighting": "Endüstriyel Aydınlatma",
+    "emergencyLighting": "Acil Aydınlatma ve Yönlendirmeler"
   },
   "applications": {
     "title": "Uygulama Alanlarımız",
@@ -104,6 +109,65 @@
   },
   "blog": {
     "title": "Blog",
-    "subtitle": "Haberler ve yazılar"
+    "subtitle": "Aydınlatma dünyasından haberler ve yazılar",
+    "readMore": "Devamını oku",
+    "backToBlog": "Bloga dön"
+  },
+  "faq": {
+    "title": "Sıkça Sorulan Sorular",
+    "q1": "Minimum sipariş miktarı nedir?",
+    "a1": "Proje büyüklüğüne göre değişmekle birlikte, detaylı bilgi için bizimle iletişime geçebilirsiniz.",
+    "q2": "Teslimat süresi ne kadardır?",
+    "a2": "Stok durumuna ve sipariş hacmine bağlı olarak 2-6 hafta arasında değişebilir. Acil projeler için özel çözümler sunuyoruz.",
+    "q3": "İhracat yapıyor musunuz?",
+    "a3": "Evet. Dünya çapında birçok ülkeye ihracat yapıyoruz. Ödeme ve lojistik konularında destek sağlıyoruz.",
+    "q4": "Garanti koşullarınız nelerdir?",
+    "a4": "Ürünlerimiz standart garanti kapsamındadır. Süre ve kapsam ürün grubuna göre değişir."
+  },
+  "productDetail": {
+    "productsBreadcrumb": "Ürünler",
+    "model": "Model",
+    "stockCode": "Stok kodu",
+    "about": "Hakkında",
+    "description": "Açıklama",
+    "features": "Özellikler",
+    "usageAreasTitle": "Kullanım Alanları",
+    "product": "Ürün",
+    "technical": "Teknik",
+    "technicalSpecs": "Teknik Özellikler",
+    "application": "Uygulama",
+    "documents": "Dökümanlar",
+    "downloadableMedia": "İndirilebilir Ürün Medyası",
+    "mountingWarnings": "Montaj ve Güvenlik Uyarıları",
+    "importantWarnings": "Önemli Uyarılar",
+    "warrantyTerms": "Garanti Şartları",
+    "suggestions": "Öneriler",
+    "relatedProducts": "İlgili Ürünler",
+    "similarProducts": "Benzer Ürünler",
+    "whatsappProduct": "Ürün hakkında bilgi almak istiyorum",
+    "whatsappQuote": "Ürün veya projem için teklif almak istiyorum",
+    "ctaQuote": "Bu ürün veya projeniz için özel teklif almak ister misiniz?",
+    "ctaWhatsApp": "WhatsApp ile İletişim",
+    "ctaRequestQuote": "Teklif / Bilgi Al"
+  },
+  "aboutPage": {
+    "title": "Hakkımızda",
+    "subtitle": "Aynı deneyim, aynı kalite, kardeş marka güvencesi",
+    "storyTitle": "Hikayemiz",
+    "storyIntro": "Asialux, 2002 yılında Masialux'tan ayrılarak kurulmuş, aynı deneyim ve aynı ürün portföyüyle hizmet veren kardeş bir firmadır.",
+    "storyP1": "Masialux'un 2005'te profesyonel kimliğini kazandığı aydınlatma ailesi, yıllar içinde ışığın estetikle birleştiği özel tasarımlar sunagelmiştir. Asialux da bu kökten doğarak, üretimden satışa kadar aynı kalite anlayışı ve Avrupa standartlarını temel ilke edinmiştir. Geniş ürün portföyümüzü güçlü teknik altyapı ve ürün garantisi ile destekliyoruz.",
+    "storyP2": "Her bir detayda kusursuz tasarım, işlevsellik ve uzun ömürlülük dengesi gözetilir. Bu yaklaşım yalnızca aydınlatma değil; mekânın ruhuna dokunan, yaşam alanlarını dönüştüren ışık deneyimleri yaratır. Küresel trendleri ve teknolojik gelişmeleri yakından takip eden ekibimiz, enerji verimliliğini estetikle buluşturarak sektöre yön veren çözümler sunmaktadır.",
+    "qualityTitle": "Kalite Politikamız",
+    "qualityIntro": "Asialux için kalite, yalnızca bir standart değil; ışığın, tasarımın ve mühendisliğin mükemmel bir dengede buluştuğu bir değer anlayışıdır.",
+    "qualityP1": "Zamana gösterilen özen ve kaliteye olan bağlılık, üretim politikamızın temelini oluşturur. Kalite, AR-GE aşamasında başlayan bir yolculuktur ve bu yolculuk ürün montajına kadar süren titiz bir denetim zinciriyle devam eder. Kullandığımız her malzeme, yalnızca estetik ve dayanıklılık açısından değil; insan sağlığına ve doğaya duyarlılığı ile de seçilir.",
+    "qualityP2": "Asialux, aydınlatmayı yalnızca bir teknik unsur olarak değil, mekânın ruhunu şekillendiren bir sanat formu olarak görür ve bu anlayış, her ürünümüzde sessiz bir zarafetle kendini gösterir.",
+    "productionTitle": "Üretim ve Vizyonumuz",
+    "productionP1": "Hedefimiz, yalnızca ürün üretmek değil; ışığın kalitesini, estetiğini ve verimliliğini ileri teknolojiyle birleştirerek, sektöre yön veren çözümler geliştirmektir. Entegre üretim anlayışımızı, yenilikçi mühendislik ve sürekli gelişen tasarım vizyonumuzla güçlendiriyoruz.",
+    "productionP2": "Her bir ürün, aynı aileden gelen kalite felsefesini temsil eden, dayanıklılık, zarafet ve fonksiyonelliği bir araya getirir. Asialux olarak; tasarım, teknoloji ve sürdürülebilirlik ekseninde ilerleyerek, aydınlatma sektöründe güvenilir bir kardeş marka olma yolunda emin adımlarla ilerliyoruz.",
+    "sisterBrand": "Kardeş marka",
+    "since": "Kuruluş",
+    "sameQuality": "Aynı kalite anlayışı",
+    "sameProducts": "Aynı ürün portföyü",
+    "sameProductsSubtitle": "Masialux ile aynı ürün gamı"
   }
 }

@@ -5,17 +5,22 @@ import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { getProductCountByCategory } from "@/data/products";
 
-/** public/images/categories/ içindeki dosya adları (sizin eklediğiniz: rayspot, sivaustu, sivaalti, aplik, sarkit, dismekan, linear, magnet) */
+/** public/images/categories/ altındaki kategori görselleri (dosya adı, .png eklenir) */
 const CATEGORY_IMAGE_FILES: Record<string, string> = {
-  "ray-spot": "rayspot",
-  "surface-mounted": "sivaustu",
-  "recessed": "sivaalti",
-  "wall-light": "aplik",
-  "pendant": "sarkit",
-  "outdoor": "dismekan",
-  "linear": "linear",
-  "magnet": "magnet",
+  "ray-spot": "ray-spot",
+  "surface-mounted": "sivaustu1",
+  "recessed": "sivalati1",
+  "wall-light": "aplik1",
+  "pendant": "sarkit1",
+  "outdoor": "dismekan1",
+  "linear": "lineer",
+  "magnet": "magnet1",
+  "lamp-shade": "abajur",
+  "bronze-collection": "bronz",
+  "industrial-lighting": "endüstriyel",
+  "emergency-lighting": "acil yonlendirme",
 };
 
 const FALLBACK_IMAGES: Record<string, string> = {
@@ -27,6 +32,10 @@ const FALLBACK_IMAGES: Record<string, string> = {
   "outdoor": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
   "linear": "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
   "magnet": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  "lamp-shade": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  "bronze-collection": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  "industrial-lighting": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  "emergency-lighting": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
 };
 
 const categories = [
@@ -38,6 +47,10 @@ const categories = [
   { id: "outdoor" },
   { id: "linear" },
   { id: "magnet" },
+  { id: "lamp-shade" },
+  { id: "bronze-collection" },
+  { id: "industrial-lighting" },
+  { id: "emergency-lighting" },
 ];
 
 export default function ProductCategories() {
@@ -48,7 +61,7 @@ export default function ProductCategories() {
   const getCategoryImage = (id: string) => {
     if (failedImages.has(id)) return FALLBACK_IMAGES[id];
     const filename = CATEGORY_IMAGE_FILES[id] ?? id;
-    return `/images/categories/${filename}.png`;
+    return `/images/categories/${encodeURIComponent(filename)}.png`;
   };
 
   return (
@@ -85,7 +98,7 @@ export default function ProductCategories() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link
-                  href={locale === 'tr' ? (category.id === 'ray-spot' ? '/products/ray-spot' : `/products#${category.id}`) : (category.id === 'ray-spot' ? `/${locale}/products/ray-spot` : `/${locale}/products#${category.id}`)}
+                  href={locale === "tr" ? `/products/${category.id}` : `/${locale}/products/${category.id}`}
                   className="group block overflow-hidden rounded-xl border border-gray-200 hover:border-primary-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-white"
                 >
                   <div className="relative h-[212px] overflow-hidden">
@@ -104,7 +117,7 @@ export default function ProductCategories() {
                       {t(categoryKey as any)}
                     </h3>
                     <p className="text-sm text-gray-600">
-                      Premium çözümler
+                      {t("productCount", { count: getProductCountByCategory(category.id) })}
                     </p>
                   </div>
                 </Link>

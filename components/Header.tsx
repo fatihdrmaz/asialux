@@ -2,16 +2,15 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
-import { Menu, X, Globe, Lightbulb } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 import { locales, type Locale } from "@/i18n";
 
 const localeNames: Record<Locale, string> = {
   tr: "TR",
   en: "EN",
-  de: "DE",
-  ar: "AR",
-  ru: "RU",
+  ar: "العربية",
 };
 
 export default function Header() {
@@ -57,19 +56,16 @@ export default function Header() {
         <div className="flex items-center justify-between min-h-[72px] py-3">
           <Link
             href={locale === 'tr' ? '/' : `/${locale}`}
-            className="flex items-center gap-2 shrink-0 group"
+            className="flex items-center shrink-0 group"
           >
-            <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-primary-500/20 text-primary-500 group-hover:bg-primary-500/30 transition-colors duration-300">
-              <Lightbulb className="w-5 h-5" strokeWidth={1.5} />
-            </span>
-            <span className="flex items-baseline tracking-tight">
-              <span className={`text-xl font-semibold tracking-wide ${isScrolled ? "text-dark-900" : "text-white"}`}>
-                ASIA
-              </span>
-              <span className={`text-xl font-extralight tracking-[0.2em] uppercase ml-0.5 ${isScrolled ? "text-primary-600" : "text-primary-400"}`}>
-                LUX
-              </span>
-            </span>
+            <Image
+              src="/images/logo-w.webp"
+              alt="Asialux"
+              width={140}
+              height={40}
+              className={`h-10 w-auto object-contain transition-all duration-300 group-hover:opacity-90 ${!isScrolled ? "invert" : ""}`}
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -79,6 +75,12 @@ export default function Header() {
               className={`font-medium transition-colors ${isScrolled ? "text-gray-700 hover:text-primary-600" : "text-gray-200 hover:text-white"}`}
             >
               {t("home")}
+            </Link>
+            <Link
+              href={locale === 'tr' ? '/about' : `/${locale}/about`}
+              className={`font-medium transition-colors ${isScrolled ? "text-gray-700 hover:text-primary-600" : "text-gray-200 hover:text-white"}`}
+            >
+              {t("about")}
             </Link>
             <Link
               href={locale === 'tr' ? '/products' : `/${locale}/products`}
@@ -97,12 +99,6 @@ export default function Header() {
               className={`font-medium transition-colors ${isScrolled ? "text-gray-700 hover:text-primary-600" : "text-gray-200 hover:text-white"}`}
             >
               {t("projects")}
-            </Link>
-            <Link
-              href={locale === 'tr' ? '/about' : `/${locale}/about`}
-              className={`font-medium transition-colors ${isScrolled ? "text-gray-700 hover:text-primary-600" : "text-gray-200 hover:text-white"}`}
-            >
-              {t("about")}
             </Link>
             <Link
               href={locale === 'tr' ? '/blog' : `/${locale}/blog`}
@@ -164,6 +160,13 @@ export default function Header() {
               {t("home")}
             </Link>
             <Link
+              href={locale === 'tr' ? '/about' : `/${locale}/about`}
+              className="block py-2 text-gray-700 hover:text-primary-600"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {t("about")}
+            </Link>
+            <Link
               href={locale === 'tr' ? '/products' : `/${locale}/products`}
               className="block py-2 text-gray-700 hover:text-primary-600"
               onClick={() => setIsMenuOpen(false)}
@@ -183,13 +186,6 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               {t("projects")}
-            </Link>
-            <Link
-              href={locale === 'tr' ? '/about' : `/${locale}/about`}
-              className="block py-2 text-gray-700 hover:text-primary-600"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t("about")}
             </Link>
             <Link
               href={locale === 'tr' ? '/blog' : `/${locale}/blog`}

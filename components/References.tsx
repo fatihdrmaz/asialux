@@ -1,15 +1,17 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const references = [
-  { name: "Referans 1", logo: "/images/references/ref1.png" },
-  { name: "Referans 2", logo: "/images/references/ref2.png" },
-  { name: "Referans 3", logo: "/images/references/ref3.png" },
-  { name: "Referans 4", logo: "/images/references/ref4.png" },
-  { name: "Referans 5", logo: "/images/references/ref5.png" },
-  { name: "Referans 6", logo: "/images/references/ref6.png" },
+  { name: "Avec", logo: "/images/references/avec.png" },
+  { name: "Bambi", logo: "/images/references/bambi.jpg" },
+  { name: "Bluemint", logo: "/images/references/bluemint.png" },
+  { name: "Chamada Hotels", logo: "/images/references/chamada_hotels.png" },
+  { name: "Giovanni Gentile", logo: "/images/references/giovanni%20gentile.png" },
+  { name: "Gratis", logo: "/images/references/gratis.png" },
+  { name: "Kronotrop", logo: "/images/references/kronotrop.jpeg" },
 ];
 
 export default function References() {
@@ -35,7 +37,7 @@ export default function References() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-8 items-center"
         >
           {references.map((ref, index) => (
             <motion.div
@@ -44,11 +46,15 @@ export default function References() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.05 * index }}
-              className="flex items-center justify-center h-20 px-4 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-primary-200 transition-all duration-300"
+              className="flex items-center justify-center h-24 px-6 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-primary-200 transition-all duration-300 overflow-hidden"
             >
-              <span className="text-lg font-semibold text-gray-500 truncate max-w-full">
-                {ref.name}
-              </span>
+              <Image
+                src={ref.logo}
+                alt={ref.name}
+                width={120}
+                height={48}
+                className="object-contain w-full h-full max-h-16"
+              />
             </motion.div>
           ))}
         </motion.div>

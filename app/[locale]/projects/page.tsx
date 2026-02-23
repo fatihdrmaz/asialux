@@ -1,10 +1,10 @@
 import { setRequestLocale } from "next-intl/server";
 import ProjectPortfolio from "@/components/ProjectPortfolio";
 
-type Props = { params: Promise<{ locale: string }> };
+type Props = { params: { locale: string } };
 
 export default async function ProjectsPage({ params }: Props) {
-  const { locale } = await params;
+  const { locale } = params;
   setRequestLocale(locale);
 
   return (

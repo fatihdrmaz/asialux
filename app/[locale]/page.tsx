@@ -7,13 +7,12 @@ import References from "@/components/References";
 import Showcase from "@/components/Showcase";
 import Applications from "@/components/Applications";
 import ProjectPortfolio from "@/components/ProjectPortfolio";
-import Certificates from "@/components/Certificates";
 import CTA from "@/components/CTA";
 
-type Props = { params: Promise<{ locale: string }> };
+type Props = { params: { locale: string } };
 
 export default async function Home({ params }: Props) {
-  const { locale } = await params;
+  const { locale } = params;
   setRequestLocale(locale);
 
   return (
@@ -26,7 +25,6 @@ export default async function Home({ params }: Props) {
       <Showcase />
       <Applications />
       <ProjectPortfolio />
-      <Certificates />
       <CTA />
     </>
   );

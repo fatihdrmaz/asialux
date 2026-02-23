@@ -6,16 +6,16 @@ import { useTranslations } from "next-intl";
 
 const showcaseImages = [
   {
-    src: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-    alt: "Modern interior lighting",
+    src: "/images/ozel%20tasar%C4%B1m/ozel-tasarim-portfoyo-3.jpg",
+    alt: "Özel tasarım portföy 1",
   },
   {
-    src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-    alt: "Elegant lighting design",
+    src: "/images/ozel%20tasar%C4%B1m/ozel-tasarim-portfoyo-4.jpg",
+    alt: "Özel tasarım portföy 2",
   },
   {
-    src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-    alt: "Premium lighting fixtures",
+    src: "/images/ozel%20tasar%C4%B1m/ozel-tasarim-portfoyo-5.jpg",
+    alt: "Özel tasarım portföy 3",
   },
 ];
 

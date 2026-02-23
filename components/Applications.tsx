@@ -15,7 +15,7 @@ const applications = [
   {
     id: "cafe",
     icon: Coffee,
-    gradient: "from-amber-500 to-orange-500",
+    gradient: "from-blue-600 to-indigo-700",
     image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
   },
   {

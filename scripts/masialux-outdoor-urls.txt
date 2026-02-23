@@ -1,0 +1,24 @@
+# Masialux ürün sayfası linkleri — collect-masialux-category-urls.mjs ile toplandı
+# Kategori: https://masialux.com/urun-category/dis-mekan/
+# Toplam: 17 ürün
+#
+# Güncellemek için: node scripts/collect-masialux-category-urls.mjs "<kategori-url>" [çıktı-dosyası]
+# Ardından: node scripts/sync-masialux-details.mjs [urls-dosyası]
+#
+https://masialux.com/urun/ajra-serisi-mpj-104-peyzaj-led-aydinlatma
+https://masialux.com/urun/jiwa-serisi-mo-130-dis-mekan-aydinlatma
+https://masialux.com/urun/jiwa-serisi-mo-131-dis-mekan-aydinlatma
+https://masialux.com/urun/jiwa-serisi-mo-132-dis-mekan-aydinlatma
+https://masialux.com/urun/jiwa-serisi-mo-133-dis-mekan-aplik-aydinlatma
+https://masialux.com/urun/jiwa-serisi-mo-134-dis-mekan-aplik-aydinlatma
+https://masialux.com/urun/jiwa-serisi-mo-135-dis-mekan-aydinlatma
+https://masialux.com/urun/jiwa-serisi-mo-136-dis-mekan-aydinlatma
+https://masialux.com/urun/moss-serisi-mo-110-dis-mekan-aydinlatma-dis-mekan-aplik
+https://masialux.com/urun/moss-serisi-mo-111-dis-mekan-aydinlatma-dis-mekan-aplik
+https://masialux.com/urun/moss-serisi-mo-112-dis-mekan-aplik-aydinlatma
+https://masialux.com/urun/moss-serisi-mo-113-dis-mekan-aplik-aydinlatma
+https://masialux.com/urun/moss-serisi-mo-114-dis-mekan-aydinlatma-dis-mekan-aplik
+https://masialux.com/urun/moss-serisi-mo-120-dis-mekan-kazikli-cim-armatur
+https://masialux.com/urun/moss-serisi-mo-200-dis-mekan-led-projektor
+https://masialux.com/urun/vairo-serisi-mo-400-wallwasher
+https://masialux.com/urun/zaita-serisi-mo-300-dis-mekan-led-projektor

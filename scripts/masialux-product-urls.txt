@@ -1,0 +1,41 @@
+# Masialux ürün sayfası linkleri — collect-masialux-category-urls.mjs ile toplandı
+# Kategori: https://masialux.com/urun-category/ray-spot/
+# Toplam: 34 ürün
+#
+# Güncellemek için: node scripts/collect-masialux-category-urls.mjs
+# Ardından: node scripts/sync-masialux-details.mjs
+#
+https://masialux.com/urun/bera-serisimr-1040-ray-spot
+https://masialux.com/urun/bruna-serisi-mr-1060-ray-spot
+https://masialux.com/urun/golobo-serisi-mr-301-ray-spot
+https://masialux.com/urun/golobo-serisi-mr-307-ray-spot
+https://masialux.com/urun/lairo-serisi-mr-1050-60-ray-spot
+https://masialux.com/urun/lanzo-serisi-mr-1020-100-ray-spot
+https://masialux.com/urun/lanzo-serisi-mr-1020-118-ray-spot
+https://masialux.com/urun/lanzo-serisi-mr-1020-60-ray-spot
+https://masialux.com/urun/lanzo-serisi-mr-1020-85-ray-spot
+https://masialux.com/urun/lima-serisi-mr-1010-100-ray-spot
+https://masialux.com/urun/lima-serisi-mr-1010-85-ray-spot
+https://masialux.com/urun/luca-serisi-mr-1002-ray-spot
+https://masialux.com/urun/luciano-series-mr-701-100-ray-spot
+https://masialux.com/urun/luciano-series-mr-701-85-ray-spot
+https://masialux.com/urun/nena-serisi-mr-801-100-ray-spot
+https://masialux.com/urun/nena-serisi-mr-801-85-ray-spot
+https://masialux.com/urun/nena-serisi-mr-802-100-ray-spot
+https://masialux.com/urun/nena-serisi-mr-802-85-ray-spot
+https://masialux.com/urun/nora-serisi-mr-418-1-ray-spot
+https://masialux.com/urun/nora-serisi-mr-418-2-ray-spot
+https://masialux.com/urun/nora-serisi-mr-418-ray-spot
+https://masialux.com/urun/nora-serisi-mr-421-ray-spot
+https://masialux.com/urun/nora-serisi-mr-423-ray-spot
+https://masialux.com/urun/ray-spot-luca-serisi-mr-1001
+https://masialux.com/urun/renardo-serisi-mr-601-100-ray-spot
+https://masialux.com/urun/renardo-serisi-mr-601-118-ray-spot
+https://masialux.com/urun/renardo-serisi-mr-602-ray-spot
+https://masialux.com/urun/rotella-serisi-mr-413-85-ray-spot
+https://masialux.com/urun/rotella-serisi-mr-425-100-ray-spot
+https://masialux.com/urun/rotella-serisi-mr-425-118-ray-spot
+https://masialux.com/urun/saturn-serisi-mr-501-ray-spot
+https://masialux.com/urun/saturn-serisi-mr-502-ray-spot
+https://masialux.com/urun/senita-serisi-mr-1030-100-ray-spot
+https://masialux.com/urun/senita-serisi-mr-1030-85-ray-spot
