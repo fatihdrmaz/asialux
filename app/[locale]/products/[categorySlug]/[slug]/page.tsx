@@ -57,6 +57,7 @@ export default async function ProductDetailPage({ params }: Props) {
     ...relatedFromIds,
     ...othersFromCategory.slice(0, Math.max(0, MAX_SUGGESTIONS - relatedFromIds.length)),
   ]
+    .filter((p): p is NonNullable<typeof p> => p != null)
     .slice(0, MAX_SUGGESTIONS)
     .map((p) => {
       const rd = getProductDetail(categorySlug, p.id, locale);
