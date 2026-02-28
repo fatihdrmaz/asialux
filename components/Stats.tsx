@@ -14,8 +14,14 @@ export default function Stats() {
   const t = useTranslations("stats");
 
   return (
-    <section className="py-16 md:py-20 bg-dark-950 text-white">
-      <div className="container mx-auto px-4">
+    <section className="py-section md:py-section-lg bg-dark-950 text-white">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{ duration: 0.6 }}
+        className="container mx-auto px-4"
+      >
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {stats.map((stat, index) => (
             <motion.div
@@ -35,7 +41,7 @@ export default function Stats() {
             </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

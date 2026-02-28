@@ -5,8 +5,14 @@
 export type LocaleProduct = "en" | "ar";
 
 export const productDetailGlossary: Record<string, { en: string; ar: string }> = {
+  // Ürün adı terimleri
+  Serisi: { en: "Series", ar: "سلسلة" },
+  SERİSİ: { en: "Series", ar: "سلسلة" },
+  Ledli: { en: "LED", ar: "LED" },
+
   // Kategoriler
   "Ray Spot": { en: "Track Spot", ar: "سبوت ريل" },
+  "RAY SPOT": { en: "TRACK SPOT", ar: "سبوت ريل" },
   "Sıva Üstü": { en: "Surface Mounted", ar: "سطح الجدار" },
   "Sıva Altı": { en: "Recessed", ar: "مدمج في السقف" },
   "Dış Mekan": { en: "Outdoor", ar: "الخارجي" },
@@ -15,6 +21,12 @@ export const productDetailGlossary: Record<string, { en: string; ar: string }> =
   Magnet: { en: "Magnet", ar: "مغناطيسي" },
   Aplik: { en: "Wall Light", ar: "جدارية" },
   Sarkıt: { en: "Pendant", ar: "معلقة" },
+  "Abajur ve Lambader": { en: "Table Lamp and Lamp Shade", ar: "مصباح الطاولة والثريا" },
+  Lambader: { en: "Lamp Shade", ar: "ثريا الطاولة" },
+  LAMBADER: { en: "Lamp Shade", ar: "ثريا الطاولة" },
+  "Masa Lambası": { en: "Table Lamp", ar: "مصباح الطاولة" },
+  "Masa lambası": { en: "Table Lamp", ar: "مصباح الطاولة" },
+  "Özel Koleksiyon": { en: "Special Collection", ar: "المجموعة الخاصة" },
 
   // Kullanım alanları
   Dekorasyon: { en: "Decoration", ar: "ديكور" },
@@ -185,11 +197,96 @@ export const productDetailGlossary: Record<string, { en: string; ar: string }> =
     en: "Masialux aluminium enclosure luminaire",
     ar: "ثريا ماسيالوكس بغلاف ألومنيوم",
   },
+
+  // Lambader / Masa Lambası (Özel Koleksiyon)
+  "Özel Koleksiyon Masa lambası ve LAMBADER;": {
+    en: "Special Collection Table Lamp and Lamp Shade;",
+    ar: "المجموعة الخاصة مصباح الطاولة والثريا؛",
+  },
+  "Masialux Özel Koleksiyon Masa Lambası ve Lambader": {
+    en: "Masialux Special Collection Table Lamp and Lamp Shade",
+    ar: "ماسيالوكس المجموعة الخاصة مصباح الطاولة والثريا",
+  },
+  "Özel koleksiyon masa lambası ve lambaderinizi teslim alırken, fiziksel bir hasar olup olmadığını kontrol ediniz. Nakliye hasarlı ürünlerin değişimini kargodan yada ambardan talep ediniz ve ürün ile birlikte gelmesi gereken aksesuarlar varsa tam olup olmadığını kontrol ediniz.": {
+    en: "When receiving your special collection table lamp and lamp shade, check for any physical damage. Request replacement of transport-damaged products from the carrier or warehouse and verify that any accessories that should come with the product are complete.",
+    ar: "عند استلام مصباح الطاولة والثريا من المجموعة الخاصة، تحقق من أي ضرر مادي. اطلب استبدال المنتجات التالفة أثناء النقل من الناقل أو المستودع وتأكد من اكتمال أي ملحقات يجب أن تأتي مع المنتج.",
+  },
+  "Elektrik bağlantıları sadece uzman personel tarafından yapılmalıdır.": {
+    en: "Electrical connections must be made only by qualified personnel.",
+    ar: "يجب أن تتم التوصيلات الكهربائية فقط من قبل شخص مؤهل.",
+  },
+  "Satıcı firma, ürünün usulüne uygun olmayan bir şekilde kullanılması sonucu ortaya çıkabilecek yaralanma veya hasar görme vakalarında sorumluluk almaz": {
+    en: "The seller is not liable for injury or damage resulting from improper use of the product.",
+    ar: "البائع غير مسؤول عن الإصابة أو الضرر الناتج عن الاستخدام غير السليم للمنتج.",
+  },
+  "Özel koleksiyon masa lambası ve lambaderinizde meydana gelen herhangi bir arıza durumunda uzman yetkili servisimizle irtibata geçiniz.": {
+    en: "In case of any malfunction of your special collection table lamp and lamp shade, contact our authorised service.",
+    ar: "في حالة أي عطل في مصباح الطاولة والثريا من المجموعة الخاصة، اتصل بخدمتنا المعتمدة.",
+  },
+  "Özel Koleksiyon Masa Lambası ve Lambaderinizin ;": {
+    en: "Your Special Collection Table Lamp and Lamp Shade;",
+    ar: "مصباح الطاولة والثريا من المجموعة الخاصة؛",
+  },
+  "Garanti süresi, ürünün fatura tarihinden itibaren başlar ve 2 yıldır.": {
+    en: "Warranty period starts from the invoice date and is 2 years.",
+    ar: "تبدأ فترة الضمان من تاريخ الفاتورة وهي سنتان.",
+  },
+  "Bütün parçaları dahil olmak üzere tamamı garanti kapsamına gir.": {
+    en: "All parts are covered by warranty.",
+    ar: "جميع الأجزاء مشمولة بالضمان.",
+  },
+  "Ayıplı olduğunun anlaşılması durumunda tüketici, 6502 sayılı Tüketicinin Korunması Hakkında Kanunun 11. maddesinde yer alan;": {
+    en: "If a defect is found, the consumer may, under Article 11 of the Consumer Protection Law No. 6502:",
+    ar: "في حال اكتشاف عيب، يجوز للمستهلك بموجب المادة 11 من قانون حماية المستهلك:",
+  },
+  "a) Ücretsiz onarımı yaptırmak.": {
+    en: "a) Have it repaired free of charge.",
+    ar: "أ) إصلاحه مجاناً.",
+  },
+  "b) Onarımı yapılmadığı takdirde yeni ürünle değiştirilmesi.": {
+    en: "b) Request replacement with a new product if repair is not carried out.",
+    ar: "ب) طلب استبداله بمنتج جديد إذا لم يتم الإصلاح.",
+  },
+  "Tüketicinin bu haklardan ücretsiz onarım durumunda satıcı; işçilik masrafı, değiştirilen parça bedeli ya da başka herhangi bir ad altında hiçbir ücret talep etmeksizin ürünün onarımını yaptırmakla yükümlüdür.": {
+    en: "In case of free repair, the seller is obliged to carry out the repair without charging any labour, part replacement or other fees.",
+    ar: "في حالة الإصلاح المجاني، البائع ملزم بإجراء الإصلاح دون تحصيل أي رسوم عمل أو قطع غيار أو غيرها.",
+  },
+  "Garanti süresi içerisinde arızalanması durumunda, tamirde geçen süre garanti süresine eklenir. Ürünün tamir süresi 20 iş gününü geçemez.": {
+    en: "If the product fails within the warranty period, the repair time is added to the warranty period. Repair time shall not exceed 20 working days.",
+    ar: "إذا تعطل المنتج خلال فترة الضمان، يُضاف وقت الإصلاح إلى فترة الضمان. لا يتجاوز وقت الإصلاح 20 يوماً عمل.",
+  },
+  "Kullanma kılavuzunda yer alan hususlara aykırı kullanılmasından kaynaklanan arızalar garanti kapsamı dışındadır.": {
+    en: "Defects arising from use contrary to the user manual are not covered by warranty.",
+    ar: "العيوب الناتجة عن الاستخدام المخالف لكتيب الاستخدام غير مشمولة بالضمان.",
+  },
+  "Elektrik ve kullanıcının kullanımından doğan arızalar (elektrik kesilmesi, voltaj dalgalanması, makinaya ait olmayan aksesuar takılması yada kullanılması zorunlu olan aksesuarların kullanılmaması gibi) garantili ürünlerde yetkili servis dışında herhangi bir müdahalenin yapılması, garanti etiketi olan ürünlerde etiketin zarar görmesi, cihazın dış yüzeyinde oluşan kırık, çizik vb. nedenlerden meydana gelen arızalar, tozlu, rutubetli, aşırı sıcak ya da soğuk ortamlarda kullanılma sebebi ile oluşan arızalar, sel, yangın, deprem, yıldırım düşmesi vb. doğal afetlerin sebep olduğu arızalarda garanti kapsamı dışındadır.": {
+    en: "Defects due to electrical or user-related causes (power cuts, voltage fluctuations, use of unauthorised accessories, etc.), any intervention other than authorised service, damage to the warranty label, damage to the outer surface of the product, or use in dusty, humid or extreme temperatures, and damage from natural disasters are not covered by warranty.",
+    ar: "العيوب بسبب كهربائي أو مستخدم (انقطاع التيار، تقلبات الجهد، استخدام ملحقات غير معتمدة، إلخ)، أي تدخل غير الخدمة المعتمدة، تلف ملصق الضمان، تلف السطح الخارجي للمنتج، أو الاستخدام في بيئة مغبرة أو رطبة أو حرارة قصوى، والأضرار الناتجة عن كوارث طبيعية غير مشمولة بالضمان.",
+  },
+
+  // Sarkıt (Özel Koleksiyon)
+  "Masialux Özel Koleksiyon Sarkıt Aydınlatma Armatür": {
+    en: "Masialux Special Collection Pendant Lighting Luminaire",
+    ar: "ماسيالوكس ثريا معلقة إضاءة من المجموعة الخاصة",
+  },
+  "Özel Koleksiyon sarkıt ARMATÜRÜNÜZÜ;": {
+    en: "Your Special Collection pendant luminaire;",
+    ar: "ثريا المجموعة الخاصة المعلقة؛",
+  },
+  "Özel Koleksiyon sarkıt AYDINLATMA ARMATÜRÜNÜZÜ;": {
+    en: "Your Special Collection pendant lighting luminaire;",
+    ar: "ثريا الإضاءة المعلقة من المجموعة الخاصة؛",
+  },
+  "Özel Koleksiyon Sarkıt Armatürün;": {
+    en: "Special Collection Pendant Luminaire;",
+    ar: "ثريا معلقة المجموعة الخاصة؛",
+  },
 };
 
 
 /**
- * Tek bir metni locale'e göre sözlükten çevirir. Yoksa orijinali döner.
+ * Tek bir metni locale'e göre sözlükten çevirir.
+ * Önce tam eşleşme dener; yoksa metin içinde sözlük ifadelerini (uzun önce) arar ve çevirir.
  */
 export function translateWithGlossary(text: string | undefined, locale: LocaleProduct): string {
   if (!text) return "";
@@ -197,5 +294,12 @@ export function translateWithGlossary(text: string | undefined, locale: LocalePr
   if (!trimmed) return text;
   const entry = productDetailGlossary[trimmed];
   if (entry) return locale === "en" ? entry.en : entry.ar;
-  return text;
+  // Bileşik metin: sözlükteki anahtarları uzunluk sırasına göre (uzun önce) metinde değiştir
+  const keys = Object.keys(productDetailGlossary).filter((k) => trimmed.includes(k)).sort((a, b) => b.length - a.length);
+  let result = trimmed;
+  for (const k of keys) {
+    const val = locale === "en" ? productDetailGlossary[k].en : productDetailGlossary[k].ar;
+    result = result.split(k).join(val);
+  }
+  return result;
 }

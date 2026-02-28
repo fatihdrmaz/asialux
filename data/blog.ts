@@ -20,36 +20,42 @@ export const blogPosts: BlogPost[] = [
     image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=1200&q=80",
     content: {
       tr: {
-        title: "LED Aydınlatma Trendleri 2025",
+        title: "LED Aydınlatma Trendleri 2025: Akıllı Sistemler ve Mimari Aydınlatma",
         excerpt:
-          "Yeni nesil LED teknolojileri, akıllı aydınlatma sistemleri ve mekân tasarımında öne çıkan trendler; sektörün nereye evrildiğini anlamak için rehber.",
+          "2025 LED aydınlatma trendleri: insan odaklı aydınlatma (HCL), akıllı kontrol sistemleri, çizgisel LED ve sürdürülebilirlik. Sektör rehberi.",
         body: [
-          "2025 yılında LED aydınlatma sektörü, enerji verimliliğinin ötesinde kullanıcı deneyimi ve mekânla bütünleşen çözümler sunuyor. Artık sadece ışık kaynağı değil; renk sıcaklığı ayarlanabilir, insan odaklı (HCL) ve akıllı senaryolarla yönetilebilir sistemler talep görüyor.",
-          "Mimari aydınlatmada çizgisel (linear) ürünler ve gizli entegrasyon öne çıkıyor. Tavan ve duvar birleşimlerinde devam eden şerit LED’ler, ofis ve perakende mekânlarda sade bir görünüm ve homojen aydınlatma sağlıyor. Aynı zamanda ray spot ve sıva altı armatürlerde daha kompakt formlar ve yüksek lümen çıkışı öne çıkan özellikler arasında.",
-          "Sürdürülebilirlik, üreticiler ve proje sahipleri için belirleyici olmaya devam ediyor. Düşük karbon ayak izi, uzun ömür ve geri dönüştürülebilir malzeme kullanımı hem sertifikasyonlarda hem de ihale şartnamelerinde daha sık aranıyor. LED’ler bu beklentiyi uzun kullanım ömrü ve düşük enerji tüketimiyle karşılıyor.",
-          "Son olarak, konut ve ticari projelerde Wi‑Fi ve Bluetooth tabanlı akıllı kontrol sistemleri yaygınlaşıyor. Tek bir uygulama üzerinden aydınlatma senaryolarını yönetmek, enerji tasarrufu sağlamak ve konforu artırmak mümkün. Asialux olarak bu trendleri ürün gamımızda ve proje çözümlerimizde takip ediyoruz.",
+          "LED aydınlatma sektörü 2025 yılında yalnızca enerji verimliliği değil, kullanıcı deneyimi ve mekânla bütünleşen çözümler sunuyor. Artık aydınlatma ürünleri sadece ışık kaynağı olarak değil; renk sıcaklığı ayarlanabilir, insan odaklı (HCL – Human Centric Lighting) ve akıllı senaryolarla yönetilebilir sistemler olarak talep görüyor. Bu yazıda 2025 LED aydınlatma trendlerini, mimari aydınlatma uygulamalarını ve proje seçiminde dikkat edilmesi gerekenleri özetliyoruz.",
+          "Mimari aydınlatmada çizgisel (linear) LED ürünler ve gizli entegrasyon öne çıkıyor. Tavan ve duvar birleşimlerinde devam eden şerit LED uygulamaları, ofis ve perakende mekânlarda sade bir görünüm ve homojen aydınlatma sağlıyor. Ray spot ve sıva altı armatürlerde ise daha kompakt formlar ve yüksek lümen çıkışı (lm/W) öne çıkan özellikler arasında. Özellikle ticari projelerde görünmez veya minimum görünür armatür tercihi, mekânın estetiğini bozmadan yeterli aydınlık seviyesine ulaşmayı mümkün kılıyor.",
+          "İnsan odaklı aydınlatma (HCL), ofis ve sağlık yapılarında giderek daha fazla talep görüyor. Gün içinde renk sıcaklığı ve yoğunluğun değiştirilmesiyle biyoritme destek veren sistemler, çalışan verimliliği ve konforu artırıyor. Tunable white (ayarlanabilir beyaz) LED armatürler bu uygulamaların temelini oluşturuyor.",
+          "Sürdürülebilirlik, üreticiler ve proje sahipleri için belirleyici olmaya devam ediyor. Düşük karbon ayak izi, uzun kullanım ömrü ve geri dönüştürülebilir malzeme kullanımı hem yeşil sertifikasyonlarda (LEED, BREEAM vb.) hem de ihale şartnamelerinde daha sık aranıyor. LED teknolojisi bu beklentiyi uzun ömür ve düşük enerji tüketimiyle karşılıyor; ayrıca bakım maliyetlerini de düşürüyor.",
+          "Konut ve ticari projelerde Wi‑Fi ve Bluetooth tabanlı akıllı aydınlatma kontrol sistemleri yaygınlaşıyor. Tek bir uygulama üzerinden aydınlatma senaryolarını yönetmek, enerji tasarrufu sağlamak ve konforu artırmak mümkün. Hareket ve gün ışığı sensörleriyle entegre çalışan sistemler, boş alanlarda otomatik kısma veya kapatma ile tüketimi azaltıyor.",
+          "Asialux olarak LED aydınlatma trendlerini ürün gamımızda ve proje çözümlerimizde takip ediyoruz. Sıva altı, sıva üstü, ray spot ve dış mekân ürünlerimizle projenize uygun teknik ve estetik çözümler sunuyoruz. Detaylı bilgi ve proje teklifi için iletişime geçebilirsiniz.",
         ],
       },
       en: {
-        title: "LED Lighting Trends 2025",
+        title: "LED Lighting Trends 2025: Smart Systems and Architectural Lighting",
         excerpt:
-          "Next-generation LED technologies, smart lighting systems, and key trends in spatial design: a guide to where the industry is heading.",
+          "2025 LED lighting trends: human-centric lighting (HCL), smart controls, linear LED and sustainability. Industry guide and best practices.",
         body: [
-          "In 2025, the LED lighting sector is delivering more than energy efficiency: it is about user experience and solutions that integrate with the space. Products are no longer just light sources; tunable colour temperature, human-centric (HCL) and smart scenario-based systems are in demand.",
-          "In architectural lighting, linear products and concealed integration stand out. Continuous strip LEDs along ceiling and wall junctions provide a clean look and even illumination in offices and retail. At the same time, track spots and recessed luminaires are trending towards more compact forms and higher lumen output.",
-          "Sustainability remains a key factor for manufacturers and project owners. Low carbon footprint, long life and recyclable materials are increasingly required in certifications and tender specifications. LEDs meet these expectations with long service life and low energy consumption.",
-          "Finally, Wi‑Fi and Bluetooth-based smart control systems are becoming common in residential and commercial projects. Managing lighting scenarios, saving energy and improving comfort from a single app is now standard. At Asialux we follow these trends in our product range and project solutions.",
+          "The LED lighting sector in 2025 delivers more than energy efficiency: it focuses on user experience and solutions that integrate with the space. Lighting products are no longer just light sources; tunable colour temperature, human-centric lighting (HCL) and smart scenario-based systems are in demand. This article summarises 2025 LED lighting trends, architectural lighting applications and what to consider when specifying projects.",
+          "In architectural lighting, linear LED products and concealed integration stand out. Continuous strip LEDs along ceiling and wall junctions provide a clean look and even illumination in offices and retail. Track spots and recessed luminaires are trending towards more compact forms and higher lumen output (lm/W). In commercial projects, invisible or minimal-visibility luminaires allow sufficient illuminance without compromising the aesthetics of the space.",
+          "Human-centric lighting (HCL) is increasingly requested in offices and healthcare buildings. Systems that adjust colour temperature and intensity through the day support circadian rhythm and improve occupant productivity and comfort. Tunable white LED luminaires form the basis of these applications.",
+          "Sustainability remains a key factor for manufacturers and project owners. Low carbon footprint, long service life and recyclable materials are increasingly required in green certifications (LEED, BREEAM, etc.) and tender specifications. LED technology meets these expectations with long life and low energy consumption, and also reduces maintenance costs.",
+          "Wi‑Fi and Bluetooth-based smart lighting control systems are becoming common in residential and commercial projects. Managing lighting scenarios, saving energy and improving comfort from a single app is now standard. Systems integrated with motion and daylight sensors reduce consumption by automatically dimming or switching off in unoccupied areas.",
+          "At Asialux we follow LED lighting trends in our product range and project solutions. With recessed, surface-mounted, track spot and outdoor luminaires we offer technical and aesthetic solutions suited to your project. Contact us for detailed information and project proposals.",
         ],
       },
       ar: {
-        title: "اتجاهات إضاءة LED 2025",
+        title: "اتجاهات إضاءة LED 2025: الأنظمة الذكية والإضاءة المعمارية",
         excerpt:
-          "تقنيات LED من الجيل الجديد وأنظمة الإضاءة الذكية والاتجاهات البارزة في تصميم الفضاء: دليل لفهم اتجاه القطاع.",
+          "اتجاهات إضاءة LED 2025: الإضاءة المركزة على الإنسان (HCL)، التحكم الذكي، LED الخطي والاستدامة. دليل القطاع وأفضل الممارسات.",
         body: [
-          "في عام 2025، يقدم قطاع إضاءة LED أكثر من كفاءة الطاقة: إنه يركز على تجربة المستخدم والحلول المتكاملة مع الفضاء. المنتجات لم تعد مجرد مصدر ضوء؛ الأنظمة القابلة لضبط درجة حرارة اللون والمركزة على الإنسان (HCL) والذكية حسب السيناريو مطلوبة.",
-          "في الإضاءة المعمارية، تبرز المنتجات الخطية والتكامل المخفي. شرائط LED المستمرة عند تقاطعات السقف والجدار توفر مظهراً أنيقاً وإضاءة متجانسة في المكاتب والتجزئة. في الوقت نفسه، تميل سبوتات الريل والثريات المدمجة إلى أشكال أصغر وإخراج لومن أعلى.",
-          "الاستدامة لا تزال عاملاً حاسماً للمصنعين وأصحاب المشاريع. البصمة الكربونية المنخفضة والعمر الطويل والمواد القابلة لإعادة التدوير مطلوبة بشكل متزايد في الشهادات ومواصفات المناقصات. تلبي مصابيح LED هذه التوقعات بعمر خدمة طويل واستهلاك منخفض للطاقة.",
-          "أخيراً، أنظمة التحكم الذكية القائمة على Wi‑Fi و Bluetooth أصبحت شائعة في المشاريع السكنية والتجارية. إدارة سيناريوهات الإضاءة وتوفير الطاقة وتحسين الراحة من تطبيق واحد أصبح معياراً. في أسيا لوكس نتابع هذه الاتجاهات في مجموعتنا من المنتجات وحلول المشاريع.",
+          "قطاع إضاءة LED في عام 2025 يقدم أكثر من كفاءة الطاقة: يركز على تجربة المستخدم والحلول المتكاملة مع الفضاء. منتجات الإضاءة لم تعد مجرد مصدر ضوء؛ الأنظمة القابلة لضبط درجة حرارة اللون والمركزة على الإنسان (HCL) والذكية حسب السيناريو مطلوبة. تلخص هذه المقالة اتجاهات إضاءة LED 2025 وتطبيقات الإضاءة المعمارية وما يجب مراعاته عند تحديد المشاريع.",
+          "في الإضاءة المعمارية، تبرز المنتجات الخطية لـ LED والتكامل المخفي. شرائط LED المستمرة عند تقاطعات السقف والجدار توفر مظهراً أنيقاً وإضاءة متجانسة في المكاتب والتجزئة. سبوتات الريل والثريات المدمجة تميل إلى أشكال أصغر وإخراج لومن أعلى (lm/W). في المشاريع التجارية، الثريات غير المرئية أو ذات الرؤية الدنيا تسمح بإضاءة كافية دون المساس بجماليات المكان.",
+          "الإضاءة المركزة على الإنسان (HCL) مطلوبة بشكل متزايد في المكاتب والمباني الصحية. الأنظمة التي تضبط درجة حرارة اللون والشدة خلال اليوم تدعم الإيقاع اليومي وتحسن إنتاجية وراحة الشاغلين. ثريات LED ذات اللون الأبيض القابل للضبط تشكل أساس هذه التطبيقات.",
+          "الاستدامة لا تزال عاملاً حاسماً للمصنعين وأصحاب المشاريع. البصمة الكربونية المنخفضة والعمر الطويل والمواد القابلة لإعادة التدوير مطلوبة بشكل متزايد في الشهادات الخضراء (LEED، BREEAM، إلخ) ومواصفات المناقصات. تقنية LED تلبي هذه التوقعات بعمر طويل واستهلاك منخفض للطاقة، وتقلل أيضاً تكاليف الصيانة.",
+          "أنظمة التحكم الذكية القائمة على Wi‑Fi و Bluetooth أصبحت شائعة في المشاريع السكنية والتجارية. إدارة سيناريوهات الإضاءة وتوفير الطاقة وتحسين الراحة من تطبيق واحد أصبح معياراً. الأنظمة المدمجة مع حساسات الحركة وضوء النهار تقلل الاستهلاك عبر التخفيف أو الإطفاء التلقائي في المناطق غير المشغولة.",
+          "في أسيا لوكس نتابع اتجاهات إضاءة LED في مجموعتنا من المنتجات وحلول المشاريع. مع الثريات المدمجة والسطحية وسبوت الريل والخارجية نقدم حلولاً تقنية وجمالية مناسبة لمشروعك. تواصل معنا للمعلومات التفصيلية وعروض المشاريع.",
         ],
       },
     },
@@ -60,29 +66,29 @@ export const blogPosts: BlogPost[] = [
     image: "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=1200&q=80",
     content: {
       tr: {
-        title: "Dış Mekan Aydınlatması İpuçları",
+        title: "Dış Mekan Aydınlatması İpuçları: IP Sınıfları, Peyzaj ve Cephe Aydınlatma",
         excerpt:
-          "Peyzaj, cephe ve güvenlik aydınlatmasında doğru ürün seçimi, IP sınıfları ve proje uygulama önerileri.",
+          "Dış mekân ve peyzaj aydınlatmasında IP koruma sınıfları, LED dış mekân armatürleri seçimi ve ışık kirliliği. Uygulama rehberi.",
         body: [
-          "Dış mekân aydınlatması hem estetik hem işlevsel hedefleri bir arada karşılamalıdır. Yaya yolları, otoparklar ve girişlerde yeterli ve yansımaya yol açmayan düzgün dağılımlı ışık, güvenlik ve konforu artırır. Cephe ve peyzajda ise vurgulama ve atmosfer ön plandadır.",
-          "Ürün seçiminde IP (koruma sınıfı) kritiktir. Toz ve suya karşı dayanım, ürünün ömrünü ve güvenilirliğini doğrudan etkiler. Dış mekân için en az IP65, tamamen açık alanlar veya yıkanan bölgeler için IP66 ve üzeri tercih edilmelidir. Ayrıca UV ve sıcaklık değişimine dayanıklı malzeme ve conta kullanımı önemlidir.",
-          "Enerji verimliliği için LED dış mekân armatürleri ve sensörlü veya zaman ayarlı sistemler kullanılabilir. Hareket sensörü özellikle güvenlik ve tasarruf açısından anlamlıdır. Işık kirliliğini azaltmak adına aşağı yönlü (downlight) veya perdeli armatürler tercih edilmeli; gökyüzüne doğru ışık kaçışı engellenmelidir.",
-          "Proje aşamasında çevre aydınlık seviyeleri, kullanım senaryoları ve bakım erişimi dikkate alınmalıdır. Asialux dış mekân ürün gamında aplik, kazıklı ve gömme tipi armatürlerle farklı ihtiyaçlara uygun çözümler sunuyoruz.",
+          "Dış mekân aydınlatması hem estetik hem işlevsel hedefleri bir arada karşılamalıdır. Yaya yolları, otoparklar ve girişlerde yeterli ve yansımaya yol açmayan düzgün dağılımlı ışık, güvenlik ve konforu artırır. Cephe ve peyzaj aydınlatmasında ise vurgulama ve atmosfer ön plandadır. Bu yazıda dış mekân LED aydınlatma ürünleri seçiminde dikkat edilecek IP sınıfları, uygulama önerileri ve proje aşamasında dikkat edilmesi gerekenleri özetliyoruz.",
+          "Ürün seçiminde IP (ingress protection – koruma sınıfı) kritiktir. Toz ve suya karşı dayanım, dış mekân armatürünün ömrünü ve güvenilirliğini doğrudan etkiler. Dış mekân için en az IP65 önerilir; tamamen açık alanlar veya yıkanan bölgeler için IP66 ve üzeri tercih edilmelidir. UV ve sıcaklık değişimine dayanıklı malzeme ve conta kullanımı da önemlidir. Yanlış IP seçimi erken arızaya ve garanti dışı kalmana yol açabilir.",
+          "Enerji verimliliği için LED dış mekân armatürleri ve sensörlü veya zaman ayarlı kontrol sistemleri kullanılabilir. Hareket sensörü özellikle güvenlik ve enerji tasarrufu açısından anlamlıdır. Işık kirliliğini azaltmak adına aşağı yönlü (downlight) veya perdeli armatürler tercih edilmeli; gökyüzüne doğru ışık kaçışı engellenmelidir. Bu hem çevre hem de yönetmelik uyumu açısından önem taşır.",
+          "Proje aşamasında çevre aydınlık seviyeleri, kullanım senaryoları ve bakım erişimi dikkate alınmalıdır. Yol, cephe ve peyzaj aydınlatması için farklı armatür tipleri gerekebilir: aplik (duvar), kazıklı (bollard) ve gömme (recessed) dış mekân armatürleri farklı uygulama ihtiyaçlarına yanıt verir. Asialux dış mekân ürün gamında bu tiplerde çözümler sunuyoruz. Teknik ölçüm ve proje teklifi için iletişime geçebilirsiniz.",
         ],
       },
       en: {
-        title: "Outdoor Lighting Tips",
+        title: "Outdoor Lighting Tips: IP Ratings, Landscape and Façade Lighting",
         excerpt:
-          "Right product selection for landscape, façade and security lighting, IP ratings, and practical project advice.",
+          "Outdoor and landscape lighting: IP protection ratings, LED outdoor luminaire selection and light pollution. Practical application guide.",
         body: [
-          "Outdoor lighting should meet both aesthetic and functional goals. Adequate, well-distributed light with minimal glare on paths, car parks and entrances improves safety and comfort. On façades and in landscape, accent and atmosphere take the lead.",
-          "IP (ingress protection) rating is critical when selecting products. Resistance to dust and water directly affects product life and reliability. For outdoor use, at least IP65 is recommended; IP66 and above for fully exposed or wash-down areas. UV and temperature-resistant materials and gaskets are also important.",
-          "For energy efficiency, LED outdoor luminaires and sensor- or time-based controls are effective. Motion sensors are especially useful for security and savings. To reduce light pollution, prefer downlight or shielded luminaires and avoid upward light spill.",
-          "At the project stage, ambient light levels, use scenarios and maintenance access should be considered. In the Asialux outdoor range we offer wall, bollard and recessed luminaires to suit different needs.",
+          "Outdoor lighting should meet both aesthetic and functional goals. Adequate, well-distributed light with minimal glare on paths, car parks and entrances improves safety and comfort. On façades and in landscape lighting, accent and atmosphere take the lead. This article summarises IP ratings, application tips and what to consider at the project stage when selecting outdoor LED lighting products.",
+          "IP (ingress protection) rating is critical when selecting outdoor luminaires. Resistance to dust and water directly affects product life and reliability. For outdoor use, at least IP65 is recommended; IP66 and above for fully exposed or wash-down areas. UV and temperature-resistant materials and gaskets are also important. Wrong IP choice can lead to premature failure and warranty exclusion.",
+          "For energy efficiency, LED outdoor luminaires and sensor- or time-based control systems are effective. Motion sensors are especially useful for security and energy savings. To reduce light pollution, prefer downlight or shielded luminaires and avoid upward light spill; this matters both for the environment and for regulatory compliance.",
+          "At the project stage, ambient light levels, use scenarios and maintenance access should be considered. Path, façade and landscape lighting may require different luminaire types: wall, bollard and recessed outdoor luminaires each suit different application needs. In the Asialux outdoor range we offer solutions in these categories. Contact us for technical calculations and project proposals.",
         ],
       },
       ar: {
-        title: "نصائح إضاءة الخارجية",
+        title: "نصائح إضاءة الخارجية: درجات IP وإضاءة المشهد والواجهة",
         excerpt:
           "اختيار المنتج المناسب لإضاءة المشهد والواجهة والأمان، ودرجات الحماية IP ونصائح تطبيق المشاريع.",
         body: [
@@ -100,29 +106,29 @@ export const blogPosts: BlogPost[] = [
     image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80",
     content: {
       tr: {
-        title: "Enerji Tasarruflu Aydınlatma Çözümleri",
+        title: "Enerji Tasarruflu Aydınlatma Çözümleri: LED, Lümen ve Akıllı Kontrol",
         excerpt:
-          "LED dönüşümü, doğru lümen seçimi ve kontrol sistemleriyle elektrik tüketimini ve maliyeti düşürme rehberi.",
+          "Enerji tasarruflu aydınlatma: LED dönüşümü, lümen/watt verimliliği, dimmer ve sensör sistemleri. Ofis ve ticari binalar rehberi.",
         body: [
-          "Aydınlatma, ofis ve perakende binalarında toplam elektrik tüketiminin önemli bir bölümünü oluşturuyor. LED’e geçiş, aynı aydınlık seviyesinde geleneksel sistemlere göre %50–70’e varan enerji tasarrufu sağlayabiliyor. Özellikle uzun çalışma süreli mekânlarda yatırım kendini kısa sürede amorti ediyor.",
-          "Doğru ürün seçiminde lümen (ışık çıkışı) ve lümen/watt verimliliği önemlidir. Sadece watt’a bakmak yanıltıcı olabilir; aynı güçte farklı verimlilikte ürünler bulunabiliyor. Proje hedefi, mekândaki aydınlık seviyesi (lux) ve homojen dağılım olmalı; buna göre armatür sayısı ve konumu belirlenmelidir.",
-          "Dimmer ve sensör entegrasyonu tasarrufu daha da artırır. Boş alanlarda ışığın kısılması veya kapatılması, gün ışığına göre ayarlama (daylight harvesting) ve hareket sensörleri özellikle ofis ve depolar için anlamlıdır. Akıllı aydınlatma sistemleriyle senaryo bazlı kontrol de mümkündür.",
-          "Asialux ürün gamında yüksek verimli LED armatürler, uzun ömür ve düşük bakım maliyeti ile enerji tasarruflu çözümler sunuyoruz. Proje bazlı öneri ve teknik hesaplama için ekibimizle iletişime geçebilirsiniz.",
+          "Aydınlatma, ofis ve perakende binalarında toplam elektrik tüketiminin önemli bir bölümünü oluşturuyor. LED’e geçiş, aynı aydınlık seviyesinde geleneksel sistemlere göre %50–70’e varan enerji tasarrufu sağlayabiliyor. Özellikle uzun çalışma süreli mekânlarda yatırım kendini kısa sürede amorti ediyor. Bu yazıda enerji tasarruflu aydınlatma için lümen seçimi, kontrol sistemleri ve proje bazlı önerileri özetliyoruz.",
+          "Doğru ürün seçiminde lümen (ışık çıkışı) ve lümen/watt verimliliği önemlidir. Sadece watt’a bakmak yanıltıcı olabilir; aynı güçte farklı verimlilikte ürünler bulunabiliyor. Proje hedefi, mekândaki aydınlık seviyesi (lux) ve homojen dağılım olmalı; buna göre armatür sayısı ve konumu belirlenmelidir. Yüksek lm/W değeri uzun vadede hem enerji hem maliyet tasarrufu sağlar.",
+          "Dimmer ve sensör entegrasyonu tasarrufu daha da artırır. Boş alanlarda ışığın kısılması veya kapatılması, gün ışığına göre ayarlama (daylight harvesting) ve hareket sensörleri özellikle ofis ve depolar için anlamlıdır. Akıllı aydınlatma sistemleriyle senaryo bazlı kontrol de mümkündür. DALI veya benzeri protokollerle tüm armatürler tek elden yönetilebilir.",
+          "Asialux ürün gamında yüksek verimli LED armatürler, uzun ömür ve düşük bakım maliyeti ile enerji tasarruflu çözümler sunuyoruz. Proje bazlı öneri, aydınlık hesapları ve teknik hesaplama için ekibimizle iletişime geçebilirsiniz.",
         ],
       },
       en: {
-        title: "Energy-Efficient Lighting Solutions",
+        title: "Energy-Efficient Lighting Solutions: LED, Lumens and Smart Control",
         excerpt:
-          "A guide to reducing electricity use and cost with LED conversion, correct lumen choice and control systems.",
+          "Energy-efficient lighting: LED conversion, lumens-per-watt efficiency, dimmer and sensor systems. Guide for offices and commercial buildings.",
         body: [
-          "Lighting accounts for a significant share of total electricity use in office and retail buildings. Switching to LED can deliver 50–70% energy savings compared with traditional systems at the same light levels. In spaces with long operating hours, the investment pays back quickly.",
-          "When selecting products, lumen output and lumens-per-watt efficiency matter. Focusing only on watts can be misleading; products with the same power can have different efficiencies. The project goal should be target illuminance (lux) and even distribution; the number and position of luminaires should be planned accordingly.",
-          "Dimmer and sensor integration increases savings further. Dimming or switching off in unoccupied areas, daylight harvesting and motion sensors are especially valuable in offices and warehouses. Scenario-based control is also possible with smart lighting systems.",
-          "In the Asialux range we offer high-efficiency LED luminaires with long life and low maintenance cost for energy-efficient solutions. Contact our team for project-specific advice and technical calculations.",
+          "Lighting accounts for a significant share of total electricity use in office and retail buildings. Switching to LED can deliver 50–70% energy savings compared with traditional systems at the same light levels. In spaces with long operating hours, the investment pays back quickly. This article summarises lumen choice, control systems and project-level advice for energy-efficient lighting.",
+          "When selecting products, lumen output and lumens-per-watt efficiency matter. Focusing only on watts can be misleading; products with the same power can have different efficiencies. The project goal should be target illuminance (lux) and even distribution; the number and position of luminaires should be planned accordingly. High lm/W delivers both energy and cost savings over time.",
+          "Dimmer and sensor integration increases savings further. Dimming or switching off in unoccupied areas, daylight harvesting and motion sensors are especially valuable in offices and warehouses. Scenario-based control is also possible with smart lighting systems; DALI or similar protocols allow central management of all luminaires.",
+          "In the Asialux range we offer high-efficiency LED luminaires with long life and low maintenance cost for energy-efficient solutions. Contact our team for project-specific advice, illuminance calculations and technical support.",
         ],
       },
       ar: {
-        title: "حلول الإضاءة الموفرة للطاقة",
+        title: "حلول الإضاءة الموفرة للطاقة: LED واللومن والتحكم الذكي",
         excerpt:
           "دليل لتقليل استهلاك الكهرباء والتكلفة عبر التحول إلى LED واختيار اللومن الصحيح وأنظمة التحكم.",
         body: [
@@ -140,29 +146,29 @@ export const blogPosts: BlogPost[] = [
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80",
     content: {
       tr: {
-        title: "Ofis Aydınlatmasında Verimlilik ve Konfor",
+        title: "Ofis Aydınlatmasında Verimlilik ve Konfor: Lux, UGR ve HCL Rehberi",
         excerpt:
-          "Çalışma performansı ve göz sağlığı için ofis aydınlatmasında dikkat edilmesi gerekenler ve güncel standartlar.",
+          "Ofis aydınlatması standartları: 300–500 lux, UGR kamaşma sınırı, renk sıcaklığı ve insan odaklı aydınlatma (HCL). Göz konforu ve verimlilik.",
         body: [
-          "Ofis aydınlatması, çalışanların görsel konforu ve üretkenliği üzerinde doğrudan etkiye sahiptir. Yetersiz veya kötü dağılımlı ışık göz yorgunluğu ve baş ağrısına yol açabilir; aşırı parlaklık ve yansıma ise ekran üzerinde rahatsız edici olabilir. Bu nedenle hem yatay (masa) hem dikey (duvar, ekran çevresi) aydınlık seviyeleri standartlara uygun planlanmalıdır.",
-          "Günümüzde ofis projelerinde genellikle 300–500 lux düzeyinde genel aydınlatma hedeflenir; detaylı işlerde bu değer 750 lux’e kadar çıkabilir. Homojen dağılım için tavan tipi armatürler (sıva altı, sıva üstü veya lineer) sık kullanılır. UGR (birleşik kamaşma sınıfı) değeri düşük ürünler, bilgisayar kullanımı olan ofislerde tercih edilmelidir.",
-          "Renk sıcaklığı olarak 4000 K (nötr beyaz) ofis ortamları için yaygındır; daha sıcak tonlar dinlenme alanlarında kullanılabilir. İnsan odaklı aydınlatma (HCL) uygulamalarında gün içinde renk sıcaklığı ve yoğunluk değiştirilerek biyoritme destek verilebiliyor.",
-          "Asialux ofis aydınlatması çözümlerinde panel, lineer ve ray spot ürünleriyle geniş bir seçenek sunuyoruz. Projenize özel öneri ve aydınlık hesapları için bizimle iletişime geçebilirsiniz.",
+          "Ofis aydınlatması, çalışanların görsel konforu ve üretkenliği üzerinde doğrudan etkiye sahiptir. Yetersiz veya kötü dağılımlı ışık göz yorgunluğu ve baş ağrısına yol açabilir; aşırı parlaklık ve yansıma ise ekran üzerinde rahatsız edici olabilir. Bu nedenle hem yatay (masa) hem dikey (duvar, ekran çevresi) aydınlık seviyeleri standartlara uygun planlanmalıdır. Bu yazıda ofis aydınlatması için lux hedefleri, UGR ve HCL uygulamalarını özetliyoruz.",
+          "Günümüzde ofis projelerinde genellikle 300–500 lux düzeyinde genel aydınlatma hedeflenir; detaylı işlerde bu değer 750 lux'e kadar çıkabilir. Homojen dağılım için tavan tipi armatürler (sıva altı, sıva üstü veya lineer) sık kullanılır. UGR (birleşik kamaşma sınıfı) değeri düşük ürünler, bilgisayar kullanımı olan ofislerde tercih edilmelidir; yüksek UGR ekran üzerinde yansıma ve rahatsızlık yaratır.",
+          "Renk sıcaklığı olarak 4000 K (nötr beyaz) ofis ortamları için yaygındır; daha sıcak tonlar dinlenme alanlarında kullanılabilir. İnsan odaklı aydınlatma (HCL) uygulamalarında gün içinde renk sıcaklığı ve yoğunluk değiştirilerek biyoritme destek verilebiliyor. Tunable white ofis armatürleri bu uygulamaları mümkün kılar.",
+          "Asialux ofis aydınlatması çözümlerinde panel, lineer ve ray spot ürünleriyle geniş bir seçenek sunuyoruz. Projenize özel öneri, aydınlık hesapları ve UGR değerleri için bizimle iletişime geçebilirsiniz.",
         ],
       },
       en: {
-        title: "Efficiency and Comfort in Office Lighting",
+        title: "Efficiency and Comfort in Office Lighting: Lux, UGR and HCL Guide",
         excerpt:
-          "What to consider in office lighting for performance and eye comfort, and current standards.",
+          "Office lighting standards: 300–500 lux, UGR glare limits, colour temperature and human-centric lighting (HCL). Eye comfort and productivity.",
         body: [
-          "Office lighting has a direct impact on visual comfort and productivity. Insufficient or poorly distributed light can cause eye strain and headaches; excessive brightness and glare can be distracting on screens. Therefore both horizontal (desk) and vertical (wall, around screen) illuminance should be planned in line with standards.",
-          "Today office projects typically target 300–500 lux general lighting; for detailed tasks this can go up to 750 lux. Recessed, surface-mounted or linear ceiling luminaires are commonly used for even distribution. Products with low UGR (unified glare rating) are preferred in offices with computer use.",
-          "A colour temperature of 4000 K (neutral white) is common for offices; warmer tones can be used in breakout areas. In human-centric lighting (HCL) applications, colour temperature and intensity can be varied through the day to support circadian rhythm.",
-          "In Asialux office lighting solutions we offer a wide choice of panel, linear and track spot products. Contact us for project-specific advice and illuminance calculations.",
+          "Office lighting has a direct impact on visual comfort and productivity. Insufficient or poorly distributed light can cause eye strain and headaches; excessive brightness and glare can be distracting on screens. Therefore both horizontal (desk) and vertical (wall, around screen) illuminance should be planned in line with standards. This article summarises lux targets, UGR and HCL for office lighting.",
+          "Today office projects typically target 300–500 lux general lighting; for detailed tasks this can go up to 750 lux. Recessed, surface-mounted or linear ceiling luminaires are commonly used for even distribution. Products with low UGR (unified glare rating) are preferred in offices with computer use; high UGR causes screen reflection and discomfort.",
+          "A colour temperature of 4000 K (neutral white) is common for offices; warmer tones can be used in breakout areas. In human-centric lighting (HCL) applications, colour temperature and intensity can be varied through the day to support circadian rhythm. Tunable white office luminaires enable these applications.",
+          "In Asialux office lighting solutions we offer a wide choice of panel, linear and track spot products. Contact us for project-specific advice, illuminance calculations and UGR values.",
         ],
       },
       ar: {
-        title: "الكفاءة والراحة في إضاءة المكاتب",
+        title: "الكفاءة والراحة في إضاءة المكاتب: دليل اللوكس وUGR وHCL",
         excerpt:
           "ما يجب مراعاته في إضاءة المكاتب من أجل الأداء وراحة العين والمعايير الحالية.",
         body: [
@@ -180,29 +186,29 @@ export const blogPosts: BlogPost[] = [
     image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=1200&q=80",
     content: {
       tr: {
-        title: "Tavan Aydınlatması Seçerken Dikkat Edilecekler",
+        title: "Tavan Aydınlatması Seçimi: Sıva Altı, Sıva Üstü ve Asma Tavan Rehberi",
         excerpt:
-          "Sıva altı, sıva üstü ve asma tavan uygulamalarında doğru armatür seçimi ve montaj önerileri.",
+          "Tavan aydınlatması seçimi: sıva altı (gömme), sıva üstü ve asma tavan uygulamalarında LED armatür ve montaj önerileri. Teknik rehber.",
         body: [
-          "Tavan aydınlatması, mekânın genel atmosferini ve işlevselliğini belirleyen ana unsurdur. Seçim yaparken tavan yüksekliği, kullanım amacı ve mevcut tesisat (asma tavan, beton tavan vb.) dikkate alınmalıdır. Yanlış seçim yetersiz aydınlatma veya gereksiz enerji tüketimine yol açabilir.",
+          "Tavan aydınlatması, mekânın genel atmosferini ve işlevselliğini belirleyen ana unsurdur. Seçim yaparken tavan yüksekliği, kullanım amacı ve mevcut tesisat (asma tavan, beton tavan vb.) dikkate alınmalıdır. Yanlış seçim yetersiz aydınlatma veya gereksiz enerji tüketimine yol açabilir. Bu yazıda sıva altı, sıva üstü ve asma tavan uygulamalarında dikkat edilecekleri özetliyoruz.",
           "Sıva altı (gömme) armatürler, düz ve modern bir görünüm istenen ofis, mağaza ve konut projelerinde sık kullanılır. Montaj öncesi çerçeve ve boşluk ölçüleri doğru planlanmalı; yangına dayanımlı tavanlarda ilgili standartlara uygun ürünler tercih edilmelidir. Sıva üstü armatürler ise tadilatı kolay ve hızlı çözümler sunar; özellikle mevcut tavanın delinmesinin istenmediği durumlarda idealdir.",
-          "Asma tavan (alçıpan, mineral vb.) uygulamalarında armatürün ağırlığı ve boyutu taşıma kapasitesi ile uyumlu olmalıdır. Lineer ve panel ürünler bu tür uygulamalarda homojen aydınlatma ve estetik bütünlük sağlar. Ray spot sistemleri ise yönlendirilebilir ışık ile vurgulama ve esneklik sunar.",
-          "Asialux tavan aydınlatması ürün gamında sıva altı, sıva üstü, lineer ve ray spot seçenekleriyle projenize uygun çözümü bulabilirsiniz. Teknik çizim ve montaj detayları için kataloglarımıza ve ekibimize ulaşabilirsiniz.",
+          "Asma tavan (alçıpan, mineral vb.) uygulamalarında armatürün ağırlığı ve boyutu taşıma kapasitesi ile uyumlu olmalıdır. Lineer ve panel ürünler bu tür uygulamalarda homojen aydınlatma ve estetik bütünlük sağlar. Ray spot sistemleri ise yönlendirilebilir ışık ile vurgulama ve esneklik sunar; spot sayısı ve yeri sonradan değiştirilebilir.",
+          "Asialux tavan aydınlatması ürün gamında sıva altı, sıva üstü, lineer ve ray spot seçenekleriyle projenize uygun çözümü bulabilirsiniz. Teknik çizim, montaj detayları ve aydınlık hesapları için kataloglarımıza ve ekibimize ulaşabilirsiniz.",
         ],
       },
       en: {
-        title: "What to Consider When Choosing Ceiling Lighting",
+        title: "Ceiling Lighting Selection: Recessed, Surface-Mounted and Suspended Ceiling Guide",
         excerpt:
-          "Right luminaire choice and mounting advice for recessed, surface-mounted and suspended ceiling applications.",
+          "Ceiling lighting selection: recessed (flush), surface-mounted and suspended ceiling applications. LED luminaire and mounting guide.",
         body: [
-          "Ceiling lighting is the main element that defines the overall atmosphere and functionality of a space. When choosing, consider ceiling height, purpose of use and existing construction (suspended ceiling, concrete, etc.). Wrong choices can lead to insufficient light or unnecessary energy use.",
+          "Ceiling lighting is the main element that defines the overall atmosphere and functionality of a space. When choosing, consider ceiling height, purpose of use and existing construction (suspended ceiling, concrete, etc.). Wrong choices can lead to insufficient light or unnecessary energy use. This article summarises what to consider for recessed, surface-mounted and suspended ceiling applications.",
           "Recessed (flush) luminaires are common in offices, retail and residential projects where a flat, modern look is desired. Frame and cut-out dimensions must be planned correctly before installation; in fire-rated ceilings, products complying with relevant standards should be used. Surface-mounted luminaires offer easy, quick retrofit solutions and are ideal where drilling the existing ceiling is not desired.",
-          "In suspended ceiling (gypsum, mineral, etc.) applications, luminaire weight and size must match load capacity. Linear and panel products provide even lighting and visual continuity in such applications. Track spot systems offer accent and flexibility with directional light.",
-          "In the Asialux ceiling lighting range you can find the right solution for your project with recessed, surface-mounted, linear and track spot options. Contact our catalogues and team for technical drawings and mounting details.",
+          "In suspended ceiling (gypsum, mineral, etc.) applications, luminaire weight and size must match load capacity. Linear and panel products provide even lighting and visual continuity in such applications. Track spot systems offer accent and flexibility with directional light; the number and position of spots can be changed later.",
+          "In the Asialux ceiling lighting range you can find the right solution for your project with recessed, surface-mounted, linear and track spot options. Contact our catalogues and team for technical drawings, mounting details and illuminance calculations.",
         ],
       },
       ar: {
-        title: "ما يجب مراعاته عند اختيار إضاءة السقف",
+        title: "اختيار إضاءة السقف: دليل المدمج والسطحية والمعلقة",
         excerpt:
           "اختيار الثريا المناسبة ونصائح التركيب لتطبيقات السقف المدمج والسطحية والمعلقة.",
         body: [
@@ -220,29 +226,29 @@ export const blogPosts: BlogPost[] = [
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
     content: {
       tr: {
-        title: "LED Ürünlerde Garanti ve Ömür",
+        title: "LED Ürünlerde Garanti ve Ömür: L70, L80 ve Kullanım Ömrü Rehberi",
         excerpt:
-          "LED armatürlerde kullanım ömrü (L70, L80), garanti süreleri ve doğru beklenti oluşturma.",
+          "LED armatür kullanım ömrü (L70, L80), garanti süreleri ve beklenti. LED ömrü nasıl okunur, garanti kapsamı ve ısı yönetimi.",
         body: [
-          "LED aydınlatma ürünlerinde ‘ömür’ kavramı, geleneksel ampullerdekinden farklı tanımlanır. Üreticiler genellikle L70 veya L80 değerini verir: bu, belirli çalışma saatleri sonunda ışık çıkışının başlangıçtaki değerin %70 veya %80’ine düşeceği anlamına gelir. Örneğin ‘L80 / 50.000 saat’ ifadesi, 50.000 saat sonunda lümenin %80’inin korunacağını belirtir.",
-          "Garanti süreleri marka ve ürün grubuna göre değişir; 2 yıl ile 5 yıl arasında yaygındır. Garanti kapsamı genellikle üretim ve malzeme hatalarını kapsar; uygunsuz kullanım, fiziksel hasar veya elektrik kaynaklı arızalar hariç tutulabilir. Satın almadan önce garanti belgesini ve istisnaları okumak önemlidir.",
-          "Ürünün gerçek ömrünü etkileyen faktörler arasında çalışma sıcaklığı, sürücü kalitesi ve ısı yönetimi sayılabilir. İyi tasarlanmış armatürlerde ısı, LED çipleri ve sürücüden uzaklaştırılarak performans ve ömür korunur. Bu nedenle kaliteli ve belgeli ürünler uzun vadede daha ekonomik olabilir.",
-          "Asialux ürünlerinde garanti koşulları ve teknik ömür bilgileri ürün detay sayfalarında ve kullanım kılavuzlarında yer alır. Sorularınız için satış ve teknik destek ekibimizle iletişime geçebilirsiniz.",
+          "LED aydınlatma ürünlerinde ‘ömür’ kavramı, geleneksel ampullerdekinden farklı tanımlanır. Üreticiler genellikle L70 veya L80 değerini verir: bu, belirli çalışma saatleri sonunda ışık çıkışının başlangıçtaki değerin %70 veya %80’ine düşeceği anlamına gelir. Örneğin ‘L80 / 50.000 saat’ ifadesi, 50.000 saat sonunda lümenin %80’inin korunacağını belirtir. Bu yazıda LED ömrü, garanti ve satın alma öncesi dikkat edilecekleri özetliyoruz.",
+          "Garanti süreleri marka ve ürün grubuna göre değişir; 2 yıl ile 5 yıl arasında yaygındır. Garanti kapsamı genellikle üretim ve malzeme hatalarını kapsar; uygunsuz kullanım, fiziksel hasar veya elektrik kaynaklı arızalar hariç tutulabilir. Satın almadan önce garanti belgesini ve istisnaları okumak önemlidir. Proje bazlı uzun garanti talepleri için üreticiyle görüşülebilir.",
+          "Ürünün gerçek ömrünü etkileyen faktörler arasında çalışma sıcaklığı, sürücü kalitesi ve ısı yönetimi sayılabilir. İyi tasarlanmış armatürlerde ısı, LED çipleri ve sürücüden uzaklaştırılarak performans ve ömür korunur. Bu nedenle kaliteli ve belgeli ürünler uzun vadede daha ekonomik olabilir. Yüksek ortam sıcaklığı veya kapalı armatür kullanımı ömrü kısaltabilir.",
+          "Asialux ürünlerinde garanti koşulları ve teknik ömür bilgileri (L70/L80, saat) ürün detay sayfalarında ve kullanım kılavuzlarında yer alır. Sorularınız için satış ve teknik destek ekibimizle iletişime geçebilirsiniz.",
         ],
       },
       en: {
-        title: "Warranty and Lifespan in LED Products",
+        title: "Warranty and Lifespan in LED Products: L70, L80 and Lifespan Guide",
         excerpt:
-          "LED luminaire lifespan (L70, L80), warranty periods and setting the right expectations.",
+          "LED luminaire lifespan (L70, L80), warranty periods and what to expect. How to read LED lifespan, warranty scope and thermal management.",
         body: [
-          "In LED lighting products, ‘lifespan’ is defined differently from traditional bulbs. Manufacturers typically quote L70 or L80: this means that after a given number of operating hours, light output will fall to 70% or 80% of the initial value. For example, ‘L80 / 50,000 hours’ means that 80% of lumens will be maintained after 50,000 hours.",
-          "Warranty periods vary by brand and product group; 2 to 5 years is common. Warranty usually covers manufacturing and material defects; improper use, physical damage or electrical faults may be excluded. It is important to read the warranty document and exclusions before purchase.",
-          "Factors that affect actual product life include operating temperature, driver quality and thermal management. In well-designed luminaires, heat is removed from the LED chips and driver to preserve performance and life. Therefore quality, certified products can be more economical in the long run.",
-          "Warranty terms and technical lifespan information for Asialux products are given on product detail pages and in user manuals. Contact our sales and technical support team for any questions.",
+          "In LED lighting products, ‘lifespan’ is defined differently from traditional bulbs. Manufacturers typically quote L70 or L80: this means that after a given number of operating hours, light output will fall to 70% or 80% of the initial value. For example, ‘L80 / 50,000 hours’ means that 80% of lumens will be maintained after 50,000 hours. This article summarises LED lifespan, warranty and what to check before purchase.",
+          "Warranty periods vary by brand and product group; 2 to 5 years is common. Warranty usually covers manufacturing and material defects; improper use, physical damage or electrical faults may be excluded. It is important to read the warranty document and exclusions before purchase. For project-specific extended warranty requests, the manufacturer can be consulted.",
+          "Factors that affect actual product life include operating temperature, driver quality and thermal management. In well-designed luminaires, heat is removed from the LED chips and driver to preserve performance and life. Therefore quality, certified products can be more economical in the long run. High ambient temperature or enclosed luminaire use can shorten lifespan.",
+          "Warranty terms and technical lifespan information (L70/L80, hours) for Asialux products are given on product detail pages and in user manuals. Contact our sales and technical support team for any questions.",
         ],
       },
       ar: {
-        title: "الضمان والعمر الافتراضي في منتجات LED",
+        title: "الضمان والعمر الافتراضي في منتجات LED: دليل L70 وL80 والعمر",
         excerpt:
           "العمر الافتراضي لثريات LED (L70, L80)، فترات الضمان وتحديد التوقعات الصحيحة.",
         body: [

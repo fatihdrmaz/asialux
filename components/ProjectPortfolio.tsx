@@ -11,7 +11,7 @@ const projects = [
     id: 1,
     titleKey: "project1",
     locationKey: "location1",
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80",
+    image: "/images/ozel tasarım/ozel-tasarim-portfoyo-3.jpg",
     category: "residential",
   },
   {
@@ -35,8 +35,14 @@ export default function ProjectPortfolio() {
   const locale = useLocale();
 
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="py-section md:py-section-lg bg-white">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{ duration: 0.6 }}
+        className="container mx-auto px-4"
+      >
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -53,7 +59,7 @@ export default function ProjectPortfolio() {
             href={locale === "tr" ? "/projects" : `/${locale}/projects`}
             className="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700"
           >
-            Tümünü gör <ArrowRight className="w-4 h-4" />
+            {t("viewAll")} <ArrowRight className="w-4 h-4" />
           </Link>
         </motion.div>
 
@@ -69,7 +75,7 @@ export default function ProjectPortfolio() {
             >
               <Link
                 href={locale === "tr" ? `/projects#${project.id}` : `/${locale}/projects#${project.id}`}
-                className="block overflow-hidden rounded-2xl bg-gray-100 border border-gray-200 hover:border-primary-200 hover:shadow-xl transition-all duration-300"
+                className="block overflow-hidden rounded-2xl bg-gray-100 border border-gray-200 hover:border-primary-200 hover:shadow-xl transition-all duration-300 card-hover"
               >
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
@@ -91,7 +97,7 @@ export default function ProjectPortfolio() {
             </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

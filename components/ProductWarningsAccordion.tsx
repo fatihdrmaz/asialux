@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { ChevronDown } from "lucide-react";
 
 interface AccordionSection {
@@ -18,10 +19,6 @@ interface ProductWarningsAccordionProps {
   warranty?: { title?: string; items: string[] };
 }
 
-const DEFAULT_MOUNTING_TITLE = "Montaj ve Güvenlik Uyarıları";
-const DEFAULT_IMPORTANT_TITLE = "Önemli Uyarılar";
-const DEFAULT_WARRANTY_TITLE = "Garanti Şartları";
-
 export default function ProductWarningsAccordion({
   mountingTitle,
   importantTitle,
@@ -30,27 +27,28 @@ export default function ProductWarningsAccordion({
   important,
   warranty,
 }: ProductWarningsAccordionProps) {
+  const t = useTranslations("productDetail");
   const [openId, setOpenId] = useState<string | null>("montaj");
 
   const sections: { id: string; title: string; section: AccordionSection }[] = [];
   if (mounting && mounting.items.length > 0) {
     sections.push({
       id: "montaj",
-      title: mountingTitle ?? DEFAULT_MOUNTING_TITLE,
+      title: mountingTitle ?? t("mountingWarnings"),
       section: { intro: mounting.items[0], items: mounting.items.slice(1) },
     });
   }
   if (important && important.items.length > 0) {
     sections.push({
       id: "onemli",
-      title: importantTitle ?? DEFAULT_IMPORTANT_TITLE,
+      title: importantTitle ?? t("importantWarnings"),
       section: { items: important.items },
     });
   }
   if (warranty && warranty.items.length > 0) {
     sections.push({
       id: "garanti",
-      title: warranty.title ?? warrantyTitle ?? DEFAULT_WARRANTY_TITLE,
+      title: warranty.title ?? warrantyTitle ?? t("warrantyTerms"),
       section: { items: warranty.items },
     });
   }

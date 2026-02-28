@@ -4,9 +4,19 @@ import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin } from "lucide-react";
 import Newsletter from "./Newsletter";
+import { PRODUCT_CATEGORY_IDS } from "@/data/products";
+
+/** Kategori id (slug) → products.* çeviri anahtarı (camelCase) */
+function categoryIdToTranslationKey(id: string): string {
+  return id
+    .split("-")
+    .map((word, i) => (i === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)))
+    .join("");
+}
 
 export default function Footer() {
   const t = useTranslations("footer");
+  const tProducts = useTranslations("products");
   const locale = useLocale();
 
   return (
@@ -18,8 +28,7 @@ export default function Footer() {
             <div>
             <h3 className="text-2xl font-display font-bold mb-4">ASIALUX</h3>
             <p className="text-gray-400 mb-4 max-w-md">
-              Premium aydınlatma çözümleri ile mekanlarınızı dönüştürün. 
-              Modern tasarım ve üstün kalite ile ihracat odaklı hizmet.
+              {t("description")}
             </p>
             <div className="flex space-x-4">
               <a
@@ -65,11 +74,6 @@ export default function Footer() {
                   {t("blog")}
                 </Link>
               </li>
-              <li>
-                <Link href={locale === 'tr' ? '/projects' : `/${locale}/projects`} className="hover:text-white transition-colors">
-                  {t("projects")}
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -77,26 +81,17 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">{t("products")}</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>
-                <Link href={locale === 'tr' ? '/products' : `/${locale}/products`} className="hover:text-white transition-colors">
-                  Ray Spot
-                </Link>
-              </li>
-              <li>
-                <Link href={locale === 'tr' ? '/products' : `/${locale}/products`} className="hover:text-white transition-colors">
-                  Sıva Altı
-                </Link>
-              </li>
-              <li>
-                <Link href={locale === 'tr' ? '/products' : `/${locale}/products`} className="hover:text-white transition-colors">
-                  Sıva Üstü
-                </Link>
-              </li>
-              <li>
-                <Link href={locale === 'tr' ? '/products' : `/${locale}/products`} className="hover:text-white transition-colors">
-                  Dış Mekan
-                </Link>
-              </li>
+              {PRODUCT_CATEGORY_IDS.map((categoryId) => {
+                const productHref = locale === "tr" ? `/products/${categoryId}` : `/${locale}/products/${categoryId}`;
+                const labelKey = categoryIdToTranslationKey(categoryId);
+                return (
+                  <li key={categoryId}>
+                    <Link href={productHref} className="hover:text-white transition-colors">
+                      {tProducts(labelKey as any)}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
@@ -106,18 +101,23 @@ export default function Footer() {
             <ul className="space-y-3 text-gray-400">
               <li className="flex items-start space-x-2">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span>İstanbul, Türkiye</span>
+                <span className="whitespace-pre-line">{t("addressValue")}</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="w-5 h-5 flex-shrink-0" />
-                <a href="tel:+902124340000" className="hover:text-white transition-colors">
-                  +90 212 434 00 00
-                </a>
+                <div className="flex flex-col gap-1">
+                  <a href="tel:+902122440605" className="hover:text-white transition-colors">
+                    {t("phoneValue1")}
+                  </a>
+                  <a href="tel:+905337816505" className="hover:text-white transition-colors">
+                    {t("phoneValue2")}
+                  </a>
+                </div>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="w-5 h-5 flex-shrink-0" />
-                <a href="mailto:info@asialux.com.tr" className="hover:text-white transition-colors">
-                  info@asialux.com.tr
+                <a href="mailto:bilgi@asialux.com.tr" className="hover:text-white transition-colors">
+                  {t("emailValue")}
                 </a>
               </li>
             </ul>

@@ -3,14 +3,14 @@
  * Ray Spot standardında ürün listesi ve detay üretir.
  * Çalıştırma: node scripts/generate-all-categories-data.mjs
  *
- * Kategori -> Klasör eşlemesi:
- * - surface-mounted -> SIVA ÜSTÜ
- * - recessed -> SIVA ALTI
- * - linear -> SIVE ÜSTÜ LİNEER
- * - magnet -> MAGNET RAY SPOT
- * - industrial-lighting -> ENDÜSTRİYEL
- * - outdoor -> DIŞ MEKAN
- * - ray-spot -> RAY SPOT
+ * Kategori -> Klasör eşlemesi (SEO uyumlu slug; klasörler rename-product-folders-to-slugs.mjs ile yeniden adlandırılmış olmalı):
+ * - ray-spot -> ray-spot
+ * - surface-mounted -> siva-ustu
+ * - recessed -> siva-alti
+ * - linear -> siva-ustu-lineer
+ * - magnet -> magnet-ray-spot
+ * - industrial-lighting -> endustriyel
+ * - outdoor -> dis-mekan
  */
 import fs from "fs";
 import path from "path";
@@ -20,13 +20,13 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const productsBase = path.join(__dirname, "../public/images/products");
 
 const CATEGORY_CONFIG = [
-  { categorySlug: "ray-spot", categoryName: "Ray Spot", folderName: "RAY SPOT" },
-  { categorySlug: "surface-mounted", categoryName: "Sıva Üstü", folderName: "SIVA ÜSTÜ" },
-  { categorySlug: "recessed", categoryName: "Sıva Altı", folderName: "SIVA ALTI" },
-  { categorySlug: "linear", categoryName: "Lineer", folderName: "SIVE ÜSTÜ LİNEER" },
-  { categorySlug: "magnet", categoryName: "Magnet", folderName: "MAGNET RAY SPOT" },
-  { categorySlug: "industrial-lighting", categoryName: "Endüstriyel Aydınlatma", folderName: "ENDÜSTRİYEL" },
-  { categorySlug: "outdoor", categoryName: "Dış Mekan", folderName: "DIŞ MEKAN" },
+  { categorySlug: "ray-spot", categoryName: "Ray Spot", folderName: "ray-spot" },
+  { categorySlug: "surface-mounted", categoryName: "Sıva Üstü", folderName: "siva-ustu" },
+  { categorySlug: "recessed", categoryName: "Sıva Altı", folderName: "siva-alti" },
+  { categorySlug: "linear", categoryName: "Lineer", folderName: "siva-ustu-lineer" },
+  { categorySlug: "magnet", categoryName: "Magnet", folderName: "magnet-ray-spot" },
+  { categorySlug: "industrial-lighting", categoryName: "Endüstriyel Aydınlatma", folderName: "endustriyel" },
+  { categorySlug: "outdoor", categoryName: "Dış Mekan", folderName: "dis-mekan" },
 ];
 
 function folderToSlug(folder) {
@@ -85,7 +85,7 @@ for (const config of CATEGORY_CONFIG) {
     const slug = folderToSlug(folder);
 
     const imagePaths = files.map((f) => {
-      const segment = encodeURIComponent(config.folderName) + "/" + encodeURIComponent(folder) + "/" + encodeURIComponent(f);
+      const segment = config.folderName + "/" + encodeURIComponent(folder) + "/" + encodeURIComponent(f);
       return "/images/products/" + segment;
     });
 

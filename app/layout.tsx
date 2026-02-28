@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import { getBaseUrl } from "@/lib/seo";
 import "./globals.css";
 
 const inter = Inter({
@@ -14,10 +15,39 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
+const siteName = "Asialux";
+const defaultTitle = "Asialux - Premium Lighting Solutions";
+const defaultDescription =
+  "Premium LED lighting solutions: track spot, recessed, surface-mounted, pendant, outdoor and industrial lighting. Export-focused manufacturer.";
+const defaultKeywords =
+  "lighting, LED, track spot, recessed, surface mounted, pendant, outdoor lighting, industrial lighting, Asialux";
+
 export const metadata: Metadata = {
-  title: "Asialux - Premium Lighting Solutions",
-  description: "Modern tasarım ve üstün kalite ile mekanlarınızı aydınlatın. Profesyonel aydınlatma çözümleri.",
-  keywords: "aydınlatma, LED, ray spot, sıva altı, sıva üstü, aplik, sarkıt, dış mekan aydınlatma",
+  metadataBase: new URL(getBaseUrl()),
+  title: {
+    default: defaultTitle,
+    template: `%s | ${siteName}`,
+  },
+  description: defaultDescription,
+  keywords: defaultKeywords,
+  openGraph: {
+    type: "website",
+    locale: "tr_TR",
+    alternateLocale: ["en_GB", "ar_EG"],
+    siteName,
+    title: defaultTitle,
+    description: defaultDescription,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: defaultTitle,
+    description: defaultDescription,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
 };
 
 export default function RootLayout({

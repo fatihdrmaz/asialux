@@ -1,10 +1,25 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import ContactForm from "@/components/ContactForm";
 import ContactMap from "@/components/ContactMap";
 import Faq from "@/components/Faq";
+import { getAlternates } from "@/lib/seo";
 
 type Props = { params: { locale: string } };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = params;
+  const t = await getTranslations({ locale, namespace: "contact" });
+  const title = t("title");
+  const description = t("subtitle");
+  return {
+    title,
+    description,
+    alternates: getAlternates("contact", locale),
+    openGraph: { title, description },
+  };
+}
 
 export default async function ContactPage({ params }: Props) {
   const { locale } = params;

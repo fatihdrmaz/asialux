@@ -28,7 +28,7 @@ export default function Newsletter() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="E-posta adresiniz"
+            placeholder={t("newsletterPlaceholder")}
             required
             className="w-full pl-10 pr-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
           />
@@ -46,7 +46,7 @@ export default function Newsletter() {
         </button>
       </form>
       {status === "success" && (
-        <p className="mt-2 text-sm text-primary-400">Teşekkürler, kaydınız alındı.</p>
+        <p className="mt-2 text-sm text-primary-400">{t("newsletterSuccess")}</p>
       )}
     </div>
   );

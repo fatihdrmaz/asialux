@@ -2,7 +2,7 @@
   "nav": {
     "home": "Ana Sayfa",
     "products": "Ürünler",
-    "applications": "Uygulamalar",
+    "applications": "Uygulamalarımız",
     "projects": "Projeler",
     "about": "Hakkımızda",
     "blog": "Blog",
@@ -12,12 +12,14 @@
     "title": "Premium Aydınlatma Çözümleri",
     "subtitle": "Modern tasarım ve üstün kalite ile mekanlarınızı aydınlatın",
     "cta": "Ürünleri Keşfet",
-    "ctaSecondary": "Projelerimiz"
+    "ctaSecondary": "Uygulamalarımız",
+    "imageAlt": "Premium aydınlatma iç mekan"
   },
   "products": {
     "title": "Ürün Gruplarımız",
     "subtitle": "Her mekan için özel çözümler",
     "productCount": "{count} ürün",
+    "cardTagline": "Premium LED aydınlatma çözümü",
     "raySpot": "Ray Spot",
     "surfaceMounted": "Sıva Üstü",
     "recessed": "Sıva Altı",
@@ -34,14 +36,21 @@
   "applications": {
     "title": "Uygulama Alanlarımız",
     "subtitle": "Profesyonel aydınlatma çözümleri",
+    "tagline": "Profesyonel aydınlatma çözümleri",
     "residential": "Yaşam Alanları",
     "cafe": "Kafe ve Bistro",
     "office": "Plaza ve Ofis",
     "industrial": "Üretim Tesisleri",
     "outdoor": "Dış Mekan",
-    "custom": "Özel Tasarım"
+    "custom": "Özel Tasarım",
+    "ctaTitle": "Projeniz İçin Doğru Aydınlatma",
+    "ctaDescription": "Mekanınıza özel aydınlatma çözümleri için ekibimizle iletişime geçin. Ücretsiz keşif ve profesyonel danışmanlık hizmeti sunuyoruz.",
+    "ctaButton": "Bize Ulaşın",
+    "galleryTitle": "Projelerimizden Kareler",
+    "gallerySubtitle": "Tamamladığımız projelerden seçme görseller"
   },
   "features": {
+    "valuesLabel": "Değerlerimiz",
     "title": "Neden Asialux?",
     "quality": {
       "title": "Üstün Kalite",
@@ -70,7 +79,22 @@
     "send": "Gönder",
     "address": "Adres",
     "phoneLabel": "Telefon",
-    "emailLabel": "E-posta"
+    "emailLabel": "E-posta",
+    "location": "Konum",
+    "mapTitle": "Asialux konum",
+    "ctaButton": "İletişime Geçin",
+    "formTitle": "Bize Ulaşın",
+    "infoTitle": "İletişim Bilgileri",
+    "workingHoursTitle": "Çalışma Saatleri",
+    "workingHoursWeekday": "Pazartesi - Cuma: 09:00 - 18:00",
+    "workingHoursSaturday": "Cumartesi: 09:00 - 14:00",
+    "workingHoursSunday": "Pazar: Kapalı",
+    "submitting": "Gönderiliyor...",
+    "successMessage": "Mesajınız gönderildi! En kısa sürede size dönüş yapacağız.",
+    "addressValue": "Bereketzade Mahallesi Okçumusa Cd.\nYücel İş Merkezi No:13\nKaraköy / Beyoğlu / İstanbul\nPk: 34421",
+    "phoneValue1": "+90 212 244 06 05",
+    "phoneValue2": "+90 533 781 65 05",
+    "emailValue": "bilgi@asialux.com.tr"
   },
   "footer": {
     "about": "Hakkımızda",
@@ -81,7 +105,14 @@
     "rights": "Tüm hakları saklıdır",
     "newsletter": "Bülten",
     "newsletterDesc": "Yeniliklerden haberdar olun",
-    "subscribe": "Abone Ol"
+    "subscribe": "Abone Ol",
+    "newsletterPlaceholder": "E-posta adresiniz",
+    "newsletterSuccess": "Teşekkürler, kaydınız alındı.",
+    "description": "Premium aydınlatma çözümleri ile mekanlarınızı dönüştürün. Modern tasarım ve üstün kalite ile ihracat odaklı hizmet.",
+    "addressValue": "Bereketzade Mahallesi Okçumusa Cd.\nYücel İş Merkezi No:13\nKaraköy / Beyoğlu / İstanbul\nPk: 34421",
+    "phoneValue1": "+90 212 244 06 05",
+    "phoneValue2": "+90 533 781 65 05",
+    "emailValue": "bilgi@asialux.com.tr"
   },
   "stats": {
     "countries": "Ülkeye ihracat",
@@ -97,6 +128,14 @@
     "title": "Sertifikalarımız",
     "subtitle": "Kalite ve güvenin belgesi"
   },
+  "showcase": {
+    "title": "Premium Tasarımlarımız",
+    "subtitle": "Modern mekanlarda hayat bulan aydınlatma çözümlerimiz",
+    "image1Alt": "Özel tasarım portföy 1",
+    "image2Alt": "Özel tasarım portföy 2",
+    "image3Alt": "Özel tasarım portföy 3",
+    "viewMore": "Daha fazlasını gör"
+  },
   "projects": {
     "title": "Referans Projeler",
     "subtitle": "Tamamladığımız projelerden örnekler",
@@ -105,13 +144,16 @@
     "project2": "Ofis Projesi",
     "location2": "Ankara, Türkiye",
     "project3": "Peyzaj Aydınlatma",
-    "location3": "İzmir, Türkiye"
+    "location3": "İzmir, Türkiye",
+    "viewAll": "Tümünü gör"
   },
   "blog": {
     "title": "Blog",
     "subtitle": "Aydınlatma dünyasından haberler ve yazılar",
     "readMore": "Devamını oku",
-    "backToBlog": "Bloga dön"
+    "backToBlog": "Bloga dön",
+    "homeSectionTitle": "Son Yazılar",
+    "viewAll": "Tüm yazılar"
   },
   "faq": {
     "title": "Sıkça Sorulan Sorular",
@@ -148,7 +190,9 @@
     "whatsappQuote": "Ürün veya projem için teklif almak istiyorum",
     "ctaQuote": "Bu ürün veya projeniz için özel teklif almak ister misiniz?",
     "ctaWhatsApp": "WhatsApp ile İletişim",
-    "ctaRequestQuote": "Teklif / Bilgi Al"
+    "ctaRequestQuote": "Teklif / Bilgi Al",
+    "bodyColorOptionsTitle": "Gövde Renk Seçenekleri",
+    "lightColorOptionsTitle": "Işık Renk Seçenekleri"
   },
   "aboutPage": {
     "title": "Hakkımızda",

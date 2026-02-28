@@ -1,11 +1,26 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import Image from "next/image";
 import { blogPosts, getPostContent } from "@/data/blog";
 import { ArrowRight } from "lucide-react";
+import { getAlternates } from "@/lib/seo";
 
 type Props = { params: { locale: string } };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = params;
+  const t = await getTranslations({ locale, namespace: "blog" });
+  const title = t("title");
+  const description = t("subtitle");
+  return {
+    title,
+    description,
+    alternates: getAlternates("blog", locale),
+    openGraph: { title, description },
+  };
+}
 
 export default async function BlogPage({ params }: Props) {
   const { locale } = params;

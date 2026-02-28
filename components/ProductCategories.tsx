@@ -5,7 +5,7 @@ import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { getProductCountByCategory } from "@/data/products";
+import { getProductCountByCategory, PRODUCT_CATEGORY_IDS } from "@/data/products";
 
 /** public/images/categories/ altındaki kategori görselleri (dosya adı, .png eklenir) */
 const CATEGORY_IMAGE_FILES: Record<string, string> = {
@@ -38,20 +38,7 @@ const FALLBACK_IMAGES: Record<string, string> = {
   "emergency-lighting": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
 };
 
-const categories = [
-  { id: "ray-spot" },
-  { id: "surface-mounted" },
-  { id: "recessed" },
-  { id: "wall-light" },
-  { id: "pendant" },
-  { id: "outdoor" },
-  { id: "linear" },
-  { id: "magnet" },
-  { id: "lamp-shade" },
-  { id: "bronze-collection" },
-  { id: "industrial-lighting" },
-  { id: "emergency-lighting" },
-];
+const categories = PRODUCT_CATEGORY_IDS.map((id) => ({ id }));
 
 export default function ProductCategories() {
   const t = useTranslations("products");
@@ -65,8 +52,14 @@ export default function ProductCategories() {
   };
 
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="py-section md:py-section-lg bg-white">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{ duration: 0.6 }}
+        className="container mx-auto px-4"
+      >
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -99,7 +92,7 @@ export default function ProductCategories() {
               >
                 <Link
                   href={locale === "tr" ? `/products/${category.id}` : `/${locale}/products/${category.id}`}
-                  className="group block overflow-hidden rounded-xl border border-gray-200 hover:border-primary-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-white"
+                  className="group block overflow-hidden rounded-xl border border-gray-200 hover:border-primary-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-white card-hover"
                 >
                   <div className="relative h-[212px] overflow-hidden">
                     <Image
@@ -125,7 +118,7 @@ export default function ProductCategories() {
             );
           })}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

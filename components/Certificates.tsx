@@ -40,8 +40,14 @@ export default function Certificates() {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-20 bg-gray-50" id="certificates">
-      <div className="container mx-auto px-4">
+    <section className="py-section md:py-section-lg bg-gray-50" id="certificates">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{ duration: 0.6 }}
+        className="container mx-auto px-4"
+      >
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -72,7 +78,7 @@ export default function Certificates() {
                 viewport={{ once: true }}
                 transition={{ delay: Math.min(index * 0.05, 0.3) }}
                 onClick={() => setLightboxIndex(index)}
-                className="group relative aspect-[3/4] rounded-xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-lg hover:border-primary-200 transition-all duration-300 text-left"
+                className="group relative aspect-[3/4] rounded-xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-lg hover:border-primary-200 transition-all duration-300 text-left card-hover"
               >
                 <Image
                   src={src}
@@ -89,7 +95,7 @@ export default function Certificates() {
             );
           })}
         </motion.div>
-      </div>
+      </motion.div>
 
       {/* Lightbox */}
       <AnimatePresence>

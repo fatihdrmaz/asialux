@@ -1,0 +1,34 @@
+# Masialux ürün sayfası linkleri — collect-masialux-category-urls.mjs ile toplandı
+# Kategori: https://masialux.com/urun-category/abajur-lambader-ozel-koleksiyon-masa-lambasi-ve-lambader/
+# Toplam: 27 ürün
+#
+# Güncellemek için: node scripts/collect-masialux-category-urls.mjs "<kategori-url>" [çıktı-dosyası]
+# Ardından: node scripts/sync-masialux-details.mjs [urls-dosyası]
+#
+https://masialux.com/urun/ozel-koleksiyon-lambader-me-147-1
+https://masialux.com/urun/ozel-koleksiyon-lambader-me-149
+https://masialux.com/urun/ozel-koleksiyon-lambader-me-169
+https://masialux.com/urun/ozel-koleksiyon-lambader-me-170
+https://masialux.com/urun/ozel-koleksiyon-lambader-me-177
+https://masialux.com/urun/ozel-koleksiyon-lambader-me-181
+https://masialux.com/urun/ozel-koleksiyon-lambader-me-186
+https://masialux.com/urun/ozel-koleksiyon-lambader-me-202-ozel-koleksiyon-masa-lambasi-ve-lambader
+https://masialux.com/urun/ozel-koleksiyon-lambader-me-232
+https://masialux.com/urun/ozel-koleksiyon-lambader-me-234
+https://masialux.com/urun/ozel-koleksiyon-lambader-me-300
+https://masialux.com/urun/ozel-koleksiyon-lambader-me-301
+https://masialux.com/urun/ozel-koleksiyon-masa-lambasi-me-147
+https://masialux.com/urun/ozel-koleksiyon-masa-lambasi-me-168
+https://masialux.com/urun/ozel-koleksiyon-masa-lambasi-me-176
+https://masialux.com/urun/ozel-koleksiyon-masa-lambasi-me-187
+https://masialux.com/urun/ozel-koleksiyon-masa-lambasi-me-189
+https://masialux.com/urun/ozel-koleksiyon-masa-lambasi-me-192
+https://masialux.com/urun/ozel-koleksiyon-masa-lambasi-me-199
+https://masialux.com/urun/ozel-koleksiyon-masa-lambasi-me-201-ozel-koleksiyon-masa-lambasi-ve-lambader
+https://masialux.com/urun/ozel-koleksiyon-masa-lambasi-me-239
+https://masialux.com/urun/ozel-koleksiyon-me-179-ozel-koleksiyon-masa-lambasi-ve-lambader
+https://masialux.com/urun/ozel-koleksiyon-me-185-ozel-koleksiyon-masa-lambasi-ve-lambader
+https://masialux.com/urun/ozel-koleksiyon-me-191-ozel-koleksiyon-masa-lambasi-ve-lambader
+https://masialux.com/urun/ozel-koleksiyon-me-193-ozel-koleksiyon-masa-lambasi-ve-lambader
+https://masialux.com/urun/ozel-koleksiyon-me-194-ozel-koleksiyon-masa-lambasi-ve-lambader
+https://masialux.com/urun/ozel-koleksiyon-me-198-ozel-koleksiyon-masa-lambasi-ve-lambader

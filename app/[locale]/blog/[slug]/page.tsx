@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -5,10 +6,35 @@ import Link from "next/link";
 import Image from "next/image";
 import { getPost, blogPosts, getPostContent } from "@/data/blog";
 import { ArrowLeft } from "lucide-react";
+import { getAlternates, getBaseUrl } from "@/lib/seo";
 
 type Props = {
   params: { locale: string; slug: string };
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale, slug } = params;
+  const post = getPost(slug);
+  if (!post) return { title: "Blog" };
+  const content = getPostContent(post, locale);
+  if (!content) return { title: "Blog" };
+  const title = content.title;
+  const description = content.excerpt;
+  const path = `blog/${slug}`;
+  const base = getBaseUrl();
+  return {
+    title,
+    description,
+    alternates: getAlternates(path, locale),
+    openGraph: {
+      title,
+      description,
+      images: [{ url: post.image, width: 1200, height: 630, alt: title }],
+      type: "article",
+      publishedTime: post.date,
+    },
+  };
+}
 
 export default async function BlogPostPage({ params }: Props) {
   const { locale, slug } = params;

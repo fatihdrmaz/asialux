@@ -17,7 +17,13 @@ export default function Faq() {
   ];
 
   return (
-    <section className="py-16 border-t border-gray-200">
+    <section className="py-section md:py-section-lg border-t border-gray-200">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{ duration: 0.6 }}
+      >
       <h3 className="text-2xl font-display font-bold text-dark-950 mb-8">
         {t("title")}
       </h3>
@@ -25,7 +31,7 @@ export default function Faq() {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="border border-gray-200 rounded-xl overflow-hidden"
+            className="border border-gray-200 rounded-xl overflow-hidden card-hover"
           >
             <button
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
@@ -56,6 +62,7 @@ export default function Faq() {
           </div>
         ))}
       </div>
+      </motion.div>
     </section>
   );
 }

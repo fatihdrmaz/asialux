@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -5,6 +6,22 @@ import Link from "next/link";
 import ProductGrid from "@/components/ProductGrid";
 import { getProductsByCategory } from "@/data/products";
 import { ChevronLeft } from "lucide-react";
+import { getAlternates } from "@/lib/seo";
+
+const CATEGORY_I18N_KEYS: Record<string, string> = {
+  "ray-spot": "raySpot",
+  "surface-mounted": "surfaceMounted",
+  recessed: "recessed",
+  linear: "linear",
+  magnet: "magnet",
+  "industrial-lighting": "industrialLighting",
+  outdoor: "outdoor",
+  "emergency-lighting": "emergencyLighting",
+  "wall-light": "wallLight",
+  "bronze-collection": "bronzeCollection",
+  pendant: "pendant",
+  "lamp-shade": "lampShade",
+};
 
 const CATEGORY_TITLES: Record<string, string> = {
   "ray-spot": "Ray Spot Aydınlatma",
@@ -14,6 +31,11 @@ const CATEGORY_TITLES: Record<string, string> = {
   magnet: "Magnet Ray Spot",
   "industrial-lighting": "Endüstriyel Aydınlatma",
   outdoor: "Dış Mekan Aydınlatma",
+  "emergency-lighting": "Acil Aydınlatma ve Yönlendirmeler",
+  "wall-light": "Aplik Aydınlatma",
+  "bronze-collection": "Bronz Koleksiyon",
+  pendant: "Sarkıt Aydınlatma",
+  "lamp-shade": "Abajur ve Lambader",
 };
 
 const CATEGORY_SUBTITLES: Record<string, string> = {
@@ -24,9 +46,28 @@ const CATEGORY_SUBTITLES: Record<string, string> = {
   magnet: "Magnet ray spot serisi ürünlerimiz.",
   "industrial-lighting": "Endüstriyel aydınlatma ürünlerimiz.",
   outdoor: "Dış mekan aydınlatma ürünlerimiz.",
+  "emergency-lighting": "YAMAS serisi acil aydınlatma ve yönlendirme armatürleri; sıva üstü, sarkıt ve sıva altı seçenekleri.",
+  "wall-light": "Özel Koleksiyon ve Aplik duvar armatürleri; Masialux ozel-koleksiyon/aplik ile eşleşir.",
+  "bronze-collection": "Özel Koleksiyon bronz ray spot, sıva üstü ve sıva altı armatürler; Masialux ozel-koleksiyon/bronz ile eşleşir.",
+  pendant: "Sarkıt aydınlatma serisi ürünlerimiz; tavan sarkıt armatürleri.",
+  "lamp-shade": "Abajur ve masa lambası (lambader) serisi ürünlerimiz.",
 };
 
 type Props = { params: { locale: string; categorySlug: string } };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale, categorySlug } = params;
+  const tProducts = await getTranslations({ locale, namespace: "products" });
+  const key = CATEGORY_I18N_KEYS[categorySlug];
+  const title = key ? tProducts(key) : categorySlug;
+  const path = `products/${categorySlug}`;
+  return {
+    title,
+    description: CATEGORY_SUBTITLES[categorySlug] ?? title,
+    alternates: getAlternates(path, locale),
+    openGraph: { title },
+  };
+}
 
 export default async function CategoryProductsPage({ params }: Props) {
   const { locale, categorySlug } = params;
@@ -75,5 +116,10 @@ export function generateStaticParams() {
     { categorySlug: "magnet" },
     { categorySlug: "industrial-lighting" },
     { categorySlug: "outdoor" },
+    { categorySlug: "emergency-lighting" },
+    { categorySlug: "wall-light" },
+    { categorySlug: "bronze-collection" },
+    { categorySlug: "pendant" },
+    { categorySlug: "lamp-shade" },
   ];
 }

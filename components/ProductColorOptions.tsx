@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { Palette } from "lucide-react";
 
 /** Işık sıcaklığına göre yaklaşık renk (görsel swatch) */
@@ -13,7 +14,7 @@ const KELVIN_COLORS: Record<number, string> = {
 
 interface BodyOption {
   label: string;
-  value: "black" | "white" | "ral";
+  value: "black" | "white" | "copper" | "gold" | "silver" | "ral";
 }
 
 interface LightOption {
@@ -30,6 +31,7 @@ export default function ProductColorOptions({
   bodyColorOptions = [],
   lightColorOptions = [],
 }: ProductColorOptionsProps) {
+  const t = useTranslations("productDetail");
   const [selectedBody, setSelectedBody] = useState<string | null>(null);
   const [selectedLight, setSelectedLight] = useState<string | null>(null);
 
@@ -37,11 +39,10 @@ export default function ProductColorOptions({
 
   return (
     <div className="space-y-8">
-      {/* Gövde Renk Seçenekleri */}
       {bodyColorOptions.length > 0 && (
       <div>
         <h3 className="text-sm font-semibold text-dark-800 mb-3">
-          Gövde Renk Seçenekleri
+          {t("bodyColorOptionsTitle")}
         </h3>
         <div className="flex flex-wrap gap-4">
           {bodyColorOptions.map((opt) => (
@@ -62,7 +63,13 @@ export default function ProductColorOptions({
                     ? "bg-gray-900"
                     : opt.value === "white"
                       ? "bg-white"
-                      : "bg-gradient-to-br from-red-400 via-yellow-400 to-blue-500"
+                      : opt.value === "copper"
+                        ? "bg-[#b87333]"
+                        : opt.value === "gold"
+                          ? "bg-[#d4af37]"
+                          : opt.value === "silver"
+                            ? "bg-[#c0c0c0]"
+                            : "bg-gradient-to-br from-red-400 via-yellow-400 to-blue-500"
                 }`}
               >
                 {opt.value === "ral" && (
@@ -76,11 +83,10 @@ export default function ProductColorOptions({
       </div>
       )}
 
-      {/* Işık Renk Seçenekleri */}
       {lightColorOptions.length > 0 && (
       <div>
         <h3 className="text-sm font-semibold text-dark-800 mb-3">
-          Işık Renk Seçenekleri
+          {t("lightColorOptionsTitle")}
         </h3>
         <div className="flex flex-wrap gap-4">
           {lightColorOptions.map((opt) => (

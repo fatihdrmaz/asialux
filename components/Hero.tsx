@@ -20,20 +20,22 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image – Kendi görseliniz: public/images/hero/hero.png veya hero.jpg */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src={heroSrc}
-          alt="Premium lighting interior"
-          fill
-          className="object-cover"
-          priority
-          quality={90}
-          sizes="100vw"
-          onError={() => setHeroSrc(HERO_IMAGE_FALLBACK)}
-        />
+      {/* Background Image – slow zoom for depth */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="absolute inset-0 animate-hero-zoom">
+          <Image
+            src={heroSrc}
+            alt={t("imageAlt")}
+            fill
+            className="object-cover min-w-full min-h-full"
+            priority
+            quality={90}
+            sizes="100vw"
+            onError={() => setHeroSrc(HERO_IMAGE_FALLBACK)}
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-b from-dark-950/60 via-dark-900/50 to-dark-950/60" />
-        <div className="absolute inset-0 bg-gradient-to-r from-dark-950/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-dark-950/40 to-transparent" />
       </div>
 
       {/* Prism WebGL Effect */}
@@ -52,54 +54,92 @@ export default function Hero() {
         />
       </div>
 
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden z-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary-400/10 rounded-full blur-3xl animate-pulse delay-1000" />
+      {/* Animated background orbs */}
+      <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-500/15 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary-400/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
       </div>
 
       <div className="container mx-auto px-4 relative z-10 pt-24 md:pt-32">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {},
+            visible: {
+              transition: { staggerChildren: 0.12, delayChildren: 0.2 },
+            },
+          }}
           className="text-center max-w-4xl mx-auto"
         >
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center space-x-2 mb-6 px-4 py-2 bg-primary-500/20 rounded-full border border-primary-500/30"
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.6 }}
+            className="inline-flex items-center space-x-2 mb-6 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20"
           >
-            <Sparkles className="w-5 h-5 text-primary-400" />
-            <span className="text-primary-300 text-sm font-medium">
-              Premium Lighting Solutions
+            <Sparkles className="w-5 h-5 text-primary-300" />
+            <span className="text-primary-200 text-sm font-medium">
+              {t("title")}
             </span>
           </motion.div>
 
-          <h1 className="text-5xl md:text-7xl font-display font-bold mb-6 text-white leading-tight">
-            {t("title")}
-          </h1>
+          <motion.h1
+            variants={{
+              hidden: { opacity: 0, y: 28 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.7 }}
+            className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6 text-white leading-[1.1] tracking-tight drop-shadow-lg"
+          >
+            <span className="text-gradient">{t("title")}</span>
+          </motion.h1>
 
-          <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto">
+          <motion.p
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.6 }}
+            className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto font-medium"
+          >
             {t("subtitle")}
-          </p>
+          </motion.p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          {/* Accent line */}
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, scaleX: 0 },
+              visible: { opacity: 1, scaleX: 1 },
+            }}
+            transition={{ duration: 0.5 }}
+            className="w-24 h-0.5 bg-primary-400 mx-auto mb-10 rounded-full origin-center"
+          />
+
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y: 24 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.6 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center"
+          >
             <Link
               href={locale === 'tr' ? '/products' : `/${locale}/products`}
-              className="group inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-all duration-300 transform hover:scale-105 shadow-lg shadow-primary-600/50"
+              className="group btn-primary"
             >
               {t("cta")}
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
-              href={locale === 'tr' ? '/#applications' : `/${locale}#applications`}
-              className="inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm text-white rounded-lg font-semibold hover:bg-white/20 transition-all duration-300 border border-white/20"
+              href={locale === 'tr' ? '/applications' : `/${locale}/applications`}
+              className="btn-ghost"
             >
               {t("ctaSecondary")}
             </Link>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
 

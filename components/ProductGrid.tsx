@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { allProducts, getProductsByCategory, type Product } from "@/data/products";
 import { getProductDetail } from "@/data/productDetails";
 
@@ -32,6 +32,7 @@ interface ProductGridProps {
 
 export default function ProductGrid({ categorySlug }: ProductGridProps) {
   const locale = useLocale();
+  const tProducts = useTranslations("products");
   const [failedImages, setFailedImages] = useState<Set<string>>(new Set());
 
   const products = useMemo(() => {
@@ -84,6 +85,11 @@ export default function ProductGrid({ categorySlug }: ProductGridProps) {
     "magnet",
     "industrial-lighting",
     "outdoor",
+    "emergency-lighting",
+    "wall-light",
+    "bronze-collection",
+    "pendant",
+    "lamp-shade",
   ];
 
   const getProductHref = (product: Product) => {
@@ -106,7 +112,7 @@ export default function ProductGrid({ categorySlug }: ProductGridProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: Math.min(index * 0.05, 0.4) }}
-            className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
+            className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 card-hover"
           >
             <div className="relative h-[420px] min-h-[420px] w-full overflow-hidden bg-gray-100">
               <Image
@@ -138,7 +144,7 @@ export default function ProductGrid({ categorySlug }: ProductGridProps) {
                 </h3>
               )}
               <p className="text-gray-600 text-sm mt-2">
-                Premium LED aydınlatma çözümü
+                {tProducts("cardTagline")}
               </p>
             </div>
           </motion.div>

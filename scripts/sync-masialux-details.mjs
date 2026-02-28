@@ -33,6 +33,7 @@ function parseProductKey(url) {
       slug.match(/mrm-?\d+(?:-\d+)*/i) ||
       slug.match(/mr-?\d+(?:-\d+)*/i) ||
       slug.match(/ms-?\d+(?:-\d+)*/i) ||
+      slug.match(/me-?\d+(?:-\d+)*/i) ||
       slug.match(/md-?\d+(?:-\d+)*/i) ||
       slug.match(/mh-?\d+(?:-\d+)*/i) ||
       slug.match(/mbf-?\d+(?:-\d+)*/i) ||
@@ -45,6 +46,7 @@ function parseProductKey(url) {
       slug.match(/myt-?\d+(?:-\d+)*/i);
     let id = idMatch ? idMatch[0].toLowerCase() : null;
     if (id && /^(mrm|mr|ms|md|mbf|mo)(\d)/.test(id)) id = id.replace(/^(mrm|mr|ms|md|mbf|mo)(\d)/, "$1-$2");
+    if (id && /^me-?\d/.test(id)) id = id.replace(/^me-?/, "me-");
     if (id && /^mh-?\d/.test(id)) id = id.replace(/^mh-?/, "md-");
     if (id && /^(mjl|mj|mk|mo|mps|mp|myt)(\d)/.test(id)) id = id.replace(/^(mjl|mj|mk|mo|mps|mp|myt)(\d)/, "$1-$2");
     if (!id) return null;
@@ -57,6 +59,8 @@ function parseProductKey(url) {
     else if (slug.includes("magnet")) cat = "magnet";
     else if (slug.includes("endustriyel") || slug.includes("endüstriyel")) cat = "industrial-lighting";
     else if (slug.includes("dis-mekan") || slug.includes("dış-mekan")) cat = "outdoor";
+    else if (slug.includes("sarkit") || slug.includes("ozel-koleksiyon-sarkit") || slug.includes("özel-koleksiyon-sarkit")) cat = "pendant";
+    else if (slug.includes("abajur") || slug.includes("lambader") || slug.includes("masa-lambasi") || slug.includes("masa-lambası")) cat = "lamp-shade";
     return { categorySlug: cat, id };
   } catch {
     return null;
@@ -206,7 +210,7 @@ function scrapeProduct(html, productKey) {
   if (title) result.name = title;
 
   const subtitle = $(".summary h5, .woocommerce-product-details__short-description h5, h5").first().text().trim();
-  if (subtitle) result.subtitle = subtitle;
+  if (subtitle && !/^İNDİRİLEBİLİR|^[A-ZĞÜŞİÖÇ\s]+\|/.test(subtitle)) result.subtitle = subtitle;
 
   const panel = $("#tab-description, .woocommerce-Tabs-panel--description, [id*='tab-description']").first();
   const sectionMap = {};
@@ -255,7 +259,13 @@ function scrapeProduct(html, productKey) {
   }
 
   const ozellikler = getSection("ÖZELLİKLER");
-  if (ozellikler) result.features = parseLabelValueLines(ozellikler);
+  if (ozellikler) {
+    result.features = parseLabelValueLines(ozellikler);
+    if (result.features.length === 0) {
+      const bullets = parseListItems(ozellikler);
+      result.features = bullets.map((item) => ({ label: item, value: "" }));
+    }
+  }
 
   const teknik = getSection("TEKNİK ÖZELLİKLER");
   if (teknik) result.technicalSpecs = parseLabelValueLines(teknik);

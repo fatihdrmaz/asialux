@@ -2,7 +2,7 @@
   "nav": {
     "home": "Home",
     "products": "Products",
-    "applications": "Applications",
+    "applications": "Our Applications",
     "projects": "Projects",
     "about": "About",
     "blog": "Blog",
@@ -12,12 +12,14 @@
     "title": "Premium Lighting Solutions",
     "subtitle": "Illuminate your spaces with modern design and superior quality",
     "cta": "Explore Products",
-    "ctaSecondary": "Our Projects"
+    "ctaSecondary": "Our Applications",
+    "imageAlt": "Premium lighting interior"
   },
   "products": {
     "title": "Our Product Groups",
     "subtitle": "Special solutions for every space",
     "productCount": "{count} products",
+    "cardTagline": "Premium LED lighting solution",
     "raySpot": "Ray Spot",
     "surfaceMounted": "Surface Mounted",
     "recessed": "Recessed",
@@ -34,14 +36,21 @@
   "applications": {
     "title": "Application Areas",
     "subtitle": "Professional lighting solutions",
+    "tagline": "Professional lighting solutions",
     "residential": "Residential Spaces",
     "cafe": "Cafe & Bistro",
     "office": "Plaza & Office",
     "industrial": "Industrial Facilities",
     "outdoor": "Outdoor",
-    "custom": "Custom Design"
+    "custom": "Custom Design",
+    "ctaTitle": "The Right Lighting for Your Project",
+    "ctaDescription": "Contact our team for custom lighting solutions tailored to your space. We offer free site surveys and professional consultancy.",
+    "ctaButton": "Get in Touch",
+    "galleryTitle": "Snapshots from Our Projects",
+    "gallerySubtitle": "Selected visuals from our completed projects"
   },
   "features": {
+    "valuesLabel": "Our Values",
     "title": "Why Asialux?",
     "quality": {
       "title": "Superior Quality",
@@ -70,7 +79,22 @@
     "send": "Send",
     "address": "Address",
     "phoneLabel": "Phone",
-    "emailLabel": "Email"
+    "emailLabel": "Email",
+    "location": "Location",
+    "mapTitle": "Asialux location",
+    "ctaButton": "Get in Touch",
+    "formTitle": "Contact Us",
+    "infoTitle": "Contact Information",
+    "workingHoursTitle": "Working Hours",
+    "workingHoursWeekday": "Monday - Friday: 09:00 - 18:00",
+    "workingHoursSaturday": "Saturday: 09:00 - 14:00",
+    "workingHoursSunday": "Sunday: Closed",
+    "submitting": "Sending...",
+    "successMessage": "Your message has been sent! We will get back to you as soon as possible.",
+    "addressValue": "Bereketzade Mahallesi Okçumusa Cd.\nYücel İş Merkezi No:13\nKaraköy / Beyoğlu / İstanbul\nPk: 34421",
+    "phoneValue1": "+90 212 244 06 05",
+    "phoneValue2": "+90 533 781 65 05",
+    "emailValue": "bilgi@asialux.com.tr"
   },
   "footer": {
     "about": "About",
@@ -81,7 +105,14 @@
     "rights": "All rights reserved",
     "newsletter": "Newsletter",
     "newsletterDesc": "Stay updated",
-    "subscribe": "Subscribe"
+    "subscribe": "Subscribe",
+    "newsletterPlaceholder": "Your email address",
+    "newsletterSuccess": "Thank you, you have been subscribed.",
+    "description": "Transform your spaces with premium lighting solutions. Export-focused service with modern design and superior quality.",
+    "addressValue": "Bereketzade Mahallesi Okçumusa Cd.\nYücel İş Merkezi No:13\nKaraköy / Beyoğlu / İstanbul\nPk: 34421",
+    "phoneValue1": "+90 212 244 06 05",
+    "phoneValue2": "+90 533 781 65 05",
+    "emailValue": "bilgi@asialux.com.tr"
   },
   "stats": {
     "countries": "Export countries",
@@ -97,6 +128,14 @@
     "title": "Our Certificates",
     "subtitle": "Quality and trust"
   },
+  "showcase": {
+    "title": "Our Premium Designs",
+    "subtitle": "Lighting solutions that come to life in modern spaces",
+    "image1Alt": "Custom design portfolio 1",
+    "image2Alt": "Custom design portfolio 2",
+    "image3Alt": "Custom design portfolio 3",
+    "viewMore": "View more"
+  },
   "projects": {
     "title": "Reference Projects",
     "subtitle": "Sample completed projects",
@@ -105,13 +144,16 @@
     "project2": "Office Project",
     "location2": "Ankara, Turkey",
     "project3": "Landscape Lighting",
-    "location3": "Izmir, Turkey"
+    "location3": "Izmir, Turkey",
+    "viewAll": "View all"
   },
   "blog": {
     "title": "Blog",
     "subtitle": "News and articles from the world of lighting",
     "readMore": "Read more",
-    "backToBlog": "Back to blog"
+    "backToBlog": "Back to blog",
+    "homeSectionTitle": "Latest Posts",
+    "viewAll": "View all"
   },
   "faq": {
     "title": "Frequently Asked Questions",
@@ -148,7 +190,9 @@
     "whatsappQuote": "I would like to get a quote for the product or my project",
     "ctaQuote": "Would you like a custom quote for this product or your project?",
     "ctaWhatsApp": "Contact via WhatsApp",
-    "ctaRequestQuote": "Quote / Enquiry"
+    "ctaRequestQuote": "Quote / Enquiry",
+    "bodyColorOptionsTitle": "Body Colour Options",
+    "lightColorOptionsTitle": "Light Colour Options"
   },
   "aboutPage": {
     "title": "About Us",

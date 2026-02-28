@@ -2,7 +2,7 @@
   "nav": {
     "home": "الرئيسية",
     "products": "المنتجات",
-    "applications": "التطبيقات",
+    "applications": "تطبيقاتنا",
     "projects": "المشاريع",
     "about": "من نحن",
     "blog": "المدونة",
@@ -12,12 +12,14 @@
     "title": "حلول الإضاءة المميزة",
     "subtitle": "أنر مساحاتك بتصميم عصري وجودة فائقة",
     "cta": "استكشف المنتجات",
-    "ctaSecondary": "مشاريعنا"
+    "ctaSecondary": "تطبيقاتنا",
+    "imageAlt": "داخلي إضاءة مميزة"
   },
   "products": {
     "title": "مجموعات منتجاتنا",
     "subtitle": "حلول خاصة لكل مساحة",
     "productCount": "{count} منتج",
+    "cardTagline": "حل إضاءة LED مميز",
     "raySpot": "راي سبوت",
     "surfaceMounted": "مثبت على السطح",
     "recessed": "مدمج",
@@ -34,14 +36,21 @@
   "applications": {
     "title": "مجالات التطبيق",
     "subtitle": "حلول إضاءة احترافية",
+    "tagline": "حلول إضاءة احترافية",
     "residential": "المساحات السكنية",
     "cafe": "المقهى والمطعم",
     "office": "المجمع التجاري والمكتب",
     "industrial": "المنشآت الصناعية",
     "outdoor": "الخارجي",
-    "custom": "تصميم مخصص"
+    "custom": "تصميم مخصص",
+    "ctaTitle": "الإضاءة المناسبة لمشروعك",
+    "ctaDescription": "تواصل مع فريقنا للحصول على حلول إضاءة مخصصة لمساحتك. نقدم معاينة مجانية واستشارات احترافية.",
+    "ctaButton": "تواصل معنا",
+    "galleryTitle": "لقطات من مشاريعنا",
+    "gallerySubtitle": "صور مختارة من مشاريعنا المنجزة"
   },
   "features": {
+    "valuesLabel": "قيمنا",
     "title": "لماذا أسيا لوكس؟",
     "quality": {
       "title": "جودة فائقة",
@@ -70,7 +79,22 @@
     "send": "إرسال",
     "address": "العنوان",
     "phoneLabel": "الهاتف",
-    "emailLabel": "البريد الإلكتروني"
+    "emailLabel": "البريد الإلكتروني",
+    "location": "الموقع",
+    "mapTitle": "موقع أسيا لوكس",
+    "ctaButton": "تواصل معنا",
+    "formTitle": "راسلنا",
+    "infoTitle": "معلومات الاتصال",
+    "workingHoursTitle": "ساعات العمل",
+    "workingHoursWeekday": "الاثنين - الجمعة: 09:00 - 18:00",
+    "workingHoursSaturday": "السبت: 09:00 - 14:00",
+    "workingHoursSunday": "الأحد: مغلق",
+    "submitting": "جارٍ الإرسال...",
+    "successMessage": "تم إرسال رسالتك! سنعود إليك في أقرب وقت.",
+    "addressValue": "Bereketzade Mahallesi Okçumusa Cd.\nYücel İş Merkezi No:13\nKaraköy / Beyoğlu / İstanbul\nPk: 34421",
+    "phoneValue1": "+90 212 244 06 05",
+    "phoneValue2": "+90 533 781 65 05",
+    "emailValue": "bilgi@asialux.com.tr"
   },
   "footer": {
     "about": "من نحن",
@@ -81,7 +105,14 @@
     "rights": "جميع الحقوق محفوظة",
     "newsletter": "النشرة",
     "newsletterDesc": "ابق على اطلاع",
-    "subscribe": "اشترك"
+    "subscribe": "اشترك",
+    "newsletterPlaceholder": "بريدك الإلكتروني",
+    "newsletterSuccess": "شكراً، تم تسجيل اشتراكك.",
+    "description": "حوّل مساحاتك بحلول إضاءة مميزة. خدمة موجهة للتصدير بتصميم عصري وجودة فائقة.",
+    "addressValue": "Bereketzade Mahallesi Okçumusa Cd.\nYücel İş Merkezi No:13\nKaraköy / Beyoğlu / İstanbul\nPk: 34421",
+    "phoneValue1": "+90 212 244 06 05",
+    "phoneValue2": "+90 533 781 65 05",
+    "emailValue": "bilgi@asialux.com.tr"
   },
   "stats": {
     "countries": "دول التصدير",
@@ -97,6 +128,14 @@
     "title": "شهاداتنا",
     "subtitle": "دليل الجودة والثقة"
   },
+  "showcase": {
+    "title": "تصاميمنا المميزة",
+    "subtitle": "حلول إضاءة تنبض في المساحات العصرية",
+    "image1Alt": "معرض تصميم مخصص 1",
+    "image2Alt": "معرض تصميم مخصص 2",
+    "image3Alt": "معرض تصميم مخصص 3",
+    "viewMore": "عرض المزيد"
+  },
   "projects": {
     "title": "مشاريع مرجعية",
     "subtitle": "عينة من المشاريع المكتملة",
@@ -105,13 +144,16 @@
     "project2": "مشروع مكتبي",
     "location2": "أنقرة، تركيا",
     "project3": "إضاءة المناظر الطبيعية",
-    "location3": "إزمير، تركيا"
+    "location3": "إزمير، تركيا",
+    "viewAll": "عرض الكل"
   },
   "blog": {
     "title": "المدونة",
     "subtitle": "أخبار ومقالات من عالم الإضاءة",
     "readMore": "اقرأ المزيد",
-    "backToBlog": "العودة إلى المدونة"
+    "backToBlog": "العودة إلى المدونة",
+    "homeSectionTitle": "أحدث المقالات",
+    "viewAll": "عرض الكل"
   },
   "faq": {
     "title": "الأسئلة الشائعة",
@@ -148,7 +190,9 @@
     "whatsappQuote": "أود الحصول على عرض سعر للمنتج أو مشروعي",
     "ctaQuote": "هل ترغب في عرض سعر خاص لهذا المنتج أو مشروعك؟",
     "ctaWhatsApp": "التواصل عبر واتساب",
-    "ctaRequestQuote": "عرض سعر / استفسار"
+    "ctaRequestQuote": "عرض سعر / استفسار",
+    "bodyColorOptionsTitle": "خيارات لون الجسم",
+    "lightColorOptionsTitle": "خيارات لون الضوء"
   },
   "aboutPage": {
     "title": "من نحن",

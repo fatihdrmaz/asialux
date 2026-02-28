@@ -22,7 +22,7 @@ export default function ContactForm() {
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
-      alert("Mesajınız gönderildi! En kısa sürede size dönüş yapacağız.");
+      alert(t("successMessage"));
       setFormData({ name: "", email: "", phone: "", message: "" });
     }, 1000);
   };
@@ -36,7 +36,7 @@ export default function ContactForm() {
         transition={{ duration: 0.6 }}
         className="bg-white rounded-2xl shadow-xl p-8"
       >
-        <h3 className="text-2xl font-bold mb-6 text-dark-950">Bize Ulaşın</h3>
+        <h3 className="text-2xl font-bold mb-6 text-dark-950">{t("formTitle")}</h3>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -96,12 +96,12 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+            className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none space-x-2"
           >
             {isSubmitting ? (
               <>
                 <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                <span>Gönderiliyor...</span>
+                <span>{t("submitting")}</span>
               </>
             ) : (
               <>
@@ -121,7 +121,7 @@ export default function ContactForm() {
         className="space-y-8"
       >
         <div className="bg-gradient-to-br from-primary-600 to-primary-700 rounded-2xl shadow-xl p-8 text-white">
-          <h3 className="text-2xl font-bold mb-6">İletişim Bilgileri</h3>
+          <h3 className="text-2xl font-bold mb-6">{t("infoTitle")}</h3>
           
           <div className="space-y-6">
             <div className="flex items-start space-x-4">
@@ -130,7 +130,7 @@ export default function ContactForm() {
               </div>
               <div>
                 <h4 className="font-semibold mb-1">{t("address")}</h4>
-                <p className="text-white/90">İstanbul, Türkiye</p>
+                <p className="text-white/90 whitespace-pre-line">{t("addressValue")}</p>
               </div>
             </div>
 
@@ -140,9 +140,14 @@ export default function ContactForm() {
               </div>
               <div>
                 <h4 className="font-semibold mb-1">{t("phoneLabel")}</h4>
-                <a href="tel:+902124340000" className="text-white/90 hover:text-white transition-colors">
-                  +90 212 434 00 00
-                </a>
+                <div className="space-y-1">
+                  <a href="tel:+902122440605" className="text-white/90 hover:text-white transition-colors block">
+                    {t("phoneValue1")}
+                  </a>
+                  <a href="tel:+905337816505" className="text-white/90 hover:text-white transition-colors block">
+                    {t("phoneValue2")}
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -152,8 +157,8 @@ export default function ContactForm() {
               </div>
               <div>
                 <h4 className="font-semibold mb-1">{t("emailLabel")}</h4>
-                <a href="mailto:info@asialux.com.tr" className="text-white/90 hover:text-white transition-colors">
-                  info@asialux.com.tr
+                <a href="mailto:bilgi@asialux.com.tr" className="text-white/90 hover:text-white transition-colors">
+                  {t("emailValue")}
                 </a>
               </div>
             </div>
@@ -161,11 +166,11 @@ export default function ContactForm() {
         </div>
 
         <div className="bg-gray-50 rounded-2xl p-8">
-          <h4 className="font-bold text-lg mb-4 text-dark-950">Çalışma Saatleri</h4>
+          <h4 className="font-bold text-lg mb-4 text-dark-950">{t("workingHoursTitle")}</h4>
           <div className="space-y-2 text-gray-600">
-            <p>Pazartesi - Cuma: 09:00 - 18:00</p>
-            <p>Cumartesi: 09:00 - 14:00</p>
-            <p>Pazar: Kapalı</p>
+            <p>{t("workingHoursWeekday")}</p>
+            <p>{t("workingHoursSaturday")}</p>
+            <p>{t("workingHoursSunday")}</p>
           </div>
         </div>
       </motion.div>

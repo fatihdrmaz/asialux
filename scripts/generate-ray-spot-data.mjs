@@ -1,6 +1,7 @@
 /**
- * public/images/products/RAY SPOT/ altındaki klasörleri tarar,
+ * public/images/products/ray-spot/ altındaki klasörleri tarar,
  * data/products.ts ve data/productDetails.ts için Ray Spot verisini üretir.
+ * Klasör adı SEO uyumlu (rename-product-folders-to-slugs.mjs ile yeniden adlandırılmış olmalı).
  * Çalıştırma: node scripts/generate-ray-spot-data.mjs
  */
 import fs from "fs";
@@ -8,10 +9,11 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const raySpotBase = path.join(__dirname, "../public/images/products/RAY SPOT");
+const RAY_SPOT_FOLDER = "ray-spot";
+const raySpotBase = path.join(__dirname, "../public/images/products", RAY_SPOT_FOLDER);
 
 if (!fs.existsSync(raySpotBase)) {
-  console.error("RAY SPOT klasörü bulunamadı:", raySpotBase);
+  console.error("ray-spot klasörü bulunamadı:", raySpotBase);
   process.exit(1);
 }
 
@@ -61,7 +63,7 @@ for (const folder of dirs) {
   const slug = folderToSlug(folder);
 
   const imagePaths = files.map((f) => {
-    const segment = encodeURIComponent("RAY SPOT") + "/" + encodeURIComponent(folder) + "/" + encodeURIComponent(f);
+    const segment = RAY_SPOT_FOLDER + "/" + encodeURIComponent(folder) + "/" + encodeURIComponent(f);
     return "/images/products/" + segment;
   });
 

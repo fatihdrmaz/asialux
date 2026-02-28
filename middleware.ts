@@ -4,7 +4,8 @@ import { locales } from './i18n';
 export default createMiddleware({
   locales,
   defaultLocale: 'tr',
-  localePrefix: 'as-needed'
+  localePrefix: 'as-needed',
+  localeDetection: false, // Kullanıcı dil seçimine saygı; / → TR, /en → EN (tarayıcı diline göre yönlendirme yok)
 });
 
 export const config = {

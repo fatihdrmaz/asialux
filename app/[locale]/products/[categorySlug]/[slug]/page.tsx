@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -9,11 +10,52 @@ import { ChevronRight, FileDown, MessageCircle } from "lucide-react";
 import ProductImageGallery from "@/components/ProductImageGallery";
 import ProductColorOptions from "@/components/ProductColorOptions";
 import ProductWarningsAccordion from "@/components/ProductWarningsAccordion";
+import JsonLd from "@/components/JsonLd";
+import { getAlternates, getBaseUrl } from "@/lib/seo";
 
 const FALLBACK_IMAGE =
   "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=800&q=80";
 
 type Props = { params: { locale: string; categorySlug: string; slug: string } };
+
+function truncateDescription(text: string | undefined, maxLen: number): string {
+  if (!text) return "";
+  const stripped = text.replace(/\s+/g, " ").trim();
+  if (stripped.length <= maxLen) return stripped;
+  return stripped.slice(0, maxLen - 3) + "...";
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale, categorySlug, slug } = params;
+  const detail = getProductDetail(categorySlug, slug, locale);
+  const product = getProductById(categorySlug, slug);
+  if (!detail && !product) return { title: "Product" };
+  const name = detail?.name ?? product!.name;
+  const description = truncateDescription(
+    detail?.description ?? detail?.subtitle ?? "",
+    160
+  );
+  const path = `products/${categorySlug}/${slug}`;
+  const images = detail?.images ?? (product!.listImagePath ? [product!.listImagePath] : []);
+  const base = getBaseUrl();
+  const ogImages = images.slice(0, 4).map((src) => ({
+    url: src.startsWith("http") ? src : `${base}${src}`,
+    width: 800,
+    height: 600,
+    alt: name,
+  }));
+  return {
+    title: name,
+    description: description || name,
+    alternates: getAlternates(path, locale),
+    openGraph: {
+      title: name,
+      description: description || undefined,
+      images: ogImages.length ? ogImages : undefined,
+      type: "website",
+    },
+  };
+}
 
 export default async function ProductDetailPage({ params }: Props) {
   const { locale, categorySlug, slug } = params;
@@ -30,7 +72,7 @@ export default async function ProductDetailPage({ params }: Props) {
   const categoryName = detail?.category ?? product!.category;
 
   const name = detail?.name ?? product!.name;
-  const images = detail?.images ?? [FALLBACK_IMAGE];
+  const images = detail?.images ?? (product!.listImagePath ? [product!.listImagePath] : [FALLBACK_IMAGE]);
   const relatedIds = detail?.relatedIds ?? [];
   const categoryProducts = getProductsByCategory(categorySlug);
   const MAX_SUGGESTIONS = 8;
@@ -79,8 +121,24 @@ export default async function ProductDetailPage({ params }: Props) {
     (detail.warrantyTerms && detail.warrantyTerms.items.length > 0)
   );
 
+  const baseUrl = getBaseUrl();
+  const productUrl = locale === "tr"
+    ? `${baseUrl}/products/${categorySlug}/${slug}`
+    : `${baseUrl}/${locale}/products/${categorySlug}/${slug}`;
+  const productLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name,
+    description: truncateDescription(detail?.description ?? detail?.subtitle ?? "", 500),
+    image: images.map((src) => (src.startsWith("http") ? src : `${baseUrl}${src}`)),
+    url: productUrl,
+    category: categoryName,
+    brand: { "@type": "Brand", name: "Asialux" },
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <JsonLd data={productLd} />
       {/* Breadcrumb */}
       <div className="bg-white border-b border-gray-100">
         <div className="container mx-auto px-4 max-w-6xl py-4">
@@ -154,7 +212,7 @@ export default async function ProductDetailPage({ params }: Props) {
               </div>
             )}
             <a
-              href={`https://wa.me/902124340000?text=${encodeURIComponent(t("whatsappProduct"))}`}
+              href={`https://wa.me/905337816505?text=${encodeURIComponent(t("whatsappProduct"))}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary-600 text-white font-semibold hover:bg-primary-700 transition-colors shadow-md hover:shadow-lg"
@@ -310,7 +368,7 @@ export default async function ProductDetailPage({ params }: Props) {
             {t("ctaQuote")}
           </p>
           <a
-            href={`https://wa.me/902124340000?text=${encodeURIComponent(t("whatsappQuote"))}`}
+            href={`https://wa.me/905337816505?text=${encodeURIComponent(t("whatsappQuote"))}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-dark-950 font-semibold hover:bg-gray-100 transition-colors"
@@ -372,6 +430,11 @@ export function generateStaticParams() {
     "magnet",
     "industrial-lighting",
     "outdoor",
+    "emergency-lighting",
+    "wall-light",
+    "bronze-collection",
+    "pendant",
+    "lamp-shade",
   ];
   const params: { categorySlug: string; slug: string }[] = [];
   for (const categorySlug of categories) {

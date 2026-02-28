@@ -10,37 +10,37 @@ const applications = [
     id: "residential",
     icon: Home,
     gradient: "from-blue-500 to-cyan-500",
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    image: "/images/applications/yasam.jpg",
   },
   {
     id: "cafe",
     icon: Coffee,
     gradient: "from-blue-600 to-indigo-700",
-    image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    image: "/images/applications/cafe.png",
   },
   {
     id: "office",
     icon: Building2,
     gradient: "from-indigo-500 to-purple-500",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    image: "/images/applications/plaza.png",
   },
   {
     id: "industrial",
     icon: Factory,
     gradient: "from-gray-600 to-gray-800",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    image: "/images/applications/uretim.png",
   },
   {
     id: "outdoor",
     icon: TreePine,
     gradient: "from-green-500 to-emerald-500",
-    image: "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    image: "/images/applications/dis-mekan.png",
   },
   {
     id: "custom",
     icon: Sparkles,
     gradient: "from-rose-500 to-pink-500",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    image: "/images/applications/ozel.png",
   },
 ];
 
@@ -48,8 +48,14 @@ export default function Applications() {
   const t = useTranslations("applications");
 
   return (
-    <section id="applications" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="applications" className="py-section md:py-section-lg bg-white">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{ duration: 0.6 }}
+        className="container mx-auto px-4"
+      >
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -75,7 +81,7 @@ export default function Applications() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group relative overflow-hidden rounded-2xl h-80 cursor-pointer"
+                className="group relative overflow-hidden rounded-2xl h-80 cursor-pointer card-hover"
               >
                 {/* Background Image */}
                 <div className="absolute inset-0">
@@ -99,7 +105,7 @@ export default function Applications() {
                     {t(app.id)}
                   </h3>
                   <p className="text-center text-white/90 text-sm drop-shadow-md">
-                    Profesyonel aydınlatma çözümleri
+                    {t("tagline")}
                   </p>
                 </div>
 
@@ -109,7 +115,7 @@ export default function Applications() {
             );
           })}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

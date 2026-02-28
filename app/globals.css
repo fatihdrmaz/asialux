@@ -2,33 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 255, 255, 255;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 29, 29, 29;
-    --background-end-rgb: 29, 29, 29;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* Modern selection & focus */
+::selection {
+  background-color: rgba(29, 78, 216, 0.25);
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid rgba(29, 78, 216, 0.6);
+  outline-offset: 2px;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  /* Gradient text for headlines */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-100 to-primary-200;
   }
 }
 

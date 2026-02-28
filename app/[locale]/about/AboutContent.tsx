@@ -4,12 +4,9 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const IMAGE_STORY =
-  "https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80";
-const IMAGE_QUALITY =
-  "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80";
-const IMAGE_PRODUCTION =
-  "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80";
+const IMAGE_STORY = "/images/aboutus/image1.png";
+const IMAGE_QUALITY = "/images/aboutus/image2.png";
+const IMAGE_PRODUCTION = "/images/aboutus/image3.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 24 },
@@ -22,7 +19,7 @@ export default function AboutContent() {
   const t = useTranslations("aboutPage");
 
   return (
-    <div className="container mx-auto px-4 max-w-6xl py-16 md:py-24">
+    <div className="container mx-auto px-4 max-w-6xl py-section md:py-section-lg">
       {/* Hikayemiz — Image left, text right */}
       <motion.section
         {...fadeIn}
