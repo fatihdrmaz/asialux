@@ -6,11 +6,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
-import dynamic from "next/dynamic";
 
-const Prism = dynamic(() => import("./Prism"), { ssr: false });
-
-const HERO_IMAGE_LOCAL = "/images/hero/hero.png";
+const HERO_IMAGE_LOCAL = "/images/premium/image2.png";
 const HERO_IMAGE_FALLBACK = "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
 
 export default function Hero() {
@@ -34,30 +31,8 @@ export default function Hero() {
             onError={() => setHeroSrc(HERO_IMAGE_FALLBACK)}
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-dark-950/60 via-dark-900/50 to-dark-950/60" />
-        <div className="absolute inset-0 bg-gradient-to-r from-dark-950/40 to-transparent" />
-      </div>
-
-      {/* Prism WebGL Effect */}
-      <div className="absolute inset-0 z-[1] opacity-90" style={{ width: "100%", height: "100%" }}>
-        <Prism
-          animationType="rotate"
-          timeScale={0.5}
-          height={3.5}
-          baseWidth={5.5}
-          scale={3.6}
-          hueShift={0}
-          colorFrequency={1}
-          noise={0}
-          glow={1}
-          transparent={true}
-        />
-      </div>
-
-      {/* Animated background orbs */}
-      <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-500/15 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary-400/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
+        {/* Hafif gradient sadece metin okunaklılığı için */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10 pt-24 md:pt-32">
@@ -128,14 +103,14 @@ export default function Hero() {
           >
             <Link
               href={locale === 'tr' ? '/products' : `/${locale}/products`}
-              className="group btn-primary"
+              className="group inline-flex items-center justify-center px-8 py-4 rounded-lg font-semibold text-dark-900 bg-white/95 hover:bg-white border border-white/20 shadow-xl shadow-black/20 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300"
             >
               {t("cta")}
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
               href={locale === 'tr' ? '/applications' : `/${locale}/applications`}
-              className="btn-ghost"
+              className="inline-flex items-center justify-center px-8 py-4 rounded-lg font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/30 backdrop-blur-sm transition-all duration-300"
             >
               {t("ctaSecondary")}
             </Link>
