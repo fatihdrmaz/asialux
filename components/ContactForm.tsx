@@ -14,17 +14,36 @@ export default function ContactForm() {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
+    setSubmitStatus("idle");
+    setErrorMessage("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json().catch(() => ({}));
+
+      if (res.ok && data.success) {
+        setSubmitStatus("success");
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      } else {
+        setSubmitStatus("error");
+        setErrorMessage(data.message || t("errorMessage"));
+      }
+    } catch {
+      setSubmitStatus("error");
+      setErrorMessage(t("errorMessage"));
+    } finally {
       setIsSubmitting(false);
-      alert(t("successMessage"));
-      setFormData({ name: "", email: "", phone: "", message: "" });
-    }, 1000);
+    }
   };
 
   return (
@@ -37,6 +56,16 @@ export default function ContactForm() {
         className="bg-white rounded-2xl shadow-xl p-8"
       >
         <h3 className="text-2xl font-bold mb-6 text-dark-950">{t("formTitle")}</h3>
+        {submitStatus === "success" && (
+          <div className="mb-6 p-4 rounded-lg bg-green-50 text-green-800 border border-green-200">
+            {t("successMessage")}
+          </div>
+        )}
+        {submitStatus === "error" && (
+          <div className="mb-6 p-4 rounded-lg bg-red-50 text-red-800 border border-red-200">
+            {errorMessage}
+          </div>
+        )}
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">

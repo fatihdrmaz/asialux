@@ -91,6 +91,7 @@
     "workingHoursSunday": "Sunday: Closed",
     "submitting": "Sending...",
     "successMessage": "Your message has been sent! We will get back to you as soon as possible.",
+    "errorMessage": "Message could not be sent. Please try again later or contact us by email or phone.",
     "addressValue": "Bereketzade Mahallesi Okçumusa Cd.\nYücel İş Merkezi No:13\nKaraköy / Beyoğlu / İstanbul\nPk: 34421",
     "phoneValue1": "+90 212 244 06 05",
     "phoneValue2": "+90 533 781 65 05",
