@@ -161,10 +161,10 @@ export default async function ProductDetailPage({ params }: Props) {
       {/* Hero: Gallery + Info */}
       <div className="container mx-auto px-4 max-w-6xl py-10 md:py-14">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14">
-          <div className="order-2 lg:order-1 lg:sticky lg:top-24 lg:self-start">
+          <div className="order-1 lg:sticky lg:top-24 lg:self-start">
             <ProductImageGallery images={images} alt={name} />
           </div>
-          <div className="order-1 lg:order-2 lg:sticky lg:top-24 lg:self-start">
+          <div className="order-2 lg:sticky lg:top-24 lg:self-start">
             <span className="inline-block text-primary-600 font-semibold text-sm uppercase tracking-wide mb-3">
               {detail?.category ?? product!.category}
             </span>
@@ -245,10 +245,10 @@ export default async function ProductDetailPage({ params }: Props) {
                   {detail!.features.map((f) => (
                     <li
                       key={f.label}
-                      className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-3 border-b border-gray-100 last:border-0 gap-1"
+                      className="grid grid-cols-1 sm:flex sm:justify-between sm:items-center py-3 border-b border-gray-100 last:border-0 gap-1"
                     >
                       <span className="text-gray-600 font-medium">{f.label}</span>
-                      <span className="text-dark-950 text-right">{f.value}</span>
+                      <span className="text-dark-950 sm:text-right">{f.value}</span>
                     </li>
                   ))}
                 </ul>
@@ -264,10 +264,10 @@ export default async function ProductDetailPage({ params }: Props) {
                   {detail!.technicalSpecs.map((s) => (
                     <li
                       key={s.label}
-                      className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-3 border-b border-gray-100 last:border-0 gap-1"
+                      className="grid grid-cols-1 sm:flex sm:justify-between sm:items-center py-3 border-b border-gray-100 last:border-0 gap-1"
                     >
                       <span className="text-gray-600 font-medium">{s.label}</span>
-                      <span className="text-dark-950 text-right">{s.value}</span>
+                      <span className="text-dark-950 sm:text-right">{s.value}</span>
                     </li>
                   ))}
                 </ul>
