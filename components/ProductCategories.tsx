@@ -19,7 +19,7 @@ const CATEGORY_IMAGE_FILES: Record<string, string> = {
   "magnet": "magnet1",
   "lamp-shade": "abajur",
   "bronze-collection": "bronz",
-  "industrial-lighting": "endüstriyel",
+  "industrial-lighting": "endustriyel",
   "emergency-lighting": "acil yonlendirme",
 };
 
