@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
+import { WhatsAppMessageProvider } from "@/contexts/WhatsAppMessageContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -29,12 +30,14 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider key={locale} locale={locale} messages={messages}>
-      <div dir={isRtl ? "rtl" : "ltr"} lang={locale} className="min-h-screen">
-        <Header />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
-        <WhatsAppButton />
-      </div>
+      <WhatsAppMessageProvider>
+        <div dir={isRtl ? "rtl" : "ltr"} lang={locale} className="min-h-screen">
+          <Header />
+          <main className="min-h-screen">{children}</main>
+          <Footer />
+          <WhatsAppButton />
+        </div>
+      </WhatsAppMessageProvider>
     </NextIntlClientProvider>
   );
 }

@@ -10,6 +10,7 @@ import { ChevronRight, FileDown, MessageCircle } from "lucide-react";
 import ProductImageGallery from "@/components/ProductImageGallery";
 import ProductColorOptions from "@/components/ProductColorOptions";
 import ProductWarningsAccordion from "@/components/ProductWarningsAccordion";
+import SetWhatsAppProductMessage from "@/components/SetWhatsAppProductMessage";
 import JsonLd from "@/components/JsonLd";
 import { getAlternates, getBaseUrl } from "@/lib/seo";
 
@@ -139,6 +140,7 @@ export default async function ProductDetailPage({ params }: Props) {
   return (
     <div className="min-h-screen bg-gray-50">
       <JsonLd data={productLd} />
+      <SetWhatsAppProductMessage productName={name} categoryName={categoryName} />
       {/* Breadcrumb */}
       <div className="bg-white border-b border-gray-100">
         <div className="container mx-auto px-4 max-w-6xl py-4">
@@ -212,7 +214,7 @@ export default async function ProductDetailPage({ params }: Props) {
               </div>
             )}
             <a
-              href={`https://wa.me/905337816505?text=${encodeURIComponent(t("whatsappProduct"))}`}
+              href={`https://wa.me/905337816505?text=${encodeURIComponent(t("whatsappProductWithName", { categoryName, productName: name }))}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary-600 text-white font-semibold hover:bg-primary-700 transition-colors shadow-md hover:shadow-lg"
@@ -368,7 +370,7 @@ export default async function ProductDetailPage({ params }: Props) {
             {t("ctaQuote")}
           </p>
           <a
-            href={`https://wa.me/905337816505?text=${encodeURIComponent(t("whatsappQuote"))}`}
+            href={`https://wa.me/905337816505?text=${encodeURIComponent(t("whatsappQuoteWithName", { categoryName, productName: name }))}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-dark-950 font-semibold hover:bg-gray-100 transition-colors"

@@ -4,6 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import ProductGrid from "@/components/ProductGrid";
+import SetWhatsAppCategoryMessage from "@/components/SetWhatsAppCategoryMessage";
 import { getProductsByCategory } from "@/data/products";
 import { ChevronLeft } from "lucide-react";
 import { getAlternates } from "@/lib/seo";
@@ -84,6 +85,7 @@ export default async function CategoryProductsPage({ params }: Props) {
 
   return (
     <div className="min-h-screen bg-white pt-24 pb-16">
+      <SetWhatsAppCategoryMessage categoryName={title} />
       <div className="container mx-auto px-4">
         <Link
           href={productsHref}

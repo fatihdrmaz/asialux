@@ -2,13 +2,15 @@
 
 import { useState } from "react";
 import { MessageCircle } from "lucide-react";
+import { useWhatsAppMessage, DEFAULT_MESSAGE } from "@/contexts/WhatsAppMessageContext";
 
 const WHATSAPP_NUMBER = "905337816505";
-const DEFAULT_MESSAGE = "Merhaba, ürünleriniz hakkında bilgi almak istiyorum.";
 
 export default function WhatsAppButton() {
   const [hovered, setHovered] = useState(false);
-  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(DEFAULT_MESSAGE)}`;
+  const ctx = useWhatsAppMessage();
+  const message = ctx?.message ?? DEFAULT_MESSAGE;
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
   return (
     <a
