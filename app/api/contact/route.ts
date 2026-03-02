@@ -8,6 +8,7 @@ const SMTP_USER = process.env.SMTP_USER;
 const SMTP_PASS = process.env.SMTP_PASS;
 /** Alıcı e-posta (form mesajlarının gideceği adres). Boşsa SMTP_USER kullanılır. */
 const CONTACT_EMAIL = process.env.CONTACT_EMAIL || SMTP_USER;
+const RECAPTCHA_SECRET_KEY = process.env.RECAPTCHA_SECRET_KEY;
 
 /** Formu dolduran kişiye giden otomatik yanıt e-postası metinleri */
 const AUTO_REPLY: Record<string, { subject: string; greeting: string; body: string; closing: string }> = {
@@ -43,6 +44,24 @@ const AUTO_REPLY: Record<string, { subject: string; greeting: string; body: stri
   },
 };
 
+async function verifyRecaptcha(token: string): Promise<boolean> {
+  if (!RECAPTCHA_SECRET_KEY) return false;
+  try {
+    const res = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({
+        secret: RECAPTCHA_SECRET_KEY,
+        response: token,
+      }),
+    });
+    const data = await res.json();
+    return data.success === true && (data.score ?? 0) >= 0.5;
+  } catch {
+    return false;
+  }
+}
+
 export async function POST(request: NextRequest) {
   if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) {
     return NextResponse.json(
@@ -51,7 +70,7 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  let body: { name?: string; email?: string; phone?: string; message?: string; locale?: string };
+  let body: { name?: string; email?: string; phone?: string; message?: string; locale?: string; recaptchaToken?: string };
   try {
     body = await request.json();
   } catch {
@@ -61,12 +80,28 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const { name, email, phone, message, locale = "tr" } = body;
+  const { name, email, phone, message, locale = "tr", recaptchaToken } = body;
   if (!name?.trim() || !email?.trim() || !message?.trim()) {
     return NextResponse.json(
       { success: false, message: "Ad, e-posta ve mesaj zorunludur." },
       { status: 400 }
     );
+  }
+
+  if (RECAPTCHA_SECRET_KEY) {
+    if (!recaptchaToken?.trim()) {
+      return NextResponse.json(
+        { success: false, message: "Güvenlik doğrulaması eksik. Lütfen sayfayı yenileyip tekrar deneyin." },
+        { status: 400 }
+      );
+    }
+    const verified = await verifyRecaptcha(recaptchaToken);
+    if (!verified) {
+      return NextResponse.json(
+        { success: false, message: "Güvenlik doğrulaması başarısız. Lütfen tekrar deneyin." },
+        { status: 400 }
+      );
+    }
   }
 
   const transporter = nodemailer.createTransport({

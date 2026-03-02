@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin } from "lucide-react";
-import Newsletter from "./Newsletter";
 import { PRODUCT_CATEGORY_IDS } from "@/data/products";
 
 /** Kategori id (slug) → products.* çeviri anahtarı (camelCase) */
@@ -23,9 +22,8 @@ export default function Footer() {
     <footer className="bg-dark-950 text-white mt-20">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Brand + Newsletter */}
-          <div className="col-span-1 md:col-span-2 space-y-8">
-            <div>
+          {/* Brand */}
+          <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-display font-bold mb-4">ASIALUX</h3>
             <p className="text-gray-400 mb-4 max-w-md">
               {t("description")}
@@ -56,8 +54,6 @@ export default function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
-          </div>
-          <Newsletter />
           </div>
 
           {/* Company / Quick Links */}
