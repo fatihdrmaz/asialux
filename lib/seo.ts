@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { locales, type Locale } from "@/i18n";
 
-const DEFAULT_SITE_URL = "https://asialux.com.tr";
+const DEFAULT_SITE_URL = "https://www.asialux.com.tr";
 
 /** Production site base URL (no trailing slash) */
 export function getBaseUrl(): string {
