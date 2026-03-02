@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import { getBaseUrl } from "@/lib/seo";
 
 const SMTP_HOST = process.env.SMTP_HOST;
 const SMTP_PORT = Number(process.env.SMTP_PORT) || 587;
@@ -7,6 +8,40 @@ const SMTP_USER = process.env.SMTP_USER;
 const SMTP_PASS = process.env.SMTP_PASS;
 /** Alıcı e-posta (form mesajlarının gideceği adres). Boşsa SMTP_USER kullanılır. */
 const CONTACT_EMAIL = process.env.CONTACT_EMAIL || SMTP_USER;
+
+/** Formu dolduran kişiye giden otomatik yanıt e-postası metinleri */
+const AUTO_REPLY: Record<string, { subject: string; greeting: string; body: string; closing: string }> = {
+  tr: {
+    subject: "Asialux - Mesajınız Alındı",
+    greeting: "Merhaba",
+    body: "İletişim formu üzerinden gönderdiğiniz mesajınız tarafımıza ulaşmıştır. Talebiniz en kısa sürede değerlendirilecek ve size dönüş yapılacaktır.",
+    closing: "Saygılarımızla,\nAsialux Lighting Design",
+  },
+  en: {
+    subject: "Asialux - Your Message Has Been Received",
+    greeting: "Hello",
+    body: "We have received your message submitted through our contact form. Your request will be reviewed as soon as possible and we will get back to you.",
+    closing: "Best regards,\nAsialux Lighting Design",
+  },
+  ar: {
+    subject: "أسيا لوكس - تم استلام رسالتك",
+    greeting: "مرحباً",
+    body: "لقد استلمنا رسالتك المرسلة عبر نموذج الاتصال. سيتم مراجعة طلبك في أقرب وقت وسنتواصل معك.",
+    closing: "مع أطيب التحيات،\nأسيا لوكس للتصميم الإضاءة",
+  },
+  de: {
+    subject: "Asialux - Ihre Nachricht wurde empfangen",
+    greeting: "Hallo",
+    body: "Wir haben Ihre über das Kontaktformular gesendete Nachricht erhalten. Ihre Anfrage wird so schnell wie möglich bearbeitet und wir werden uns bei Ihnen melden.",
+    closing: "Mit freundlichen Grüßen,\nAsialux Lighting Design",
+  },
+  ru: {
+    subject: "Asialux - Ваше сообщение получено",
+    greeting: "Здравствуйте",
+    body: "Мы получили ваше сообщение, отправленное через форму обратной связи. Ваш запрос будет рассмотрен в ближайшее время, и мы свяжемся с вами.",
+    closing: "С уважением,\nAsialux Lighting Design",
+  },
+};
 
 export async function POST(request: NextRequest) {
   if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) {
@@ -16,7 +51,7 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  let body: { name?: string; email?: string; phone?: string; message?: string };
+  let body: { name?: string; email?: string; phone?: string; message?: string; locale?: string };
   try {
     body = await request.json();
   } catch {
@@ -26,7 +61,7 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const { name, email, phone, message } = body;
+  const { name, email, phone, message, locale = "tr" } = body;
   if (!name?.trim() || !email?.trim() || !message?.trim()) {
     return NextResponse.json(
       { success: false, message: "Ad, e-posta ve mesaj zorunludur." },
@@ -64,6 +99,34 @@ export async function POST(request: NextRequest) {
     <p>${escapeHtml(message.trim()).replace(/\n/g, "<br>")}</p>
   `;
 
+  const autoReply = AUTO_REPLY[locale] ?? AUTO_REPLY.tr;
+  const baseUrl = getBaseUrl();
+  const autoReplyText = [
+    `${autoReply.greeting} ${name.trim()},`,
+    "",
+    autoReply.body,
+    "",
+    "—",
+    autoReply.closing,
+    "",
+    "Asialux Lighting Design",
+    baseUrl,
+    "bilgi@asialux.com.tr | +90 212 244 06 05",
+  ].join("\n");
+
+  const autoReplyHtml = `
+    <p>${autoReply.greeting} ${escapeHtml(name.trim())},</p>
+    <p>${autoReply.body.replace(/\n/g, "<br>")}</p>
+    <p>—</p>
+    <p>${autoReply.closing.replace(/\n/g, "<br>")}</p>
+    <hr style="border:none;border-top:1px solid #eee;margin:20px 0" />
+    <p style="color:#666;font-size:14px">
+      <strong>Asialux Lighting Design</strong><br />
+      <a href="${escapeHtml(baseUrl)}">${escapeHtml(baseUrl.replace(/^https?:\/\//, ""))}</a><br />
+      bilgi@asialux.com.tr | +90 212 244 06 05
+    </p>
+  `;
+
   try {
     await transporter.sendMail({
       from: `"Asialux İletişim" <${SMTP_USER}>`,
@@ -73,6 +136,15 @@ export async function POST(request: NextRequest) {
       text,
       html,
     });
+
+    await transporter.sendMail({
+      from: `"Asialux" <${SMTP_USER}>`,
+      to: email.trim(),
+      subject: autoReply.subject,
+      text: autoReplyText,
+      html: autoReplyHtml,
+    });
+
     return NextResponse.json({ success: true });
   } catch (err) {
     console.error("Contact form SMTP error:", err);

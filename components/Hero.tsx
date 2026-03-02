@@ -31,8 +31,8 @@ export default function Hero() {
             onError={() => setHeroSrc(HERO_IMAGE_FALLBACK)}
           />
         </div>
-        {/* Hafif gradient sadece metin okunaklılığı için */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+        {/* Metin okunaklılığı: hafif koyu overlay (beyaz alanlarda da okunabilir) */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/15 to-transparent" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10 pt-24 md:pt-32">
@@ -67,7 +67,7 @@ export default function Hero() {
               visible: { opacity: 1, y: 0 },
             }}
             transition={{ duration: 0.7 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6 text-white leading-[1.1] tracking-tight drop-shadow-lg"
+            className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6 text-white leading-[1.1] tracking-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]"
           >
             <span className="text-gradient">{t("title")}</span>
           </motion.h1>
@@ -78,7 +78,7 @@ export default function Hero() {
               visible: { opacity: 1, y: 0 },
             }}
             transition={{ duration: 0.6 }}
-            className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto font-medium"
+            className="text-xl md:text-2xl text-white/95 mb-8 max-w-2xl mx-auto font-medium drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]"
           >
             {t("subtitle")}
           </motion.p>
