@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "الرئيسية",
+    "search": "البحث عن المنتجات",
     "products": "المنتجات",
     "applications": "تطبيقاتنا",
     "projects": "المشاريع",
@@ -31,7 +32,16 @@
     "lampShade": "أباجور ومصابيح أرضية",
     "bronzeCollection": "مجموعة برونزية",
     "industrialLighting": "إضاءة صناعية",
-    "emergencyLighting": "إضاءة الطوارئ واللافتات"
+    "emergencyLighting": "إضاءة الطوارئ واللافتات",
+    "searchByCode": "البحث عن المنتجات",
+    "searchByCodePlaceholder": "الرمز أو الاسم (مثال: MR 10, LUCA)",
+    "searchByCodeButton": "بحث",
+    "searchByCodeNotFound": "لم يتم العثور على منتجات لهذا البحث.",
+    "searchByCodeHint": "ابحث برمز المنتج أو الاسم (مثال: MR 10, LUCA).",
+    "searchTitle": "البحث عن المنتجات",
+    "searchResultsTitle": "نتائج \"{query}\"",
+    "searchResultsCount": "تم العثور على {count} منتج",
+    "searchHint": "أدخل رمز المنتج أو الاسم أعلاه وانقر على بحث."
   },
   "applications": {
     "title": "مجالات التطبيق",

@@ -324,87 +324,87 @@ export const outdoorProducts: Product[] = [
   { id: "mo-136", name: "JİWA SERİSİ MO 136 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 136", listImagePath: "/images/products/dis-mekan/MO%20136/001-jiwa-serisi-mo-136-dis-mekan-aplik.jpg" },
 ];
 
-/** Aplik (wall-light): public/images/products/APLİK alt klasörleri — Masialux Özel Koleksiyon Aplik ile eşleşir */
-const APLIK_FOLDER = "APLİK";
+/** Aplik (wall-light): public/images/products/aplik — Masialux Özel Koleksiyon Aplik ile eşleşir */
+const APLIK_FOLDER = "aplik";
 function aplikListImagePath(subfolder: string, firstImage: string): string {
-  return `/images/products/${encodeURIComponent(APLIK_FOLDER)}/${encodeURIComponent(subfolder)}/${encodeURIComponent(firstImage)}`;
+  return `/images/products/${APLIK_FOLDER}/${encodeURIComponent(subfolder)}/${encodeURIComponent(firstImage)}`;
 }
 
 export const wallLightProducts: Product[] = [
-  { id: "me-1000", name: "Aplik ME 1000", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 1000", listImagePath: aplikListImagePath("ME 1000", "001.ME 1000.jpg") },
-  { id: "me-150", name: "Aplik ME 150", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 150", listImagePath: aplikListImagePath("ME 150", "001.ME 150-masialux aplik.jpg") },
-  { id: "me-152", name: "Aplik ME 152", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 152", listImagePath: aplikListImagePath("ME 152", "001.ME 152.jpg") },
-  { id: "me-153", name: "Aplik ME 153", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 153", listImagePath: aplikListImagePath("ME 153", "001.ME 153.jpg") },
-  { id: "me-153-1", name: "Aplik ME 153-1", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 153-1", listImagePath: aplikListImagePath("ME 153-1", "001.ME 153-1.jpg") },
-  { id: "me-154", name: "Aplik ME 154", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 154", listImagePath: aplikListImagePath("ME 154", "001.ME 154.jpg") },
-  { id: "me-155", name: "Aplik ME 155", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 155", listImagePath: aplikListImagePath("ME 155", "001.ME 155.jpg") },
-  { id: "me-156", name: "Aplik ME 156", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 156", listImagePath: aplikListImagePath("ME 156", "001.ME 156.jpg") },
-  { id: "me-158", name: "Aplik ME 158", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 158", listImagePath: aplikListImagePath("ME 158", "001.ME 158.jpg") },
-  { id: "me-159", name: "Aplik ME 159", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 159", listImagePath: aplikListImagePath("ME 159", "001.ME 159.jpg") },
-  { id: "me-160", name: "Aplik ME 160", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 160", listImagePath: aplikListImagePath("ME 160", "001.ME 160.jpg") },
-  { id: "me-161", name: "Aplik ME 161", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 161", listImagePath: aplikListImagePath("ME 161", "001.ME 161.jpg") },
-  { id: "me-162", name: "Aplik ME 162", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 162", listImagePath: aplikListImagePath("ME 162", "001.ME 162.jpg") },
-  { id: "me-163", name: "Aplik ME 163", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 163", listImagePath: aplikListImagePath("ME 163", "001.ME 163.jpg") },
-  { id: "me-164", name: "Aplik ME 164", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 164", listImagePath: aplikListImagePath("ME 164", "001.ME 164.jpg") },
-  { id: "me-165", name: "Aplik ME 165", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 165", listImagePath: aplikListImagePath("ME 165", "001.ME 165.jpg") },
-  { id: "me-166", name: "Aplik ME 166", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 166", listImagePath: aplikListImagePath("ME 166", "001.ME 166-masialux aplik.jpg") },
-  { id: "me-171", name: "Aplik ME 171", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 171", listImagePath: aplikListImagePath("ME 171", "001.ME 171-masialux aplik.jpg") },
-  { id: "me-172", name: "Aplik ME 172", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 172", listImagePath: aplikListImagePath("ME 172", "001.ME 172.jpg") },
-  { id: "me-173", name: "Aplik ME 173", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 173", listImagePath: aplikListImagePath("ME 173", "001.ME 173.jpg") },
-  { id: "me-175", name: "Aplik ME 175", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 175", listImagePath: aplikListImagePath("ME 175", "001.ME 175.jpg") },
-  { id: "me-177", name: "Aplik ME 177", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 177", listImagePath: aplikListImagePath("ME 177", "001.ME 177.jpg") },
-  { id: "me-188", name: "Aplik ME 188", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 188", listImagePath: aplikListImagePath("ME 188", "001.ME 188.jpg") },
-  { id: "me-240", name: "Aplik ME 240", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 240", listImagePath: aplikListImagePath("ME 240", "001.ME 240-masialux aplik.jpg") },
-  { id: "me-324", name: "Aplik ME 324", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 324", listImagePath: aplikListImagePath("ME 324", "001.ME 324.jpg") },
-  { id: "me-325", name: "Aplik ME 325", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 325", listImagePath: aplikListImagePath("ME 325", "001.ME 325.jpg") },
-  { id: "me-326", name: "Aplik ME 326", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 326", listImagePath: aplikListImagePath("ME 326", "001.ME 326-masialux aplik.jpg") },
-  { id: "me-327", name: "Aplik ME 327", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 327", listImagePath: aplikListImagePath("ME 327", "001.ME 327-masialux aplik.jpg") },
-  { id: "me-328", name: "Aplik ME 328", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 328", listImagePath: aplikListImagePath("ME 328", "001.ME 328-masialux aplik.jpg") },
-  { id: "me-330", name: "Aplik ME 330", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 330", listImagePath: aplikListImagePath("ME 330", "001.ME 330-masialux aplik.jpg") },
-  { id: "me-331", name: "Aplik ME 331", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 331", listImagePath: aplikListImagePath("ME 331", "001.ME 331.jpg") },
-  { id: "me-334", name: "Aplik ME 334", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 334", listImagePath: aplikListImagePath("ME 334", "001.ME 334-aplik.jpg") },
-  { id: "me-335", name: "Aplik ME 335", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 335", listImagePath: aplikListImagePath("ME 335", "001.ME 335-aplik.jpg") },
-  { id: "me-748", name: "Aplik ME 748", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 748", listImagePath: aplikListImagePath("ME 748", "001.ME 748-masialux aplik.jpg") },
-  { id: "me-749", name: "Aplik ME 749", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 749", listImagePath: aplikListImagePath("ME 749", "01.ME 749-masialux aplik.jpg") },
-  { id: "me-751", name: "Aplik ME 751", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 751", listImagePath: aplikListImagePath("ME 751", "001.Masalux Aplik-ME 751.jpg") },
-  { id: "me-753", name: "Aplik ME 753", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 753", listImagePath: aplikListImagePath("ME 753", "001.ME 753.jpg") },
-  { id: "me-754", name: "Aplik ME 754", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 754", listImagePath: aplikListImagePath("ME 754", "01.ME 754-masialux aplik.jpg") },
-  { id: "me-755", name: "Özel Koleksiyon Aplik ME 755", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 755", listImagePath: aplikListImagePath("ME 755", "001.ME 755.jpg") },
-  { id: "me-756", name: "Aplik ME 756", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 756", listImagePath: aplikListImagePath("ME 756", "001.ME 756.jpg") },
-  { id: "me-757", name: "Özel Koleksiyon Aplik ME 757", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 757", listImagePath: aplikListImagePath("ME 757", "001.ME 757.jpg") },
-  { id: "me-780", name: "Aplik ME 780", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 780", listImagePath: aplikListImagePath("ME 780", "001.ME 780.jpg") },
-  { id: "me-909", name: "Aplik ME 909", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 909", listImagePath: aplikListImagePath("ME 909", "001.ME 909.jpg") },
-  { id: "me-990", name: "Özel Koleksiyon Aplik ME 990", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 990", listImagePath: aplikListImagePath("ME 990", "001.ME 990.jpg") },
-  { id: "me-991", name: "Özel Koleksiyon Aplik ME 991", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 991", listImagePath: aplikListImagePath("ME 991", "001.ME 991.jpg") },
-  { id: "me-992", name: "Özel Koleksiyon Aplik ME 992", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 992", listImagePath: aplikListImagePath("ME 992", "001.ME 992.jpg") },
-  { id: "me-993", name: "Özel Koleksiyon Aplik ME 993", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 993", listImagePath: aplikListImagePath("ME 993", "001.ME 993.jpg") },
-  { id: "me-994", name: "Özel Koleksiyon Aplik ME 994", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 994", listImagePath: aplikListImagePath("ME 994", "001.ME 994.jpg") },
-  { id: "me-995", name: "Özel Koleksiyon Aplik ME 995", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 995", listImagePath: aplikListImagePath("ME 995", "001.ME 995.jpg") },
-  { id: "me-996", name: "Özel Koleksiyon Aplik ME 996", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 996", listImagePath: aplikListImagePath("ME 996", "001.ME 996.jpg") },
-  { id: "me-997", name: "Özel Koleksiyon Aplik ME 997", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 997", listImagePath: aplikListImagePath("ME 997", "001.ME 997.jpg") },
-  { id: "me-998", name: "Özel Koleksiyon Aplik ME 998", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 998", listImagePath: aplikListImagePath("ME 998", "001.ME 998.jpg") },
-  { id: "me-999", name: "Özel Koleksiyon Aplik ME 999", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 999", listImagePath: aplikListImagePath("ME 999", "001.ME 999.jpg") },
+  { id: "me-1000", name: "Aplik ME 1000", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 1000", listImagePath: aplikListImagePath("ME 1000", "001-me-1000.jpg") },
+  { id: "me-150", name: "Aplik ME 150", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 150", listImagePath: aplikListImagePath("ME 150", "001-me-150-masialux-aplik.jpg") },
+  { id: "me-152", name: "Aplik ME 152", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 152", listImagePath: aplikListImagePath("ME 152", "001-me-152.jpg") },
+  { id: "me-153", name: "Aplik ME 153", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 153", listImagePath: aplikListImagePath("ME 153", "001-me-153.jpg") },
+  { id: "me-153-1", name: "Aplik ME 153-1", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 153-1", listImagePath: aplikListImagePath("ME 153-1", "001-me-153-1.jpg") },
+  { id: "me-154", name: "Aplik ME 154", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 154", listImagePath: aplikListImagePath("ME 154", "001-me-154.jpg") },
+  { id: "me-155", name: "Aplik ME 155", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 155", listImagePath: aplikListImagePath("ME 155", "001-me-155.jpg") },
+  { id: "me-156", name: "Aplik ME 156", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 156", listImagePath: aplikListImagePath("ME 156", "001-me-156.jpg") },
+  { id: "me-158", name: "Aplik ME 158", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 158", listImagePath: aplikListImagePath("ME 158", "001-me-158.jpg") },
+  { id: "me-159", name: "Aplik ME 159", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 159", listImagePath: aplikListImagePath("ME 159", "001-me-159.jpg") },
+  { id: "me-160", name: "Aplik ME 160", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 160", listImagePath: aplikListImagePath("ME 160", "001-me-160.jpg") },
+  { id: "me-161", name: "Aplik ME 161", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 161", listImagePath: aplikListImagePath("ME 161", "001-me-161.jpg") },
+  { id: "me-162", name: "Aplik ME 162", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 162", listImagePath: aplikListImagePath("ME 162", "001-me-162.jpg") },
+  { id: "me-163", name: "Aplik ME 163", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 163", listImagePath: aplikListImagePath("ME 163", "001-me-163.jpg") },
+  { id: "me-164", name: "Aplik ME 164", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 164", listImagePath: aplikListImagePath("ME 164", "001-me-164.jpg") },
+  { id: "me-165", name: "Aplik ME 165", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 165", listImagePath: aplikListImagePath("ME 165", "001-me-165.jpg") },
+  { id: "me-166", name: "Aplik ME 166", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 166", listImagePath: aplikListImagePath("ME 166", "001-me-166-masialux-aplik.jpg") },
+  { id: "me-171", name: "Aplik ME 171", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 171", listImagePath: aplikListImagePath("ME 171", "001-me-171-masialux-aplik.jpg") },
+  { id: "me-172", name: "Aplik ME 172", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 172", listImagePath: aplikListImagePath("ME 172", "001-me-172.jpg") },
+  { id: "me-173", name: "Aplik ME 173", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 173", listImagePath: aplikListImagePath("ME 173", "001-me-173.jpg") },
+  { id: "me-175", name: "Aplik ME 175", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 175", listImagePath: aplikListImagePath("ME 175", "001-me-175.jpg") },
+  { id: "me-177", name: "Aplik ME 177", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 177", listImagePath: aplikListImagePath("ME 177", "001-me-177.jpg") },
+  { id: "me-188", name: "Aplik ME 188", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 188", listImagePath: aplikListImagePath("ME 188", "001-me-188.jpg") },
+  { id: "me-240", name: "Aplik ME 240", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 240", listImagePath: aplikListImagePath("ME 240", "001-me-240-masialux-aplik.jpg") },
+  { id: "me-324", name: "Aplik ME 324", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 324", listImagePath: aplikListImagePath("ME 324", "001-me-324.jpg") },
+  { id: "me-325", name: "Aplik ME 325", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 325", listImagePath: aplikListImagePath("ME 325", "001-me-325.jpg") },
+  { id: "me-326", name: "Aplik ME 326", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 326", listImagePath: aplikListImagePath("ME 326", "001-me-326-masialux-aplik.jpg") },
+  { id: "me-327", name: "Aplik ME 327", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 327", listImagePath: aplikListImagePath("ME 327", "001-me-327-masialux-aplik.jpg") },
+  { id: "me-328", name: "Aplik ME 328", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 328", listImagePath: aplikListImagePath("ME 328", "001-me-328-masialux-aplik.jpg") },
+  { id: "me-330", name: "Aplik ME 330", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 330", listImagePath: aplikListImagePath("ME 330", "001-me-330-masialux-aplik.jpg") },
+  { id: "me-331", name: "Aplik ME 331", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 331", listImagePath: aplikListImagePath("ME 331", "001-me-331.jpg") },
+  { id: "me-334", name: "Aplik ME 334", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 334", listImagePath: aplikListImagePath("ME 334", "001-me-334-aplik.jpg") },
+  { id: "me-335", name: "Aplik ME 335", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 335", listImagePath: aplikListImagePath("ME 335", "001-me-335-aplik.jpg") },
+  { id: "me-748", name: "Aplik ME 748", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 748", listImagePath: aplikListImagePath("ME 748", "001-me-748-masialux-aplik.jpg") },
+  { id: "me-749", name: "Aplik ME 749", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 749", listImagePath: aplikListImagePath("ME 749", "01-me-749-masialux-aplik.jpg") },
+  { id: "me-751", name: "Aplik ME 751", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 751", listImagePath: aplikListImagePath("ME 751", "001-masalux-aplik-me-751.jpg") },
+  { id: "me-753", name: "Aplik ME 753", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 753", listImagePath: aplikListImagePath("ME 753", "001-me-753.jpg") },
+  { id: "me-754", name: "Aplik ME 754", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 754", listImagePath: aplikListImagePath("ME 754", "01-me-754-masialux-aplik.jpg") },
+  { id: "me-755", name: "Özel Koleksiyon Aplik ME 755", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 755", listImagePath: aplikListImagePath("ME 755", "001-me-755.jpg") },
+  { id: "me-756", name: "Aplik ME 756", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 756", listImagePath: aplikListImagePath("ME 756", "001-me-756.jpg") },
+  { id: "me-757", name: "Özel Koleksiyon Aplik ME 757", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 757", listImagePath: aplikListImagePath("ME 757", "001-me-757.jpg") },
+  { id: "me-780", name: "Aplik ME 780", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 780", listImagePath: aplikListImagePath("ME 780", "001-me-780.jpg") },
+  { id: "me-909", name: "Aplik ME 909", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 909", listImagePath: aplikListImagePath("ME 909", "001-me-909.jpg") },
+  { id: "me-990", name: "Özel Koleksiyon Aplik ME 990", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 990", listImagePath: aplikListImagePath("ME 990", "001-me-990.jpg") },
+  { id: "me-991", name: "Özel Koleksiyon Aplik ME 991", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 991", listImagePath: aplikListImagePath("ME 991", "001-me-991.jpg") },
+  { id: "me-992", name: "Özel Koleksiyon Aplik ME 992", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 992", listImagePath: aplikListImagePath("ME 992", "001-me-992.jpg") },
+  { id: "me-993", name: "Özel Koleksiyon Aplik ME 993", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 993", listImagePath: aplikListImagePath("ME 993", "001-me-993.jpg") },
+  { id: "me-994", name: "Özel Koleksiyon Aplik ME 994", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 994", listImagePath: aplikListImagePath("ME 994", "001-me-994.jpg") },
+  { id: "me-995", name: "Özel Koleksiyon Aplik ME 995", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 995", listImagePath: aplikListImagePath("ME 995", "001-me-995.jpg") },
+  { id: "me-996", name: "Özel Koleksiyon Aplik ME 996", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 996", listImagePath: aplikListImagePath("ME 996", "001-me-996.jpg") },
+  { id: "me-997", name: "Özel Koleksiyon Aplik ME 997", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 997", listImagePath: aplikListImagePath("ME 997", "001-me-997.jpg") },
+  { id: "me-998", name: "Özel Koleksiyon Aplik ME 998", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 998", listImagePath: aplikListImagePath("ME 998", "001-me-998.jpg") },
+  { id: "me-999", name: "Özel Koleksiyon Aplik ME 999", category: "Aplik Aydınlatma", categorySlug: "wall-light", code: "ME 999", listImagePath: aplikListImagePath("ME 999", "001-me-999.jpg") },
 ];
 
-/** Bronz Koleksiyon: public/images/products/Bronz Koleksiyon — Masialux ozel-koleksiyon/bronz ile eşleşir */
-const BRONZ_FOLDER = "Bronz Koleksiyon";
+/** Bronz Koleksiyon: public/images/products/bronz-koleksiyon — Masialux ozel-koleksiyon/bronz ile eşleşir */
+const BRONZ_FOLDER = "bronz-koleksiyon";
 function bronzListImagePath(subfolder: string, firstImage: string): string {
   return `/images/products/${encodeURIComponent(BRONZ_FOLDER)}/${encodeURIComponent(subfolder)}/${encodeURIComponent(firstImage)}`;
 }
 
-// Dosya adları: SERİSİ = I + combining dot above (U+0307) — klasördeki gerçek isimle eşleşir
+// Dosya adları: bronz-koleksiyon klasöründeki gerçek isimlerle eşleşir
 const BRONZ_IMG = (sub: string, file: string) => bronzListImagePath(sub, file);
 export const bronzeCollectionProducts: Product[] = [
-  { id: "mb-100-100", name: "Bronz Koleksiyon | MB 100-100 RAY SPOT", category: "Bronz Koleksiyon", categorySlug: "bronze-collection", code: "MB 100-100", listImagePath: BRONZ_IMG("MB 100-100", "001.BRONZ SERI\u0307SI\u0307 MB 100-100 RAY SPOT.jpg") },
-  { id: "mb-100-60", name: "Bronz Koleksiyon | MB 100-60 RAY SPOT", category: "Bronz Koleksiyon", categorySlug: "bronze-collection", code: "MB 100-60", listImagePath: BRONZ_IMG("MB 100-60", "001.BRONZ SERI\u0307SI\u0307 MB 100-60 RAY SPOT.jpg") },
-  { id: "mb-100-85", name: "Bronz Koleksiyon | MB 100-85 RAY SPOT", category: "Bronz Koleksiyon", categorySlug: "bronze-collection", code: "MB 100-85", listImagePath: BRONZ_IMG("MB 100-85", "001.BRONZ SERI\u0307SI\u0307 MB 100-85 RAY SPOT.jpg") },
-  { id: "mb-104-1", name: "Bronz Koleksiyon | MB 104-1 SIVA ALTI", category: "Bronz Koleksiyon", categorySlug: "bronze-collection", code: "MB 104-1", listImagePath: BRONZ_IMG("MB 104-1", "001.BRONZ SERI\u0307SI\u0307 MB 104-1 SIVA ALTI SPOT.jpg") },
-  { id: "mb-104-2", name: "Bronz Koleksiyon | MB 104-2 SIVA ALTI", category: "Bronz Koleksiyon", categorySlug: "bronze-collection", code: "MB 104-2", listImagePath: BRONZ_IMG("MB 104-2", "001.BRONZ SERI\u0307SI\u0307 MB 104-2 SIVA ALTI SPOT.jpg") },
-  { id: "mb-500", name: "Bronz Koleksiyon | MB 500 YARI SIVA ÜSTÜ", category: "Bronz Koleksiyon", categorySlug: "bronze-collection", code: "MB 500", listImagePath: BRONZ_IMG("MB 500", "001.BRONZ SERI\u0307SI\u0307 MB 500 SIVA U\u0308STU\u0308 SPOT.jpg") },
-  { id: "mb-506", name: "Bronz Koleksiyon | MB 506 YARI SIVA ÜSTÜ", category: "Bronz Koleksiyon", categorySlug: "bronze-collection", code: "MB 506", listImagePath: BRONZ_IMG("MB 506", "001.BRONZ SERI\u0307SI\u0307 MB 506 SIVA U\u0308STU\u0308 SPOT.jpg") },
-  { id: "mb-507", name: "Bronz Koleksiyon | MB 507 SIVA ÜSTÜ", category: "Bronz Koleksiyon", categorySlug: "bronze-collection", code: "MB 507", listImagePath: BRONZ_IMG("MB 507", "001.BRONZ SERI\u0307SI\u0307 MB 507 SIVA U\u0308STU\u0308 SPOT.jpg") },
-  { id: "mb-600-1", name: "Bronz Koleksiyon | MB 600-1 SIVA ÜSTÜ", category: "Bronz Koleksiyon", categorySlug: "bronze-collection", code: "MB 600-1", listImagePath: BRONZ_IMG("MB 600-1", "001.BRONZ SERI\u0307SI\u0307 MB 600-1 SIVA U\u0308STU\u0308 SPOT.jpg") },
-  { id: "mb-600-2", name: "Bronz Koleksiyon | MB 600-2 SIVA ÜSTÜ", category: "Bronz Koleksiyon", categorySlug: "bronze-collection", code: "MB 600-2", listImagePath: BRONZ_IMG("MB 600-2", "001.BRONZ SERI\u0307SI\u0307 MB 600-2 SIVA U\u0308STU\u0308 SPOT.jpg") },
+  { id: "mb-100-100", name: "Bronz Koleksiyon | MB 100-100 RAY SPOT", category: "Bronz Koleksiyon", categorySlug: "bronze-collection", code: "MB 100-100", listImagePath: BRONZ_IMG("MB 100-100", "001-bronz-serisi-mb-100-100-ray-spot.jpg") },
+  { id: "mb-100-60", name: "Bronz Koleksiyon | MB 100-60 RAY SPOT", category: "Bronz Koleksiyon", categorySlug: "bronze-collection", code: "MB 100-60", listImagePath: BRONZ_IMG("MB 100-60", "001-bronz-serisi-mb-100-60-ray-spot.jpg") },
+  { id: "mb-100-85", name: "Bronz Koleksiyon | MB 100-85 RAY SPOT", category: "Bronz Koleksiyon", categorySlug: "bronze-collection", code: "MB 100-85", listImagePath: BRONZ_IMG("MB 100-85", "001-bronz-serisi-mb-100-85-ray-spot.jpg") },
+  { id: "mb-104-1", name: "Bronz Koleksiyon | MB 104-1 SIVA ALTI", category: "Bronz Koleksiyon", categorySlug: "bronze-collection", code: "MB 104-1", listImagePath: BRONZ_IMG("MB 104-1", "001-bronz-serisi-mb-104-1-siva-alti-spot.jpg") },
+  { id: "mb-104-2", name: "Bronz Koleksiyon | MB 104-2 SIVA ALTI", category: "Bronz Koleksiyon", categorySlug: "bronze-collection", code: "MB 104-2", listImagePath: BRONZ_IMG("MB 104-2", "001-bronz-serisi-mb-104-2-siva-alti-spot.jpg") },
+  { id: "mb-500", name: "Bronz Koleksiyon | MB 500 YARI SIVA ÜSTÜ", category: "Bronz Koleksiyon", categorySlug: "bronze-collection", code: "MB 500", listImagePath: BRONZ_IMG("MB 500", "001-bronz-serisi-mb-500-siva-ustu-spot.jpg") },
+  { id: "mb-506", name: "Bronz Koleksiyon | MB 506 YARI SIVA ÜSTÜ", category: "Bronz Koleksiyon", categorySlug: "bronze-collection", code: "MB 506", listImagePath: BRONZ_IMG("MB 506", "001-bronz-serisi-mb-506-siva-ustu-spot.jpg") },
+  { id: "mb-507", name: "Bronz Koleksiyon | MB 507 SIVA ÜSTÜ", category: "Bronz Koleksiyon", categorySlug: "bronze-collection", code: "MB 507", listImagePath: BRONZ_IMG("MB 507", "001-bronz-serisi-mb-507-siva-ustu-spot.jpg") },
+  { id: "mb-600-1", name: "Bronz Koleksiyon | MB 600-1 SIVA ÜSTÜ", category: "Bronz Koleksiyon", categorySlug: "bronze-collection", code: "MB 600-1", listImagePath: BRONZ_IMG("MB 600-1", "001-bronz-serisi-mb-600-1-siva-ustu-spot.jpg") },
+  { id: "mb-600-2", name: "Bronz Koleksiyon | MB 600-2 SIVA ÜSTÜ", category: "Bronz Koleksiyon", categorySlug: "bronze-collection", code: "MB 600-2", listImagePath: BRONZ_IMG("MB 600-2", "001-bronz-serisi-mb-600-2-siva-ustu-spot.jpg") },
 ];
 
 /** Sarkıt: public/images/products/sarkit */
@@ -635,6 +635,17 @@ export const PRODUCT_CATEGORY_IDS: string[] = [
 export function getProductById(categorySlug: string, productId: string): Product | undefined {
   const list = getProductsByCategory(categorySlug);
   return list.find((p) => p.id === productId);
+}
+
+/** Kısmi eşleşme (kod veya isimde geçen). Boşluk normalize, büyük-küçük harf duyarsız. "mr 10" → MR 1001, MR 1002; "luca" → LUCA ürünleri. */
+export function searchProducts(query: string): Product[] {
+  const q = query.trim().replace(/\s+/g, " ").toUpperCase();
+  if (!q) return [];
+  return allProducts.filter((p) => {
+    const nameMatch = p.name.toUpperCase().includes(q);
+    const codeMatch = p.code ? p.code.replace(/\s+/g, " ").toUpperCase().includes(q) : false;
+    return nameMatch || codeMatch;
+  });
 }
 
 /** Diğer kategoriler (henüz klasör yok): placeholder */

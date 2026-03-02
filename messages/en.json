@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Home",
+    "search": "Search products",
     "products": "Products",
     "applications": "Our Applications",
     "projects": "Projects",
@@ -31,7 +32,16 @@
     "lampShade": "Lamp Shade & Floor Lamp",
     "bronzeCollection": "Bronze Collection",
     "industrialLighting": "Industrial Lighting",
-    "emergencyLighting": "Emergency Lighting & Signage"
+    "emergencyLighting": "Emergency Lighting & Signage",
+    "searchByCode": "Search products",
+    "searchByCodePlaceholder": "Code or name (e.g. MR 10, LUCA)",
+    "searchByCodeButton": "Search",
+    "searchByCodeNotFound": "No products found for this search.",
+    "searchByCodeHint": "Search by product code or name (e.g. MR 10, LUCA).",
+    "searchTitle": "Search Products",
+    "searchResultsTitle": "Results for \"{query}\"",
+    "searchResultsCount": "{count} products found",
+    "searchHint": "Enter a product code or name above and click Search."
   },
   "applications": {
     "title": "Application Areas",

@@ -28,17 +28,20 @@ const FALLBACK_BY_CATEGORY: Record<string, string> = {
 interface ProductGridProps {
   /** Sadece bu kategorideki ürünleri göster (örn. "ray-spot") */
   categorySlug?: string;
+  /** Doğrudan ürün listesi (arama sonuçları için) */
+  products?: Product[];
 }
 
-export default function ProductGrid({ categorySlug }: ProductGridProps) {
+export default function ProductGrid({ categorySlug, products: productsProp }: ProductGridProps) {
   const locale = useLocale();
   const tProducts = useTranslations("products");
   const [failedImages, setFailedImages] = useState<Set<string>>(new Set());
 
   const products = useMemo(() => {
+    if (productsProp?.length) return productsProp;
     if (categorySlug) return getProductsByCategory(categorySlug);
     return allProducts;
-  }, [categorySlug]);
+  }, [categorySlug, productsProp]);
 
   const getProductImage = (product: Product) => {
     if (failedImages.has(product.id)) {

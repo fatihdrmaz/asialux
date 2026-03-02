@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Startseite",
+    "search": "Produkte suchen",
     "products": "Produkte",
     "applications": "Anwendungen",
     "projects": "Projekte",
@@ -29,7 +30,16 @@
     "lampShade": "Lampenschirme & Stehlampen",
     "bronzeCollection": "Bronze Kollektion",
     "industrialLighting": "Industriebeleuchtung",
-    "emergencyLighting": "Notbeleuchtung & Beschilderung"
+    "emergencyLighting": "Notbeleuchtung & Beschilderung",
+    "searchByCode": "Produkte suchen",
+    "searchByCodePlaceholder": "Code oder Name (z. B. MR 10, LUCA)",
+    "searchByCodeButton": "Suchen",
+    "searchByCodeNotFound": "Keine Produkte für diese Suche gefunden.",
+    "searchByCodeHint": "Suchen Sie nach Produktcode oder Name (z. B. MR 10, LUCA).",
+    "searchTitle": "Produkte suchen",
+    "searchResultsTitle": "Ergebnisse für \"{query}\"",
+    "searchResultsCount": "{count} Produkte gefunden",
+    "searchHint": "Geben Sie oben einen Produktcode oder Namen ein und klicken Sie auf Suchen."
   },
   "applications": {
     "title": "Anwendungsbereiche",

@@ -1,11 +1,13 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
-import { Menu, X, Globe } from "lucide-react";
+import { Menu, X, Globe, Search } from "lucide-react";
 import { locales, type Locale } from "@/i18n";
+import ProductCodeSearch from "@/components/ProductCodeSearch";
 
 const localeNames: Record<Locale, string> = {
   tr: "TR",
@@ -19,9 +21,25 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   const langMenuRef = useRef<HTMLDivElement>(null);
   const langButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => setMounted(true), []);
+
+  // Cmd/Ctrl+K ile arama aç
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+        e.preventDefault();
+        setIsSearchOpen(true);
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -59,23 +77,26 @@ export default function Header() {
     };
   }, [isLangMenuOpen]);
 
-  // Mobile menu: scroll lock + Escape
+  // Mobile menu + Search overlay: scroll lock + Escape
   useEffect(() => {
-    if (isMenuOpen) {
+    if (isMenuOpen || isSearchOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
     }
 
     const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && isMenuOpen) setIsMenuOpen(false);
+      if (e.key === "Escape") {
+        if (isSearchOpen) setIsSearchOpen(false);
+        else if (isMenuOpen) setIsMenuOpen(false);
+      }
     };
     document.addEventListener("keydown", handleEscape);
     return () => {
       document.body.style.overflow = "";
       document.removeEventListener("keydown", handleEscape);
     };
-  }, [isMenuOpen]);
+  }, [isMenuOpen, isSearchOpen]);
 
   const closeMobileMenu = useCallback(() => setIsMenuOpen(false), []);
 
@@ -148,6 +169,15 @@ export default function Header() {
               {t("contact")}
             </Link>
 
+            {/* Search */}
+            <button
+              onClick={() => setIsSearchOpen(true)}
+              aria-label={t("search")}
+              className={`p-2 rounded-lg transition-colors ${isScrolled ? "text-gray-700 hover:bg-gray-100 hover:text-primary-600" : "text-gray-200 hover:bg-white/10 hover:text-white"}`}
+            >
+              <Search className="w-5 h-5" />
+            </button>
+
             {/* Language Selector */}
             <div className="relative">
               <button
@@ -185,80 +215,125 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMenuOpen((v) => !v)}
-            aria-expanded={isMenuOpen}
-            aria-controls="mobile-menu"
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className={`md:hidden ${isScrolled ? "text-gray-700" : "text-gray-200"}`}
-          >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          {/* Mobile: Search + Menu */}
+          <div className="flex items-center gap-2 md:hidden">
+            <button
+              onClick={() => setIsSearchOpen(true)}
+              aria-label={t("search")}
+              className={`p-2 rounded-lg transition-colors ${isScrolled ? "text-gray-700" : "text-gray-200"}`}
+            >
+              <Search className="w-5 h-5" />
+            </button>
+            <button
+              onClick={() => setIsMenuOpen((v) => !v)}
+              aria-expanded={isMenuOpen}
+              aria-controls="mobile-menu"
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              className={`p-2 rounded-lg transition-colors ${isScrolled ? "text-gray-700" : "text-gray-200"}`}
+            >
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
       </nav>
 
-      {/* Mobile Overlay */}
-      {isMenuOpen && (
-        <div
-          className="fixed inset-0 bg-black/40 z-[99] md:hidden"
-          onClick={closeMobileMenu}
-          aria-hidden="true"
-        />
-      )}
-
-      {/* Mobile Navigation */}
-      <div
-        id="mobile-menu"
-        role="dialog"
-        aria-modal="true"
-        className={`fixed top-[72px] left-0 right-0 bottom-0 z-[100] bg-white overflow-y-auto transition-transform duration-300 md:hidden ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <div className="px-4 py-6 space-y-1">
-          <Link href={localePath("/")} className="block py-3 text-gray-700 hover:text-primary-600 font-medium" onClick={closeMobileMenu}>
-            {t("home")}
-          </Link>
-          <Link href={localePath("/about")} className="block py-3 text-gray-700 hover:text-primary-600 font-medium" onClick={closeMobileMenu}>
-            {t("about")}
-          </Link>
-          <Link href={localePath("/products")} className="block py-3 text-gray-700 hover:text-primary-600 font-medium" onClick={closeMobileMenu}>
-            {t("products")}
-          </Link>
-            <Link
-              href={locale === "tr" ? "/applications" : `/${locale}/applications`}
-              className="block py-3 text-gray-700 hover:text-primary-600 font-medium"
-              onClick={closeMobileMenu}
+      {/* Search Overlay: Portal to body */}
+      {mounted &&
+        isSearchOpen &&
+        createPortal(
+          <div className="fixed inset-0 z-[10000] flex items-start justify-center pt-24 px-4">
+            <div
+              className="absolute inset-0 bg-black/50 backdrop-blur-sm"
+              onClick={() => setIsSearchOpen(false)}
+              aria-hidden="true"
+            />
+            <div
+              className="relative w-full max-w-xl bg-white rounded-2xl shadow-2xl p-6 animate-fade-in"
+              role="dialog"
+              aria-modal="true"
+              aria-label={t("search")}
             >
-            {t("applications")}
-          </Link>
-          <Link href={localePath("/blog")} className="block py-3 text-gray-700 hover:text-primary-600 font-medium" onClick={closeMobileMenu}>
-            {t("blog")}
-          </Link>
-          <Link href={localePath("/contact")} className="block py-3 text-gray-700 hover:text-primary-600 font-medium" onClick={closeMobileMenu}>
-            {t("contact")}
-          </Link>
-
-          <div className="mt-6 pt-6 border-t border-gray-200">
-            <div className="flex flex-wrap gap-2">
-              {locales.map((loc) => (
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="text-xl font-semibold text-dark-950">{t("search")}</h2>
                 <button
-                  key={loc}
-                  onClick={() => toggleLocale(loc)}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    locale === loc
-                      ? "bg-primary-600 text-white"
-                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                  }`}
+                  onClick={() => setIsSearchOpen(false)}
+                  aria-label="Close"
+                  className="p-2 rounded-lg text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-colors"
                 >
-                  {localeNames[loc]}
+                  <X className="w-5 h-5" />
                 </button>
-              ))}
+              </div>
+              <ProductCodeSearch onSubmitSuccess={() => setIsSearchOpen(false)} autoFocus />
             </div>
-          </div>
-        </div>
-      </div>
+          </div>,
+          document.body
+        )}
+
+      {/* Mobile Overlay + Menu: Portal to body so they're above all content */}
+      {mounted &&
+        createPortal(
+          <>
+            {isMenuOpen && (
+              <div
+                className="fixed inset-0 bg-black/40 z-[9998] md:hidden"
+                onClick={closeMobileMenu}
+                aria-hidden="true"
+              />
+            )}
+            <div
+              id="mobile-menu"
+              role="dialog"
+              aria-modal="true"
+              className={`fixed top-[72px] left-0 right-0 bottom-0 z-[9999] bg-white overflow-y-auto transition-transform duration-300 md:hidden ${
+                isMenuOpen ? "translate-x-0" : "translate-x-full"
+              }`}
+            >
+              <div className="px-4 py-6 space-y-1">
+                <Link href={localePath("/")} className="block py-3 text-gray-700 hover:text-primary-600 font-medium" onClick={closeMobileMenu}>
+                  {t("home")}
+                </Link>
+                <Link href={localePath("/about")} className="block py-3 text-gray-700 hover:text-primary-600 font-medium" onClick={closeMobileMenu}>
+                  {t("about")}
+                </Link>
+                <Link href={localePath("/products")} className="block py-3 text-gray-700 hover:text-primary-600 font-medium" onClick={closeMobileMenu}>
+                  {t("products")}
+                </Link>
+                <Link
+                  href={locale === "tr" ? "/applications" : `/${locale}/applications`}
+                  className="block py-3 text-gray-700 hover:text-primary-600 font-medium"
+                  onClick={closeMobileMenu}
+                >
+                  {t("applications")}
+                </Link>
+                <Link href={localePath("/blog")} className="block py-3 text-gray-700 hover:text-primary-600 font-medium" onClick={closeMobileMenu}>
+                  {t("blog")}
+                </Link>
+                <Link href={localePath("/contact")} className="block py-3 text-gray-700 hover:text-primary-600 font-medium" onClick={closeMobileMenu}>
+                  {t("contact")}
+                </Link>
+
+                <div className="mt-6 pt-6 border-t border-gray-200">
+                  <div className="flex flex-wrap gap-2">
+                    {locales.map((loc) => (
+                      <button
+                        key={loc}
+                        onClick={() => toggleLocale(loc)}
+                        className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                          locale === loc
+                            ? "bg-primary-600 text-white"
+                            : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                        }`}
+                      >
+                        {localeNames[loc]}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>,
+          document.body
+        )}
     </header>
   );
 }

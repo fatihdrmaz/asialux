@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Ana Sayfa",
+    "search": "Ürün ara",
     "products": "Ürünler",
     "applications": "Uygulamalarımız",
     "projects": "Projeler",
@@ -31,7 +32,16 @@
     "lampShade": "Abajur ve Lambader",
     "bronzeCollection": "Bronz Koleksiyon",
     "industrialLighting": "Endüstriyel Aydınlatma",
-    "emergencyLighting": "Acil Aydınlatma ve Yönlendirmeler"
+    "emergencyLighting": "Acil Aydınlatma ve Yönlendirmeler",
+    "searchByCode": "Ürün ara",
+    "searchByCodePlaceholder": "Kod veya isim (örn. MR 10, LUCA)",
+    "searchByCodeButton": "Ara",
+    "searchByCodeNotFound": "Bu aramayla ürün bulunamadı.",
+    "searchByCodeHint": "Ürün kodunu veya ismini yazarak arayabilirsiniz (örn. MR 10, LUCA).",
+    "searchTitle": "Ürün Ara",
+    "searchResultsTitle": "\"{query}\" arama sonuçları",
+    "searchResultsCount": "{count} ürün bulundu",
+    "searchHint": "Yukarıdaki alana ürün kodu veya ismi yazıp Ara'ya tıklayın."
   },
   "applications": {
     "title": "Uygulama Alanlarımız",

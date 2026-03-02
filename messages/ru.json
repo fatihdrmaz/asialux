@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Главная",
+    "search": "Поиск продукции",
     "products": "Продукция",
     "applications": "Применение",
     "projects": "Проекты",
@@ -29,7 +30,16 @@
     "lampShade": "Абажуры и напольные лампы",
     "bronzeCollection": "Бронзовая коллекция",
     "industrialLighting": "Промышленное освещение",
-    "emergencyLighting": "Аварийное освещение и указатели"
+    "emergencyLighting": "Аварийное освещение и указатели",
+    "searchByCode": "Поиск продуктов",
+    "searchByCodePlaceholder": "Код или название (напр. MR 10, LUCA)",
+    "searchByCodeButton": "Искать",
+    "searchByCodeNotFound": "Продукты по этому запросу не найдены.",
+    "searchByCodeHint": "Ищите по коду или названию продукта (напр. MR 10, LUCA).",
+    "searchTitle": "Поиск продуктов",
+    "searchResultsTitle": "Результаты по запросу \"{query}\"",
+    "searchResultsCount": "Найдено продуктов: {count}",
+    "searchHint": "Введите код или название продукта выше и нажмите Искать."
   },
   "applications": {
     "title": "Области применения",
