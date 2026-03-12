@@ -5,6 +5,7 @@ const withNextIntl = createNextIntlPlugin('./i18n.ts');
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    unoptimized: true,
     domains: ['asialux.com.tr', 'masialux.com', 'images.unsplash.com'],
     remotePatterns: [
       {
