@@ -126,6 +126,13 @@ export default function ProductGrid({ categorySlug, products: productsProp }: Pr
                 className="object-cover object-top group-hover:scale-110 transition-transform duration-500"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
               />
+              {product.isNew && (
+                <div className="absolute top-4 left-4">
+                  <span className="inline-flex items-center rounded-full bg-primary-600/95 text-white text-xs font-semibold px-3 py-1 shadow-md">
+                    Yeni
+                  </span>
+                </div>
+              )}
               <div className="absolute inset-0 bg-gradient-to-t from-dark-950/25 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="p-6 min-h-[140px] flex flex-col justify-end">

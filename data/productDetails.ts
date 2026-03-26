@@ -374,6 +374,197 @@ const detailMap: Record<string, ProductDetail> = {
       ],
     },
   },
+  "ray-spot/mr-1021-100": {
+    id: "mr-1021-100",
+    name: "ZENA SERİSİ MR 1021-100 RAY SPOT",
+    category: "Ray Spot",
+    categorySlug: "ray-spot",
+    code: "MR 1021-100",
+    subtitle: "Masialux Luca Serisi Ledli Ray Spot Armatür MR 1001 | 20W – 27W",
+    description:
+      "Masialux Ledli Ray Spot Armatür MR 1001, mağaza, ofis ve konut projelerinde yönlendirilebilir aydınlatma çözümü sunar. Alüminyum enjeksiyon gövde, yüksek saflıkta alüminyum reflektör ve elektrostatik toz boya ile üretilmiştir.",
+    images: [
+      "/images/products/ray-spot/MR%201021-100/001-zena-serisi-mr-1021-100-ray-spot.jpg",
+      "/images/products/ray-spot/MR%201021-100/001-zena-serisi-mr-1021-60-ray-spot.jpg",
+      "/images/products/ray-spot/MR%201021-100/001-zena-serisi-mr-1021-85-ray-spot.jpg",
+      "/images/products/ray-spot/MR%201021-100/002-zena-serisi-mr-1021-100-ray-spot.jpg",
+      "/images/products/ray-spot/MR%201021-100/002-zena-serisi-mr-1021-60-ray-spot.jpg",
+      "/images/products/ray-spot/MR%201021-100/002-zena-serisi-mr-1021-85-ray-spot.jpg",
+    ],
+    features: [
+      { label: "Gövde", value: "Alüminyum enjeksiyon gövde ve enjeksiyon kafa" },
+      { label: "Reflektör Tipi", value: "Yüksek saflıkta alüminyum reflektör" },
+      { label: "Uygulama Şekli", value: "Elektronik balast ile soket veya rozanslı" },
+      { label: "Boyama Tipi", value: "Elektrostatik toz boya" },
+      { label: "Kullanım Şekli", value: "Ray Spot" },
+    ],
+    technicalSpecs: [
+      { label: "Sürücü Akımı", value: "500 mA – 800 mA" },
+      { label: "Gerilim", value: "220V" },
+      { label: "Frekans", value: "50 Hz" },
+      { label: "Aktif Güç", value: "20W – 27W" },
+      { label: "Lümen", value: "2380 lm – 3150 lm" },
+      { label: "Işık Kaynağı", value: "Mid Power LED" },
+    ],
+    usageAreas: ["Dekorasyon", "Süpermarketler", "Mağazalar", "Evler"],
+    relatedIds: ["mr-801-100", "mr-418-1", "mr-801-85", "mr-601-100"],
+    downloads: [
+      { label: "Datasheet" },
+      { label: "Kullanım Kılavuzu" },
+      { label: "2D Çizim" },
+      { label: "3D Çizim" },
+      { label: "LDT Dosyaları" },
+    ],
+    bodyColorOptions: [
+      { label: "Siyah", value: "black" },
+      { label: "Beyaz", value: "white" },
+      { label: "RAL", value: "ral" },
+    ],
+    lightColorOptions: [
+      { label: "2700 K", kelvin: 2700 },
+      { label: "3000 K", kelvin: 3000 },
+      { label: "4000 K", kelvin: 4000 },
+      { label: "6500 K", kelvin: 6500 },
+    ],
+    mountingSafetyWarnings: [
+      "Ray spotunuzu;",
+      "Teslim alırken, fiziksel bir hasar olup olmadığını kontrol ediniz. Nakliye hasarlı ürünlerin değişimini kargodan ya da ambardan talep ediniz ve ürün ile birlikte gelmesi gereken aksesuarlar varsa tam olup olmadığını kontrol ediniz.",
+      "Orijinal kutusunu veya paketini, aksesuar ve faturasını daha sonraki servis ihtiyacında kullanmak üzere saklayınız.",
+      "Ürün barkodunun, model ve seri numarasının zarar görmemesine dikkat ediniz.",
+      "Bunların okunmaması veya yıpranmış olması durumunda ürününüz garanti kapsamına girmemektedir.",
+      "Ürün kullanım amaçları haricinde kullanılmamalıdır.",
+      "Satıcı firma, ürünün usulüne uygun olmayan bir şekilde kullanılması sonucu ortaya çıkabilecek yaralanma veya hasar görme vakalarında sorumluluk almaz.",
+      "Elektrik bağlantıları sadece ama sadece uzman personel tarafından yapılmalıdır.",
+      "Kurulurken elektrik bağlantısının kapalı olduğundan emin olunuz.",
+      "Güç kablolarının hasarlı olduğu durumda ürünü kullanmayınız. Aksi takdirde ölüm, ciddi yaralanma veya maddi hasara neden olabilir.",
+      "Montajına başlamadan önce kabloların ve ürünün dış çeperlerinin hasarlı olmadığından emin olunuz.",
+      "Etiket üzerinde belirtilen çalışma geriliminden yüksek bir gerilim almadığından emin olunuz.",
+      "Uyuşmazlık durumunda meydana gelebilecek arızalarda, satıcı firma sorumlu tutulamaz ve arıza garanti kapsamında değerlendirilemez.",
+      "Montaj için yalnızca firmamızın belirlediği ek aparatlar kullanılmalıdır.",
+      "Şebeke bağlantısı ilgili ülkenin tesisat yönetmeliğine uygun bağlantı malzemeleriyle yapılmalıdır.",
+      "Elektrik kaçağı olan yerlerde kullanmayın.",
+      "Kablo bağlantı noktaları bağlantı klemensleri veya eriyen bant ile mutlaka yalıtılmalıdır.",
+      "Tadilat, tamir, oynama veya herhangi bir fiziksel müdahalede bulunmayınız. Bu işlem sonucu maddi hasar oluşabileceği gibi, ürün garantisi de geçersiz kalacaktır.",
+    ],
+    importantWarnings: [
+      "Ray spot üründe meydana gelen herhangi bir arıza durumunda uzman yetkili servisimizle irtibata geçiniz.",
+      "Yetkili teknik servisimiz dışında ürüne kimsenin müdahale etmesine izin vermeyiniz. Bu tür müdahaleler sonucu ürün tümüyle garanti kapsamı dışında kalır.",
+      "Bu ürünün harici bükülgen kablo veya kordonu hasarlanırsa bir tehlikeden kaçınmak için yetkili kişi tarafından değiştirilmesi gerekir.",
+      "Ürün çalışır durumdayken yüzeyi sıcak olduğu için ürünün enerjisi kesilmelidir ve soğumadan dokunulmamalıdır. Ürün çalışır durumdayken direkt olarak bakmayınız.",
+      "Yüzeyi alkol, benzin gibi yanıcı maddelerle temizlemeyiniz.",
+      "Çocukların ulaşamayacakları yerlerde ve ürün kutusu içinde muhafaza ediniz.",
+    ],
+    warrantyTerms: {
+      title: "GARANTİ BELGESİ | Garanti Şartları",
+      items: [
+        "Ray Spot Ürününün;",
+        "Garanti süresi, ürünün fatura tarihinden itibaren başlar ve 2 yıldır.",
+        "Bütün parçaları dahil olmak üzere tamamı garanti kapsamına girer.",
+        "Ayıplı olduğunun anlaşılması durumunda tüketici, 6502 sayılı Tüketicinin Korunması Hakkında Kanunun 11. maddesinde yer alan; a) Ücretsiz onarımı yaptırmak. b) Onarımı yapılmadığı takdirde yeni ürünle değiştirilmesi.",
+        "Tüketicinin bu haklardan ücretsiz onarım durumunda satıcı; işçilik masrafı, değiştirilen parça bedeli ya da başka herhangi bir ad altında hiçbir ücret talep etmeksizin ürünün onarımını yaptırmakla yükümlüdür.",
+        "Garanti süresi içerisinde arızalanması durumunda, tamirde geçen süre garanti süresine eklenir. Ürünün tamir süresi 20 iş gününü geçemez.",
+        "Kullanma kılavuzunda yer alan hususlara aykırı kullanılmasından kaynaklanan arızalar garanti kapsamı dışındadır.",
+        "Arızalı ürünü garanti kapsamı dışına çıkaran kullanım hataları: Elektrik ve kullanıcının kullanımından doğan arızalar (elektrik kesilmesi, voltaj dalgalanması, makinaya ait olmayan aksesuar takılması yada kullanılması zorunlu olan aksesuarların kullanılmaması gibi), garantili ürünlerde yetkili servis dışında herhangi bir müdahalenin yapılması, garanti etiketi olan ürünlerde etiketin zarar görmesi, cihazın dış yüzeyinde oluşan kırık, çizik vb. nedenlerden meydana gelen arızalar, tozlu, rutubetli, aşırı sıcak ya da soğuk ortamlarda kullanılma sebebi ile oluşan arızalar, sel, yangın, deprem, yıldırım düşmesi vb. doğal afetlerin sebep olduğu arızalarda garanti kapsamı dışındadır.",
+      ],
+    },
+  },
+  "ray-spot/mr-1070": {
+    id: "mr-1070",
+    name: "GRADO SERİSİ MR 1070 RAY SPOT",
+    category: "Ray Spot",
+    categorySlug: "ray-spot",
+    code: "MR 1070",
+    subtitle: "Masialux Luca Serisi Ledli Ray Spot Armatür MR 1001 | 20W – 27W",
+    description:
+      "Masialux Ledli Ray Spot Armatür MR 1001, mağaza, ofis ve konut projelerinde yönlendirilebilir aydınlatma çözümü sunar. Alüminyum enjeksiyon gövde, yüksek saflıkta alüminyum reflektör ve elektrostatik toz boya ile üretilmiştir.",
+    images: [
+      "/images/products/ray-spot/MR%201070/001-grado-serisi-mr-1070-100-ray-spot.jpg",
+      "/images/products/ray-spot/MR%201070/001-grado-serisi-mr-1070-60-ray-spot.jpg",
+      "/images/products/ray-spot/MR%201070/001-grado-serisi-mr-1070-85-ray-spot.jpg",
+      "/images/products/ray-spot/MR%201070/002-grado-serisi-mr-1070-100-ray-spot.jpg",
+      "/images/products/ray-spot/MR%201070/002-grado-serisi-mr-1070-60-ray-spot.jpg",
+      "/images/products/ray-spot/MR%201070/002-grado-serisi-mr-1070-85-ray-spot.jpg",
+    ],
+    features: [
+      { label: "Gövde", value: "Alüminyum enjeksiyon gövde ve enjeksiyon kafa" },
+      { label: "Reflektör Tipi", value: "Yüksek saflıkta alüminyum reflektör" },
+      { label: "Uygulama Şekli", value: "Elektronik balast ile soket veya rozanslı" },
+      { label: "Boyama Tipi", value: "Elektrostatik toz boya" },
+      { label: "Kullanım Şekli", value: "Ray Spot" },
+    ],
+    technicalSpecs: [
+      { label: "Sürücü Akımı", value: "500 mA – 800 mA" },
+      { label: "Gerilim", value: "220V" },
+      { label: "Frekans", value: "50 Hz" },
+      { label: "Aktif Güç", value: "20W – 27W" },
+      { label: "Lümen", value: "2380 lm – 3150 lm" },
+      { label: "Işık Kaynağı", value: "Mid Power LED" },
+    ],
+    usageAreas: ["Dekorasyon", "Süpermarketler", "Mağazalar", "Evler"],
+    relatedIds: ["mr-801-100", "mr-418-1", "mr-801-85", "mr-601-100"],
+    downloads: [
+      { label: "Datasheet" },
+      { label: "Kullanım Kılavuzu" },
+      { label: "2D Çizim" },
+      { label: "3D Çizim" },
+      { label: "LDT Dosyaları" },
+    ],
+    bodyColorOptions: [
+      { label: "Siyah", value: "black" },
+      { label: "Beyaz", value: "white" },
+      { label: "RAL", value: "ral" },
+    ],
+    lightColorOptions: [
+      { label: "2700 K", kelvin: 2700 },
+      { label: "3000 K", kelvin: 3000 },
+      { label: "4000 K", kelvin: 4000 },
+      { label: "6500 K", kelvin: 6500 },
+    ],
+    mountingSafetyWarnings: [
+      "Ray spotunuzu;",
+      "Teslim alırken, fiziksel bir hasar olup olmadığını kontrol ediniz. Nakliye hasarlı ürünlerin değişimini kargodan ya da ambardan talep ediniz ve ürün ile birlikte gelmesi gereken aksesuarlar varsa tam olup olmadığını kontrol ediniz.",
+      "Orijinal kutusunu veya paketini, aksesuar ve faturasını daha sonraki servis ihtiyacında kullanmak üzere saklayınız.",
+      "Ürün barkodunun, model ve seri numarasının zarar görmemesine dikkat ediniz.",
+      "Bunların okunmaması veya yıpranmış olması durumunda ürününüz garanti kapsamına girmemektedir.",
+      "Ürün kullanım amaçları haricinde kullanılmamalıdır.",
+      "Satıcı firma, ürünün usulüne uygun olmayan bir şekilde kullanılması sonucu ortaya çıkabilecek yaralanma veya hasar görme vakalarında sorumluluk almaz.",
+      "Elektrik bağlantıları sadece ama sadece uzman personel tarafından yapılmalıdır.",
+      "Kurulurken elektrik bağlantısının kapalı olduğundan emin olunuz.",
+      "Güç kablolarının hasarlı olduğu durumda ürünü kullanmayınız. Aksi takdirde ölüm, ciddi yaralanma veya maddi hasara neden olabilir.",
+      "Montajına başlamadan önce kabloların ve ürünün dış çeperlerinin hasarlı olmadığından emin olunuz.",
+      "Etiket üzerinde belirtilen çalışma geriliminden yüksek bir gerilim almadığından emin olunuz.",
+      "Uyuşmazlık durumunda meydana gelebilecek arızalarda, satıcı firma sorumlu tutulamaz ve arıza garanti kapsamında değerlendirilemez.",
+      "Montaj için yalnızca firmamızın belirlediği ek aparatlar kullanılmalıdır.",
+      "Şebeke bağlantısı ilgili ülkenin tesisat yönetmeliğine uygun bağlantı malzemeleriyle yapılmalıdır.",
+      "Elektrik kaçağı olan yerlerde kullanmayın.",
+      "Kablo bağlantı noktaları bağlantı klemensleri veya eriyen bant ile mutlaka yalıtılmalıdır.",
+      "Tadilat, tamir, oynama veya herhangi bir fiziksel müdahalede bulunmayınız. Bu işlem sonucu maddi hasar oluşabileceği gibi, ürün garantisi de geçersiz kalacaktır.",
+    ],
+    importantWarnings: [
+      "Ray spot üründe meydana gelen herhangi bir arıza durumunda uzman yetkili servisimizle irtibata geçiniz.",
+      "Yetkili teknik servisimiz dışında ürüne kimsenin müdahale etmesine izin vermeyiniz. Bu tür müdahaleler sonucu ürün tümüyle garanti kapsamı dışında kalır.",
+      "Bu ürünün harici bükülgen kablo veya kordonu hasarlanırsa bir tehlikeden kaçınmak için yetkili kişi tarafından değiştirilmesi gerekir.",
+      "Ürün çalışır durumdayken yüzeyi sıcak olduğu için ürünün enerjisi kesilmelidir ve soğumadan dokunulmamalıdır. Ürün çalışır durumdayken direkt olarak bakmayınız.",
+      "Yüzeyi alkol, benzin gibi yanıcı maddelerle temizlemeyiniz.",
+      "Çocukların ulaşamayacakları yerlerde ve ürün kutusu içinde muhafaza ediniz.",
+    ],
+    warrantyTerms: {
+      title: "GARANTİ BELGESİ | Garanti Şartları",
+      items: [
+        "Ray Spot Ürününün;",
+        "Garanti süresi, ürünün fatura tarihinden itibaren başlar ve 2 yıldır.",
+        "Bütün parçaları dahil olmak üzere tamamı garanti kapsamına girer.",
+        "Ayıplı olduğunun anlaşılması durumunda tüketici, 6502 sayılı Tüketicinin Korunması Hakkında Kanunun 11. maddesinde yer alan; a) Ücretsiz onarımı yaptırmak. b) Onarımı yapılmadığı takdirde yeni ürünle değiştirilmesi.",
+        "Tüketicinin bu haklardan ücretsiz onarım durumunda satıcı; işçilik masrafı, değiştirilen parça bedeli ya da başka herhangi bir ad altında hiçbir ücret talep etmeksizin ürünün onarımını yaptırmakla yükümlüdür.",
+        "Garanti süresi içerisinde arızalanması durumunda, tamirde geçen süre garanti süresine eklenir. Ürünün tamir süresi 20 iş gününü geçemez.",
+        "Kullanma kılavuzunda yer alan hususlara aykırı kullanılmasından kaynaklanan arızalar garanti kapsamı dışındadır.",
+        "Arızalı ürünü garanti kapsamı dışına çıkaran kullanım hataları: Elektrik ve kullanıcının kullanımından doğan arızalar (elektrik kesilmesi, voltaj dalgalanması, makinaya ait olmayan aksesuar takılması yada kullanılması zorunlu olan aksesuarların kullanılmaması gibi), garantili ürünlerde yetkili servis dışında herhangi bir müdahalenin yapılması, garanti etiketi olan ürünlerde etiketin zarar görmesi, cihazın dış yüzeyinde oluşan kırık, çizik vb. nedenlerden meydana gelen arızalar, tozlu, rutubetli, aşırı sıcak ya da soğuk ortamlarda kullanılma sebebi ile oluşan arızalar, sel, yangın, deprem, yıldırım düşmesi vb. doğal afetlerin sebep olduğu arızalarda garanti kapsamı dışındadır.",
+      ],
+    },
+  },
+  "ray-spot/mr-1071": { id: "mr-1071", name: "SHARK SERİSİ MR 1071 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 1071", images: ["/images/products/ray-spot/MR%201071/001-shark-serisi-mr-1071-1-ray-spot.jpg", "/images/products/ray-spot/MR%201071/001-shark-serisi-mr-1071-2-ray-spot.jpg", "/images/products/ray-spot/MR%201071/002-shark-serisi-mr-1071-1-ray-spot.jpg", "/images/products/ray-spot/MR%201071/002-shark-serisi-mr-1071-2-ray-spot.jpg", "/images/products/ray-spot/MR%201071/003-shark-serisi-mr-1071-1-ray-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "ray-spot/mr-1081": { id: "mr-1081", name: "VİRA SERİSİ MR 1081 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 1081", images: ["/images/products/ray-spot/MR%201081/001-vira-serisi-mr-1081-100-ray-spot.jpg", "/images/products/ray-spot/MR%201081/001-vira-serisi-mr-1081-85-ray-spot.jpg", "/images/products/ray-spot/MR%201081/001-vira-serisi-mr-1082-100-ray-spot.jpg", "/images/products/ray-spot/MR%201081/001-vira-serisi-mr-1082-60-ray-spot.jpg", "/images/products/ray-spot/MR%201081/001-vira-serisi-mr-1082-85-ray-spot.jpg", "/images/products/ray-spot/MR%201081/002-vira-serisi-mr-1081-100-ray-spot.jpg", "/images/products/ray-spot/MR%201081/002-vira-serisi-mr-1081-85-ray-spot.jpg", "/images/products/ray-spot/MR%201081/002-vira-serisi-mr-1082-100-ray-spot.jpg", "/images/products/ray-spot/MR%201081/002-vira-serisi-mr-1082-60-ray-spot.jpg", "/images/products/ray-spot/MR%201081/002-vira-serisi-mr-1082-85-ray-spot.jpg", "/images/products/ray-spot/MR%201081/003-vira-serisi-mr-1081-100-ray-spot.jpg", "/images/products/ray-spot/MR%201081/003-vira-serisi-mr-1081-85-ray-spot.jpg", "/images/products/ray-spot/MR%201081/003-vira-serisi-mr-1082-100-ray-spot.jpg", "/images/products/ray-spot/MR%201081/003-vira-serisi-mr-1082-60-ray-spot.jpg", "/images/products/ray-spot/MR%201081/004-vira-serisi-mr-1081-100-ray-spot.jpg", "/images/products/ray-spot/MR%201081/004-vira-serisi-mr-1081-85-ray-spot.jpg", "/images/products/ray-spot/MR%201081/004-vira-serisi-mr-1082-100-ray-spot.jpg", "/images/products/ray-spot/MR%201081/005-vira-serisi-mr-1081-100-ray-spot.jpg", "/images/products/ray-spot/MR%201081/005-vira-serisi-mr-1081-85-ray-spot.jpg", "/images/products/ray-spot/MR%201081/005-vira-serisi-mr-1082-100-ray-spot.jpg", "/images/products/ray-spot/MR%201081/005-vira-serisi-mr-1082-60-ray-spot.jpg", "/images/products/ray-spot/MR%201081/005-vira-serisi-mr-1082-85-ray-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "ray-spot/mr-1090": { id: "mr-1090", name: "DORA SERİSİ MR 1090 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 1090", images: ["/images/products/ray-spot/MR%201090/001-dora-serisi-mr-1090-100-ray-spot.jpg", "/images/products/ray-spot/MR%201090/001-dora-serisi-mr-1090-60-ray-spot.jpg", "/images/products/ray-spot/MR%201090/001-dora-serisi-mr-1090-85-ray-spot.jpg", "/images/products/ray-spot/MR%201090/002-dora-serisi-mr-1090-100-ray-spot.jpg", "/images/products/ray-spot/MR%201090/002-dora-serisi-mr-1090-60-ray-spot.jpg", "/images/products/ray-spot/MR%201090/002-dora-serisi-mr-1090-85-ray-spot.jpg", "/images/products/ray-spot/MR%201090/003-dora-serisi-mr-1090-100-ray-spot.jpg", "/images/products/ray-spot/MR%201090/003-dora-serisi-mr-1090-60-ray-spot.jpg", "/images/products/ray-spot/MR%201090/004-dora-serisi-mr-1090-100-ray-spot.jpg", "/images/products/ray-spot/MR%201090/004-dora-serisi-mr-1090-60-ray-spot.jpg", "/images/products/ray-spot/MR%201090/004-dora-serisi-mr-1090-85-ray-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "ray-spot/mr-1002": { id: "mr-1002", name: "LUCA SERİSİ MR 1002 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 1002", images: ["/images/products/ray-spot/MR%201002/001-luca-serisi-mr-1002-ray-spot.jpg", "/images/products/ray-spot/MR%201002/002-luca-serisi-mr-1002-ray-spot.jpg", "/images/products/ray-spot/MR%201002/003-luca-serisi-mr-1002-ray-spot.jpg", "/images/products/ray-spot/MR%201002/004-luca-serisi-mr-1002-ray-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "ray-spot/mr-1010-100": { id: "mr-1010-100", name: "LİMA SERİSİ MR 1010-100 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 1010-100", images: ["/images/products/ray-spot/MR%201010-100/001-lima-serisi-mr-1010-100-ray-spot.jpg", "/images/products/ray-spot/MR%201010-100/002-lima-serisi-mr-1010-100-ray-spot.jpg", "/images/products/ray-spot/MR%201010-100/003-lima-serisi-mr-1010-100-ray-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "ray-spot/mr-1010-85": { id: "mr-1010-85", name: "LİMA SERİSİ MR 1010-85 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 1010-85", images: ["/images/products/ray-spot/MR%201010-85/001-lima-serisi-mr-1010-85-ray-spot.jpg", "/images/products/ray-spot/MR%201010-85/002-lima-serisi-mr-1010-85-ray-spot.jpg", "/images/products/ray-spot/MR%201010-85/004-lima-serisi-mr-1010-85-ray-spot.jpg", "/images/products/ray-spot/MR%201010-85/005-lima-serisi-mr-1010-85-ray-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
@@ -435,13 +626,16 @@ const detailMap: Record<string, ProductDetail> = {
   "surface-mounted/ms-617-1": { id: "ms-617-1", name: "TİNTA SERİSİ MS 617-1 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 617-1", images: ["/images/products/siva-ustu/MS%20617-1/001-tinta-serisi-ms-617-1-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20617-1/002-tinta-serisi-ms-617-1-siva-ustu-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "surface-mounted/ms-617-2": { id: "ms-617-2", name: "TİNTA SERİSİ MS 617-2 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 617-2", images: ["/images/products/siva-ustu/MS%20617-2/001-tinta-serisi-ms-617-2-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20617-2/002-tinta-serisi-ms-617-2-siva-ustu-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "surface-mounted/ms-624": { id: "ms-624", name: "BRUNA SERİSİ MS 624-4 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 624", images: ["/images/products/siva-ustu/MS%20624/001-bruna-serisi-ms-624-4-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20624/002-bruna-serisi-ms-624-4-siva-ustu-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
-  "surface-mounted/ms-700-110": { id: "ms-700-110", name: "ORNA SERİSİ MS 700-110 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 700-110", images: ["/images/products/siva-ustu/MS%20700-110/001-orna-serisi-ms-700-110-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-110/002-orna-serisi-ms-700-110-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-110/003-orna-serisi-ms-700-110-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-110/004-orna-serisi-ms-700-110-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-110/005-orna-serisi-ms-700-110-siva-ustu-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "surface-mounted/ms-630": { id: "ms-630", name: "TINTA SERİSİ MS 630 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 630", images: ["/images/products/siva-ustu/MS%20630/001-tinta-serisi-ms-630-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20630/001-tinta-serisi-ms-631-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20630/002-tinta-serisi-ms-630-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20630/002-tinta-serisi-ms-631-siva-ustu-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "surface-mounted/ms-650": { id: "ms-650", name: "REKTA SERİSİ MS 650 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 650", images: ["/images/products/siva-ustu/ms%20650/001-rekta-serisi-ms-650-1-siva-ustu-spot.jpg", "/images/products/siva-ustu/ms%20650/001-rekta-serisi-ms-650-2-siva-ustu-spot.jpg", "/images/products/siva-ustu/ms%20650/001-rekta-serisi-ms-650-3-siva-ustu-spot.jpg", "/images/products/siva-ustu/ms%20650/002-rekta-serisi-ms-650-1-siva-ustu-spot.jpg", "/images/products/siva-ustu/ms%20650/002-rekta-serisi-ms-650-2-siva-ustu-spot.jpg", "/images/products/siva-ustu/ms%20650/002-rekta-serisi-ms-650-3-siva-ustu-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "surface-mounted/ms-700-110": { id: "ms-700-110", name: "ORNA SERİSİ MS 700-110 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 700-110", images: ["/images/products/siva-ustu/MS%20700-110/001-orna-serisi-ms-700-110-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-110/002-orna-serisi-ms-700-110-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-110/003-orna-serisi-ms-700-110-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-110/004-orna-serisi-ms-700-110-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-110/005-orna-serisi-ms-700-110-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-110/006-orna-serisi-ms-700-110-siva-ustu-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "surface-mounted/ms-700-130": { id: "ms-700-130", name: "ORNA SERİSİ MS 700-130 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 700-130", images: ["/images/products/siva-ustu/MS%20700-130/001-orna-serisi-ms-700-130-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-130/002-orna-serisi-ms-700-130-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-130/003-orna-serisi-ms-700-130-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-130/004-orna-serisi-ms-700-130-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-130/005-orna-serisi-ms-700-130-siva-ustu-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
-  "surface-mounted/ms-700-70": { id: "ms-700-70", name: "ORNA SERİSİ MS 700-70 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 700-70", images: ["/images/products/siva-ustu/MS%20700-70/001-orna-serisi-ms-700-70-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-70/002-orna-serisi-ms-700-70-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-70/003-orna-serisi-ms-700-70-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-70/004-orna-serisi-ms-700-70-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-70/005-orna-serisi-ms-700-70-siva-ustu-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
-  "surface-mounted/ms-700-90": { id: "ms-700-90", name: "ORNA SERİSİ MS 700-90 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 700-90", images: ["/images/products/siva-ustu/MS%20700-90/001-orna-serisi-ms-700-90-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-90/002-orna-serisi-ms-700-90-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-90/003-orna-serisi-ms-700-90-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-90/004-orna-serisi-ms-700-90-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-90/005-orna-serisi-ms-700-90-siva-ustu-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
-  "surface-mounted/ms-701-110": { id: "ms-701-110", name: "ORNA SERİSİ MS 701-110 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 701-110", images: ["/images/products/siva-ustu/MS%20701-110/001-orna-serisi-ms-701-110-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-110/002-orna-serisi-ms-701-110-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-110/003-orna-serisi-ms-701-110-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-110/004-orna-serisi-ms-701-110-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-110/005-orna-serisi-ms-701-110-siva-ustu-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
-  "surface-mounted/ms-701-70": { id: "ms-701-70", name: "ORNA SERİSİ MS 701-70 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 701-70", images: ["/images/products/siva-ustu/MS%20701-70/001-orna-serisi-ms-701-70-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-70/002-orna-serisi-ms-701-70-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-70/003-orna-serisi-ms-701-70-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-70/004-orna-serisi-ms-701-70-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-70/005-orna-serisi-ms-701-70-siva-ustu-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
-  "surface-mounted/ms-701-90": { id: "ms-701-90", name: "ORNA SERİSİ MS 701-90 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 701-90", images: ["/images/products/siva-ustu/MS%20701-90/001-orna-serisi-ms-701-90-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-90/002-orna-serisi-ms-701-90-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-90/003-orna-serisi-ms-701-90-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-90/004-orna-serisi-ms-701-90-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-90/005-orna-serisi-ms-701-90-siva-ustu-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "surface-mounted/ms-700-70": { id: "ms-700-70", name: "ORNA SERİSİ MS 700-70 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 700-70", images: ["/images/products/siva-ustu/MS%20700-70/001-orna-serisi-ms-700-70-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-70/002-orna-serisi-ms-700-70-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-70/003-orna-serisi-ms-700-70-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-70/004-orna-serisi-ms-700-70-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-70/005-orna-serisi-ms-700-70-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-70/006-orna-serisi-ms-700-70-siva-ustu-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "surface-mounted/ms-700-90": { id: "ms-700-90", name: "ORNA SERİSİ MS 700-90 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 700-90", images: ["/images/products/siva-ustu/MS%20700-90/001-orna-serisi-ms-700-90-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-90/002-orna-serisi-ms-700-90-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-90/003-orna-serisi-ms-700-90-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-90/004-orna-serisi-ms-700-90-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-90/005-orna-serisi-ms-700-90-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20700-90/006-orna-serisi-ms-700-90-siva-ustu-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "surface-mounted/ms-701-110": { id: "ms-701-110", name: "ORNA SERİSİ MS 701-110 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 701-110", images: ["/images/products/siva-ustu/MS%20701-110/001-orna-serisi-ms-701-110-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-110/002-orna-serisi-ms-701-110-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-110/003-orna-serisi-ms-701-110-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-110/004-orna-serisi-ms-701-110-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-110/005-orna-serisi-ms-701-110-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-110/006-orna-serisi-ms-701-110-siva-ustu-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "surface-mounted/ms-701-70": { id: "ms-701-70", name: "ORNA SERİSİ MS 701-70 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 701-70", images: ["/images/products/siva-ustu/MS%20701-70/001-orna-serisi-ms-701-70-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-70/002-orna-serisi-ms-701-70-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-70/003-orna-serisi-ms-701-70-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-70/004-orna-serisi-ms-701-70-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-70/005-orna-serisi-ms-701-70-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-70/006-orna-serisi-ms-701-70-siva-ustu-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "surface-mounted/ms-701-90": { id: "ms-701-90", name: "ORNA SERİSİ MS 701-90 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 701-90", images: ["/images/products/siva-ustu/MS%20701-90/001-orna-serisi-ms-701-90-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-90/002-orna-serisi-ms-701-90-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-90/003-orna-serisi-ms-701-90-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-90/004-orna-serisi-ms-701-90-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-90/005-orna-serisi-ms-701-90-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20701-90/006-orna-serisi-ms-701-90-siva-ustu-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "surface-mounted/ms-702": { id: "ms-702", name: "SHAIN SERİSİ MS 702 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 702", images: ["/images/products/siva-ustu/MS%20702/001-shain-serisi-ms-702-1-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20702/001-shain-serisi-ms-702-2-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20702/001-shain-serisi-ms-702-3-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20702/001-shain-serisi-ms-702-4-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20702/002-shain-serisi-ms-702-1-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20702/002-shain-serisi-ms-702-2-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20702/002-shain-serisi-ms-702-3-siva-ustu-spot.jpg", "/images/products/siva-ustu/MS%20702/002-shain-serisi-ms-702-4-siva-ustu-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/mbf-101": { id: "mbf-101", name: "BAFFLE SERİSİ MBF 101 BAFFLE ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MBF 101", images: ["/images/products/siva-alti/MBF%20101/001-baffle-serisi-mbf-101-baffle-alti-spot.jpg", "/images/products/siva-alti/MBF%20101/002-minia-serisi-md-010-siva-alti-spot.jpg", "/images/products/siva-alti/MBF%20101/003-minia-serisi-md-010-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/mbf-102": { id: "mbf-102", name: "BAFFLE SERİSİ MBF 102 BAFFLE ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MBF 102", images: ["/images/products/siva-alti/MBF%20102/001-baffle-serisi-mbf-102-baffle-alti-spot.jpg", "/images/products/siva-alti/MBF%20102/002-baffle-serisi-mbf-102-baffle-alti-spot.jpg", "/images/products/siva-alti/MBF%20102/003-baffle-serisi-mbf-102-baffle-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/mbf-103": { id: "mbf-103", name: "BAFFLE SERİSİ MBF 103 BAFFLE ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MBF 103", images: ["/images/products/siva-alti/MBF%20103/001-baffle-serisi-mbf-103-baffle-alti-spot.jpg", "/images/products/siva-alti/MBF%20103/002-baffle-serisi-mbf-103-baffle-alti-spot.jpg", "/images/products/siva-alti/MBF%20103/003-baffle-serisi-mbf-103-baffle-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
@@ -504,6 +698,7 @@ const detailMap: Record<string, ProductDetail> = {
   "recessed/md-125-118": { id: "md-125-118", name: "AVA SERİSİ MD 125-118 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 125-118", images: ["/images/products/siva-alti/MD%20125-118/001-ava-serisi-md-125-118-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20125-118/002-ava-serisi-md-125-118-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20125-118/003-ava-serisi-md-125-118-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20125-118/004-ava-serisi-md-125-118-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20125-118/005-ava-serisi-md-125-118-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/md-125-60": { id: "md-125-60", name: "AVA SERİSİ MD 125-60 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 125-60", images: ["/images/products/siva-alti/MD%20125-60/001-ava-serisi-md-125-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20125-60/002-ava-serisi-md-125-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20125-60/003-ava-serisi-md-125-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20125-60/004-ava-serisi-md-125-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20125-60/005-ava-serisi-md-125-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20125-60/006-ava-serisi-md-125-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20125-60/007-ava-serisi-md-125-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20125-60/008-ava-serisi-md-125-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20125-60/009-ava-serisi-md-125-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20125-60/010-ava-serisi-md-125-60-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/md-125-85": { id: "md-125-85", name: "AVA SERİSİ MD 125-85 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 125-85", images: ["/images/products/siva-alti/MD%20125-85/001-ava-serisi-md-125-85-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20125-85/002-ava-serisi-md-125-85-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20125-85/003-ava-serisi-md-125-85-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20125-85/005-ava-serisi-md-125-85-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20125-85/006-ava-serisi-md-125-85-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "recessed/md-126": { id: "md-126", name: "LIVA SERİSİ MD 126 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 126", images: ["/images/products/siva-alti/MD%20126/001-liva-serisi-md-126-100-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20126/001-liva-serisi-md-126-118-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20126/001-liva-serisi-md-126-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20126/001-liva-serisi-md-126-85-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20126/002-liva-serisi-md-126-100-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20126/002-liva-serisi-md-126-118-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20126/002-liva-serisi-md-126-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20126/002-liva-serisi-md-126-85-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/md-128-1-60": { id: "md-128-1-60", name: "MATTİA SERİSİ MD 128-1-60 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 128-1-60", images: ["/images/products/siva-alti/MD%20128-1-60/001-mattia-serisi-md-128-1-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20128-1-60/002-mattia-serisi-md-128-1-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20128-1-60/003-mattia-serisi-md-128-1-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20128-1-60/004-mattia-serisi-md-128-1-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20128-1-60/005-mattia-serisi-md-128-1-60-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/md-129-1-60": { id: "md-129-1-60", name: "MATTİA SERİSİ MD 129-1-60 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 129-1-60", images: ["/images/products/siva-alti/MD%20129-1-60/001-mattia-serisi-md-129-1-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20129-1-60/002-mattia-serisi-md-129-1-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20129-1-60/003-mattia-serisi-md-129-1-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20129-1-60/004-mattia-serisi-md-129-1-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20129-1-60/005-mattia-serisi-md-129-1-60-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/md-130-60": { id: "md-130-60", name: "AVA SERİSİ MD 130-60 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 130-60", images: ["/images/products/siva-alti/MD%20130-60/001-ava-serisi-md-130-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20130-60/002-ava-serisi-md-130-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20130-60/003-ava-serisi-md-130-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20130-60/004-ava-serisi-md-130-60-siva-alti-spot-kurtarildi.jpg", "/images/products/siva-alti/MD%20130-60/005-ava-serisi-md-130-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20130-60/006-ava-serisi-md-130-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20130-60/007-ava-serisi-md-130-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20130-60/008-ava-serisi-md-130-60-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
@@ -512,6 +707,7 @@ const detailMap: Record<string, ProductDetail> = {
   "recessed/md-131-3-118": { id: "md-131-3-118", name: "RONA SERİSİ MD 131-3-118 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 131-3-118", images: ["/images/products/siva-alti/MD%20131-3-118/001-rona-serisi-md-131-3-118-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20131-3-118/002-rona-serisi-md-131-3-118-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20131-3-118/003-rona-serisi-md-131-3-118-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/md-140": { id: "md-140", name: "DOLA SERİSİ MD 140  SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 140", images: ["/images/products/siva-alti/MD%20140/001-dola-serisi-md-140-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20140/002-dola-serisi-md-140-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20140/003-dola-serisi-md-140-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20140/004-dola-serisi-md-140-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20140/005-dola-serisi-md-140-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/md-141": { id: "md-141", name: "SATURN SERİSİ MD 141 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 141", images: ["/images/products/siva-alti/MD%20141/001-saturn-serisi-md-141-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20141/002-saturn-serisi-md-141-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20141/003-saturn-serisi-md-141-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20141/004-saturn-serisi-md-141-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20141/005-saturn-serisi-md-141-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "recessed/md-151": { id: "md-151", name: "NOYA SERİSİ MD 151 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 151", images: ["/images/products/siva-alti/MD%20151/001-noya-serisi-md-151-1-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20151/001-noya-serisi-md-151-2-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20151/001-noya-serisi-md-151-3-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20151/001-noya-serisi-md-151-4-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20151/001-noya-serisi-md-151-5-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20151/001-noya-serisi-md-151-6-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20151/002-noya-serisi-md-151-1-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20151/002-noya-serisi-md-151-2-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20151/002-noya-serisi-md-151-3-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20151/002-noya-serisi-md-151-4-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20151/002-noya-serisi-md-151-5-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20151/002-noya-serisi-md-151-6-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/md-160-1-100": { id: "md-160-1-100", name: "LORA SERİSİ MD 160-1-100 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 160-1-100", images: ["/images/products/siva-alti/MD%20160-1-100/001-lora-serisi-md-160-1-100-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20160-1-100/002-lora-serisi-md-160-1-100-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20160-1-100/003-lora-serisi-md-160-1-100-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/md-160-1-118": { id: "md-160-1-118", name: "LORA SERİSİ MD 160-1-118 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 160-1-118", images: ["/images/products/siva-alti/MD%20160-1-118/001-lora-serisi-md-160-1-118-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20160-1-118/002-lora-serisi-md-160-1-118-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20160-1-118/003-lora-serisi-md-160-1-118-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/md-160-1-60": { id: "md-160-1-60", name: "LORA SERİSİ MD 160-1-60 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 160-1-60", images: ["/images/products/siva-alti/MD%20160-1-60/001-lora-serisi-md-160-1-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20160-1-60/002-lora-serisi-md-160-1-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20160-1-60/003-lora-serisi-md-160-1-60-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
@@ -528,9 +724,14 @@ const detailMap: Record<string, ProductDetail> = {
   "recessed/md-163-1-118": { id: "md-163-1-118", name: "İRA SERİSİ MD 163-1-118 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 163-1-118", images: ["/images/products/siva-alti/MD%20163-1-118/001-ira-serisi-md-163-1-118-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20163-1-118/002-ira-serisi-md-163-1-118-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20163-1-118/003-ira-serisi-md-163-1-118-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/md-163-1-60": { id: "md-163-1-60", name: "İRA SERİSİ MD 163-1-60SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 163-1-60", images: ["/images/products/siva-alti/MD%20163-1-60/001-ira-serisi-md-163-1-60siva-alti-spot.jpg", "/images/products/siva-alti/MD%20163-1-60/002-ira-serisi-md-163-1-60siva-alti-spot.jpg", "/images/products/siva-alti/MD%20163-1-60/003-ira-serisi-md-163-1-60siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/md-163-1-85": { id: "md-163-1-85", name: "İRA SERİSİ MD 163-1-85 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 163-1-85", images: ["/images/products/siva-alti/MD%20163-1-85/001-ira-serisi-md-163-1-85-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20163-1-85/002-ira-serisi-md-163-1-85-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20163-1-85/003-ira-serisi-md-163-1-85-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "recessed/md-164-55": { id: "md-164-55", name: "LUNA SERİSİ MD 164-55 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 164-55", images: ["/images/products/siva-alti/MD%20164-55/001-luna-serisi-md-164-55-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20164-55/002-luna-serisi-md-164-55-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "recessed/md-165-55": { id: "md-165-55", name: "QUTA SERİSİ MD 165-55 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 165-55", images: ["/images/products/siva-alti/MD%20165-55/001-quta-serisi-md-165-55-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20165-55/002-quta-serisi-md-165-55-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "recessed/md-170": { id: "md-170", name: "RETA SERİSİ MD 170 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 170", images: ["/images/products/siva-alti/MD%20170/001-reta-serisi-md-170-1-100-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20170/001-reta-serisi-md-170-1-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20170/001-reta-serisi-md-170-1-85-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20170/002-reta-serisi-md-170-1-100-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20170/002-reta-serisi-md-170-1-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20170/002-reta-serisi-md-170-1-85-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "recessed/md-171": { id: "md-171", name: "DIARA SERİSİ MD 171 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 171", images: ["/images/products/siva-alti/MD%20171/001-diara-serisi-md-171-1-100-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20171/001-diara-serisi-md-171-1-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20171/001-diara-serisi-md-171-1-85-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20171/002-diara-serisi-md-171-1-100-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20171/002-diara-serisi-md-171-1-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20171/002-diara-serisi-md-171-1-85-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/md-200-1-60": { id: "md-200-1-60", name: "PANA SERİSİ MD 200-1-60 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 200-1-60", images: ["/images/products/siva-alti/MD%20200-1-60/001-pana-serisi-md-200-1-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20200-1-60/002-pana-serisi-md-200-1-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20200-1-60/003-pana-serisi-md-200-1-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20200-1-60/004-pana-serisi-md-200-1-60-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/md-200-2-60": { id: "md-200-2-60", name: "PANA SERİSİ MD 200-2-60 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 200-2-60", images: ["/images/products/siva-alti/MD%20200-2-60/001-pana-serisi-md-200-2-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20200-2-60/002-pana-serisi-md-200-2-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20200-2-60/003-pana-serisi-md-200-2-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20200-2-60/004-pana-serisi-md-200-2-60-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/md-601-1-100": { id: "md-601-1-100", name: "LORA SERİSİ MD 160-1-100 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 601-1-100", images: ["/images/products/siva-alti/MD%20601-1-100/001-lora-serisi-md-160-1-100-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "recessed/md-603": { id: "md-603", name: "LENA SERİSİ MD 603 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 603", images: ["/images/products/siva-alti/MD%20603/001-lena-serisi-md-603-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20603/002-lena-serisi-md-603-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20603/003-lena-serisi-md-603-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/md-604": { id: "md-604", name: "LENA SERİSİ MD 604 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 604", images: ["/images/products/siva-alti/MD%20604/001-lena-serisi-md-604-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20604/002-lena-serisi-md-604-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20604/003-lena-serisi-md-604-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/md-605": { id: "md-605", name: "LENA SERİSİ MD 605 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 605", images: ["/images/products/siva-alti/MD%20605/001-lena-serisi-md-605-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20605/002-lena-serisi-md-605-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20605/003-lena-serisi-md-605-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/md-616-1": { id: "md-616-1", name: "TİNTA SERİSİ MD 616-1 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 616-1", images: ["/images/products/siva-alti/MD%20616-1/001-tinta-serisi-md-616-1-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20616-1/002-tinta-serisi-md-616-1-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20616-1/003-tinta-serisi-md-616-1-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20616-1/004-tinta-serisi-md-616-1-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
@@ -563,6 +764,8 @@ const detailMap: Record<string, ProductDetail> = {
   "recessed/md-903-60": { id: "md-903-60", name: "VİGGO SERİSİ MD 903-60 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 903-60", images: ["/images/products/siva-alti/MD%20903-60/001-viggo-serisi-md-903-60-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20903-60/002-viggo-serisi-md-903-60-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/md-903-85": { id: "md-903-85", name: "VİGGO SERİSİ MD 903-85 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 903-85", images: ["/images/products/siva-alti/MD%20903-85/001-viggo-serisi-md-903-85-siva-alti-spot.jpg", "/images/products/siva-alti/MD%20903-85/002-viggo-serisi-md-903-85-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "recessed/md150": { id: "md150", name: " NOYA SERİSİ MD 150-1 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD150", images: ["/images/products/siva-alti/MD150/001-noya-serisi-md-150-1-siva-alti-spot.jpg", "/images/products/siva-alti/MD150/001-noya-serisi-md-150-2-siva-alti-spot.jpg", "/images/products/siva-alti/MD150/001-noya-serisi-md-150-3-siva-alti-spot.jpg", "/images/products/siva-alti/MD150/001-noya-serisi-md-150-4-siva-alti-spot.jpg", "/images/products/siva-alti/MD150/001-noya-serisi-md-150-5-siva-alti-spot.jpg", "/images/products/siva-alti/MD150/001-noya-serisi-md-150-6-siva-alti-spot.jpg", "/images/products/siva-alti/MD150/002-noya-serisi-md-150-1-siva-alti-spot.jpg", "/images/products/siva-alti/MD150/002-noya-serisi-md-150-2-siva-alti-spot.jpg", "/images/products/siva-alti/MD150/002-noya-serisi-md-150-3-siva-alti-spot.jpg", "/images/products/siva-alti/MD150/002-noya-serisi-md-150-4-siva-alti-spot.jpg", "/images/products/siva-alti/MD150/002-noya-serisi-md-150-5-siva-alti-spot.jpg", "/images/products/siva-alti/MD150/002-noya-serisi-md-150-6-siva-alti-spot.jpg", "/images/products/siva-alti/MD150/003-noya-serisi-md-150-1-siva-alti-spot.jpg", "/images/products/siva-alti/MD150/003-noya-serisi-md-150-2-siva-alti-spot.jpg", "/images/products/siva-alti/MD150/003-noya-serisi-md-150-3-siva-alti-spot.jpg", "/images/products/siva-alti/MD150/003-noya-serisi-md-150-4-siva-alti-spot.jpg", "/images/products/siva-alti/MD150/003-noya-serisi-md-150-5-siva-alti-spot.jpg", "/images/products/siva-alti/MD150/003-noya-serisi-md-150-6-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "recessed/md-1002": { id: "md-1002", name: "VİGGO SERİSİ MD 1002 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 1002", images: ["/images/products/siva-alti/md%201002/001-viggo-serisi-md-1002-100-siva-alti-spot.jpg", "/images/products/siva-alti/md%201002/001-viggo-serisi-md-1002-60-siva-alti-spot.jpg", "/images/products/siva-alti/md%201002/001-viggo-serisi-md-1002-85-siva-alti-spot.jpg", "/images/products/siva-alti/md%201002/002-viggo-serisi-md-1002-100-siva-alti-spot.jpg", "/images/products/siva-alti/md%201002/002-viggo-serisi-md-1002-60-siva-alti-spot.jpg", "/images/products/siva-alti/md%201002/002-viggo-serisi-md-1002-85-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "recessed/md-1003": { id: "md-1003", name: "VOKO SERİSİ MD 1003 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 1003", images: ["/images/products/siva-alti/MD%201003/001-voko-serisi-md-1003-100-siva-alti-spot.jpg", "/images/products/siva-alti/MD%201003/001-voko-serisi-md-1003-35-siva-alti-spot.jpg", "/images/products/siva-alti/MD%201003/001-voko-serisi-md-1003-50-siva-alti-spot.jpg", "/images/products/siva-alti/MD%201003/001-voko-serisi-md-1003-75-siva-alti-spot.jpg", "/images/products/siva-alti/MD%201003/002-voko-serisi-md-1003-100-siva-alti-spot.jpg", "/images/products/siva-alti/MD%201003/002-voko-serisi-md-1003-35-siva-alti-spot.jpg", "/images/products/siva-alti/MD%201003/002-voko-serisi-md-1003-50-siva-alti-spot.jpg", "/images/products/siva-alti/MD%201003/002-voko-serisi-md-1003-75-siva-alti-spot.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "linear/ms-503-400": { id: "ms-503-400", name: "MS 503-400", category: "Lineer", categorySlug: "linear", code: "MS 503-400", images: ["/images/products/siva-ustu-lineer/MS%20503-400/001-ms-503-400.jpg", "/images/products/siva-ustu-lineer/MS%20503-400/002-ms-503-400.jpg", "/images/products/siva-ustu-lineer/MS%20503-400/003-ms-503-400.jpg", "/images/products/siva-ustu-lineer/MS%20503-400/004-ms-503-400.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "linear/ms-503-500": { id: "ms-503-500", name: "MS 503-500", category: "Lineer", categorySlug: "linear", code: "MS 503-500", images: ["/images/products/siva-ustu-lineer/MS%20503-500/001-ms-503-500.jpg", "/images/products/siva-ustu-lineer/MS%20503-500/002-ms-503-500.jpg", "/images/products/siva-ustu-lineer/MS%20503-500/003-ms-503-500.jpg", "/images/products/siva-ustu-lineer/MS%20503-500/004-ms-503-500.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "linear/ms-503-600": { id: "ms-503-600", name: "MS 503-600", category: "Lineer", categorySlug: "linear", code: "MS 503-600", images: ["/images/products/siva-ustu-lineer/MS%20503-600/001-ms-503-600.jpg", "/images/products/siva-ustu-lineer/MS%20503-600/002-ms-503-600.jpg", "/images/products/siva-ustu-lineer/MS%20503-600/003-ms-503-600.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
@@ -636,6 +839,70 @@ const detailMap: Record<string, ProductDetail> = {
   "outdoor/mo-134": { id: "mo-134", name: "JİWA SERİSİ MO 134 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 134", images: ["/images/products/dis-mekan/MO%20134/001-jiwa-serisi-mo-134-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20134/002-jiwa-serisi-mo-134-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20134/003-jiwa-serisi-mo-134-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20134/004-jiwa-serisi-mo-134-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "outdoor/mo-135": { id: "mo-135", name: "JİWA SERİSİ MO 135 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 135", images: ["/images/products/dis-mekan/MO%20135/001-jiwa-serisi-mo-135-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20135/002-jiwa-serisi-mo-135-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20135/003-jiwa-serisi-mo-135-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   "outdoor/mo-136": { id: "mo-136", name: "JİWA SERİSİ MO 136 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 136", images: ["/images/products/dis-mekan/MO%20136/001-jiwa-serisi-mo-136-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20136/002-jiwa-serisi-mo-136-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20136/003-jiwa-serisi-mo-136-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-000": { id: "mo-000", name: "DORIKA SERİSİ MO 000 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 000", images: ["/images/products/dis-mekan/MO%20000/001-dorika-serisi-mo-000-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-200": { id: "mo-200", name: "DORIKA SERİSİ MO 200 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 200", images: ["/images/products/dis-mekan/MO%20200/001-dorika-serisi-mo-200-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20200/002-dorika-serisi-mo-200-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20200/003-dorika-serisi-mo-200-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20200/004-dorika-serisi-mo-200-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-201": { id: "mo-201", name: "DORIKA SERİSİ MO 201 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 201", images: ["/images/products/dis-mekan/MO%20201/001-dorika-serisi-mo-201-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20201/002-dorika-serisi-mo-201-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20201/003-dorika-serisi-mo-201-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-202": { id: "mo-202", name: "DORIKA SERİSİ MO 202 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 202", images: ["/images/products/dis-mekan/MO%20202/001-dorika-serisi-mo-202-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20202/002-dorika-serisi-mo-202-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20202/003-dorika-serisi-mo-202-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20202/004-dorika-serisi-mo-202-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-203": { id: "mo-203", name: "DORIKA SERİSİ MO 203 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 203", images: ["/images/products/dis-mekan/MO%20203/001-dorika-serisi-mo-203-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20203/002-dorika-serisi-mo-203-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20203/003-dorika-serisi-mo-203-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-204": { id: "mo-204", name: "DORIKA SERİSİ MO 204 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 204", images: ["/images/products/dis-mekan/MO%20204/001-dorika-serisi-mo-204-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20204/002-dorika-serisi-mo-204-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-204-1": { id: "mo-204-1", name: "DORIKA SERİSİ MO 204-1 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 204-1", images: ["/images/products/dis-mekan/MO%20204-1/001-dorika-serisi-mo-204-1-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-205": { id: "mo-205", name: "DORIKA SERİSİ MO 205 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 205", images: ["/images/products/dis-mekan/MO%20205/001-dorika-serisi-mo-205-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20205/002-dorika-serisi-mo-205-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-206": { id: "mo-206", name: "DORIKA SERİSİ MO 206 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 206", images: ["/images/products/dis-mekan/MO%20206/001-dorika-serisi-mo-206-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20206/002-dorika-serisi-mo-206-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-207": { id: "mo-207", name: "DORIKA SERİSİ MO 207 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 207", images: ["/images/products/dis-mekan/MO%20207/001-dorika-serisi-mo-207-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20207/002-dorika-serisi-mo-207-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-208": { id: "mo-208", name: "DORIKA SERİSİ MO 208 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 208", images: ["/images/products/dis-mekan/MO%20208/001-dorika-serisi-mo-208-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20208/002-dorika-serisi-mo-208-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-209": { id: "mo-209", name: "DORIKA SERİSİ MO 209 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 209", images: ["/images/products/dis-mekan/MO%20209/001-dorika-serisi-mo-209-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20209/002-dorika-serisi-mo-209-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-209-1": { id: "mo-209-1", name: "DORIKA SERİSİ MO 209-1 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 209-1", images: ["/images/products/dis-mekan/MO%20209-1/001-dorika-serisi-mo-209-1-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20209-1/002-dorika-serisi-mo-209-1-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-209-2": { id: "mo-209-2", name: "DORIKA SERİSİ MO 209-2 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 209-2", images: ["/images/products/dis-mekan/MO%20209-2/001-dorika-serisi-mo-209-2-ikili-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20209-2/002-dorika-serisi-mo-209-2-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-210": { id: "mo-210", name: "DORIKA SERİSİ MO 210 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 210", images: ["/images/products/dis-mekan/MO%20210/001-dorika-serisi-mo-210-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20210/002-dorika-serisi-mo-210-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-210-1": { id: "mo-210-1", name: "DORIKA SERİSİ MO 210-1 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 210-1", images: ["/images/products/dis-mekan/MO%20210-1/001-dorika-serisi-mo-210-1-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-211": { id: "mo-211", name: "DORIKA SERİSİ MO 211 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 211", images: ["/images/products/dis-mekan/MO%20211/001-dorika-serisi-mo-211-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20211/002-dorika-serisi-mo-211-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-212": { id: "mo-212", name: "DORIKA SERİSİ MO 212 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 212", images: ["/images/products/dis-mekan/MO%20212/001-dorika-serisi-mo-212-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20212/002-dorika-serisi-mo-212-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-213": { id: "mo-213", name: "DORIKA SERİSİ MO 213 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 213", images: ["/images/products/dis-mekan/MO%20213/001-dorika-serisi-mo-213-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20213/002-dorika-serisi-mo-213-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-214": { id: "mo-214", name: "DORIKA SERİSİ MO 214 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 214", images: ["/images/products/dis-mekan/MO%20214/001-dorika-serisi-mo-214-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20214/002-dorika-serisi-mo-214-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-215": { id: "mo-215", name: "DORIKA SERİSİ MO 215 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 215", images: ["/images/products/dis-mekan/MO%20215/001-dorika-serisi-mo-215-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20215/002-dorika-serisi-mo-215-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-216": { id: "mo-216", name: "DORIKA SERİSİ MO 216 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 216", images: ["/images/products/dis-mekan/MO%20216/001-dorika-serisi-mo-216-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20216/002-dorika-serisi-mo-216-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20216/003-dorika-serisi-mo-216-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-217": { id: "mo-217", name: "DORIKA SERİSİ MO 217 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 217", images: ["/images/products/dis-mekan/MO%20217/001-dorika-serisi-mo-217-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20217/002-dorika-serisi-mo-217-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20217/003-dorika-serisi-mo-217-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-218": { id: "mo-218", name: "DORIKA SERİSİ MO 218 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 218", images: ["/images/products/dis-mekan/MO%20218/001-dorika-serisi-mo-218-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20218/002-dorika-serisi-mo-218-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-219": { id: "mo-219", name: "DORIKA SERİSİ MO 219 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 219", images: ["/images/products/dis-mekan/MO%20219/001-dorika-serisi-mo-219-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20219/002-dorika-serisi-mo-219-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-220": { id: "mo-220", name: "DORIKA SERİSİ MO 220 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 220", images: ["/images/products/dis-mekan/MO%20220/001-dorika-serisi-mo-220-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20220/002-dorika-serisi-mo-220-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-221": { id: "mo-221", name: "DORIKA SERİSİ MO 221 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 221", images: ["/images/products/dis-mekan/MO%20221/001-dorika-serisi-mo-221-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20221/002-dorika-serisi-mo-221-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-222": { id: "mo-222", name: "DORIKA SERİSİ MO 222 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 222", images: ["/images/products/dis-mekan/MO%20222/001-dorika-serisi-mo-222-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20222/002-dorika-serisi-mo-222-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-223": { id: "mo-223", name: "DORIKA SERİSİ MO 223 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 223", images: ["/images/products/dis-mekan/MO%20223/001-dorika-serisi-mo-223-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20223/002-dorika-serisi-mo-223-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-224": { id: "mo-224", name: "DORIKA SERİSİ MO 224 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 224", images: ["/images/products/dis-mekan/MO%20224/001-dorika-serisi-mo-224-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20224/002-dorika-serisi-mo-224-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-225": { id: "mo-225", name: "DORIKA SERİSİ MO 225 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 225", images: ["/images/products/dis-mekan/MO%20225/001-dorika-serisi-mo-225-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-226": { id: "mo-226", name: "DORIKA SERİSİ MO 226 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 226", images: ["/images/products/dis-mekan/MO%20226/001-dorika-serisi-mo-226-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20226/002-dorika-serisi-mo-226-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-227": { id: "mo-227", name: "DORIKA SERİSİ MO 227 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 227", images: ["/images/products/dis-mekan/MO%20227/001-dorika-serisi-mo-227-dis-mekan-aplik.jpg", "/images/products/dis-mekan/MO%20227/002-dorika-serisi-mo-227-dis-mekan-aplik.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-228": { id: "mo-228", name: "DORIKA SERİSİ MO 228 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 228", images: ["/images/products/dis-mekan/MO%20228/001-dorika-serisi-mo-228-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20228/002-dorika-serisi-mo-228-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-229": { id: "mo-229", name: "DORIKA SERİSİ MO 229 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 229", images: ["/images/products/dis-mekan/MO%20229/001-dorika-serisi-mo-229-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20229/002-dorika-serisi-mo-229-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-230": { id: "mo-230", name: "DORIKA SERİSİ MO 230 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 230", images: ["/images/products/dis-mekan/MO%20230/001-dorika-serisi-mo-230-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-231": { id: "mo-231", name: "DORIKA SERİSİ MO 231 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 231", images: ["/images/products/dis-mekan/MO%20231/001-dorika-serisi-mo-231-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20231/002-dorika-serisi-mo-231-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-232": { id: "mo-232", name: "DORIKA SERİSİ MO 232 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 232", images: ["/images/products/dis-mekan/MO%20232/001-dorika-serisi-mo-232-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20232/002-dorika-serisi-mo-232-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-233": { id: "mo-233", name: "DORIKA SERİSİ MO 233 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 233", images: ["/images/products/dis-mekan/MO%20233/001-dorika-serisi-mo-233-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20233/002-dorika-serisi-mo-233-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-234": { id: "mo-234", name: "DORIKA SERİSİ MO 234 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 234", images: ["/images/products/dis-mekan/MO%20234/001-dorika-serisi-mo-234-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20234/002-dorika-serisi-mo-234-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-235": { id: "mo-235", name: "DORIKA SERİSİ MO 235 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 235", images: ["/images/products/dis-mekan/MO%20235/001-dorika-serisi-mo-235-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20235/002-dorika-serisi-mo-235-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-236": { id: "mo-236", name: "DORIKA SERİSİ MO 236 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 236", images: ["/images/products/dis-mekan/MO%20236/001-dorika-serisi-mo-236-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20236/002-dorika-serisi-mo-236-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-237": { id: "mo-237", name: "DORIKA SERİSİ MO 237 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 237", images: ["/images/products/dis-mekan/MO%20237/001-dorika-serisi-mo-237-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20237/002-dorika-serisi-mo-237-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-238": { id: "mo-238", name: "DORIKA SERİSİ MO 238 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 238", images: ["/images/products/dis-mekan/MO%20238/001-dorika-serisi-mo-238-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20238/002-dorika-serisi-mo-238-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-239": { id: "mo-239", name: "DORIKA SERİSİ MO 239 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 239", images: ["/images/products/dis-mekan/MO%20239/001-dorika-serisi-mo-239-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20239/002-dorika-serisi-mo-239-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-240": { id: "mo-240", name: "DORIKA SERİSİ MO 240 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 240", images: ["/images/products/dis-mekan/MO%20240/001-dorika-serisi-mo-240-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20240/002-dorika-serisi-mo-240-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-241": { id: "mo-241", name: "DORIKA SERİSİ MO 241 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 241", images: ["/images/products/dis-mekan/MO%20241/001-dorika-serisi-mo-241-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20241/002-dorika-serisi-mo-241-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-242": { id: "mo-242", name: "DORIKA SERİSİ MO 242 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 242", images: ["/images/products/dis-mekan/MO%20242/001-dorika-serisi-mo-242-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20242/002-dorika-serisi-mo-242-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-243": { id: "mo-243", name: "DORIKA SERİSİ MO 243 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 243", images: ["/images/products/dis-mekan/MO%20243/001-dorika-serisi-mo-243-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20243/002-dorika-serisi-mo-243-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-244": { id: "mo-244", name: "DORIKA SERİSİ MO 244 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 244", images: ["/images/products/dis-mekan/MO%20244/001-dorika-serisi-mo-244-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20244/002-dorika-serisi-mo-244-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-245": { id: "mo-245", name: "DORIKA SERİSİ MO 245 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 245", images: ["/images/products/dis-mekan/MO%20245/001-dorika-serisi-mo-245-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20245/002-dorika-serisi-mo-245-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-246": { id: "mo-246", name: "DORIKA SERİSİ MO 246 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 246", images: ["/images/products/dis-mekan/MO%20246/001-dorika-serisi-mo-246-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20246/002-dorika-serisi-mo-246-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-247": { id: "mo-247", name: "DORIKA SERİSİ MO 247 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 247", images: ["/images/products/dis-mekan/MO%20247/001-dorika-serisi-mo-247-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20247/002-dorika-serisi-mo-247-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-248": { id: "mo-248", name: "DORIKA SERİSİ MO 248 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 248", images: ["/images/products/dis-mekan/MO%20248/001-dorika-serisi-mo-248-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20248/002-dorika-serisi-mo-248-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20248/003-dorika-serisi-mo-248-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-248-2": { id: "mo-248-2", name: "DORIKA SERİSİ MO 248-2 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 248-2", images: ["/images/products/dis-mekan/MO%20248-2/003-dorika-serisi-mo-248-2-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-248-3": { id: "mo-248-3", name: "DORIKA SERİSİ MO 248-3 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 248-3", images: ["/images/products/dis-mekan/MO%20248-3/001-dorika-serisi-mo-248-3-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-249": { id: "mo-249", name: "DORIKA SERİSİ MO 249 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 249", images: ["/images/products/dis-mekan/MO%20249/002-dorika-serisi-mo-249-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-249-1": { id: "mo-249-1", name: "DORIKA SERİSİ MO 249-1 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 249-1", images: ["/images/products/dis-mekan/MO%20249-1/001-dorika-serisi-mo-249-1-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20249-1/002-dorika-serisi-mo-249-1-dis-mekan-lambader.jpg", "/images/products/dis-mekan/MO%20249-1/003-dorika-serisi-mo-249-1-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-249-2": { id: "mo-249-2", name: "DORIKA SERİSİ MO 249-2 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 249-2", images: ["/images/products/dis-mekan/MO%20249-2/001-dorika-serisi-mo-249-2-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-249-3": { id: "mo-249-3", name: "DORIKA SERİSİ MO 249-3 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 249-3", images: ["/images/products/dis-mekan/MO%20249-3/001-dorika-serisi-mo-249-3-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-250": { id: "mo-250", name: "DORIKA SERİSİ MO 250 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 250", images: ["/images/products/dis-mekan/MO%20250/001-dorika-serisi-mo-250-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-250-1": { id: "mo-250-1", name: "DORIKA SERİSİ MO 250-1 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 250-1", images: ["/images/products/dis-mekan/MO%20250-1/001-dorika-serisi-mo-250-1-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-250-2": { id: "mo-250-2", name: "DORIKA SERİSİ MO 250-2 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 250-2", images: ["/images/products/dis-mekan/MO%20250-2/001-dorika-serisi-mo-250-2-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
+  "outdoor/mo-250-3": { id: "mo-250-3", name: "DORIKA SERİSİ MO 250-3 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 250-3", images: ["/images/products/dis-mekan/MO%20250-3/001-dorika-serisi-mo-250-3-dis-mekan-lambader.jpg"], features: [], technicalSpecs: [], usageAreas: [], relatedIds: [] },
   // Acil Aydınlatma ve Yönlendirmeler (YAMAS serisi)
   "emergency-lighting/mx-100": { ...ACIL_EMERGENCY_SHARED, id: "mx-100", name: "YAMAS SERİSİ | MX 100 SIVA ÜSTÜ ACİL AYDINLATMA ve YÖNLENDİRME ARMATÜRÜ", code: "MX 100", images: [acilImg("mx 100", ACIL_FILE["mx 100"])], relatedIds: ["mx-101", "mx-201", "mx-301"] },
   "emergency-lighting/mx-101": { ...ACIL_EMERGENCY_SHARED, id: "mx-101", name: "YAMAS SERİSİ | MX 101 SIVA ÜSTÜ ACİL AYDINLATMA ve YÖNLENDİRME ARMATÜRÜ", code: "MX 101", images: [acilImg("mx 101", ACIL_FILE["mx 101"])], relatedIds: ["mx-201", "mx-100", "mx-301", "mx-102"] },
@@ -877,6 +1144,159 @@ export function getProductDetail(
   const scrapedKey = SCRAPED_KEY_ALIASES[key] ?? key;
   const scrapedMap = productDetailsScraped as unknown as Record<string, ProductDetail | undefined>;
   const scraped = scrapedMap[key] ?? scrapedMap[scrapedKey];
+
+  // Dış Mekan: scraped yoksa (özellikle yeni eklenenler) mevcut bir outdoor şablonunu baz al
+  // Böylece eski dış mekan ürünlerindeki subtitle/description/uyarılar/garanti vb. alanlar da görünür.
+  if (categorySlug === "outdoor" && base && !scraped) {
+    const product = getProductById("outdoor", productSlug);
+    const outdoorProducts = getProductsByCategory("outdoor");
+    const idx = outdoorProducts.findIndex((p) => p.id === productSlug);
+    const relatedIds = outdoorProducts
+      .filter((_, i) => i !== idx)
+      .slice(0, 6)
+      .map((p) => p.id);
+
+    const template = scrapedMap["outdoor/mo-110"];
+    const merged: ProductDetail = {
+      ...base,
+      ...(template ?? {}),
+      id: productSlug,
+      name: product?.name ?? base.name,
+      category: product?.category ?? base.category ?? "Dış Mekan",
+      categorySlug: "outdoor",
+      code: product?.code ?? base.code,
+      images: base.images ?? template?.images,
+      relatedIds,
+    };
+    merged.features = dedupeByLabel(merged.features ?? []);
+    merged.technicalSpecs = dedupeByLabel(merged.technicalSpecs ?? []);
+
+    const loc = locale === "en" || locale === "ar" ? locale : undefined;
+    if (loc) {
+      const overrides = productDetailTranslations[loc][key];
+      if (overrides) {
+        if (overrides.name != null) merged.name = overrides.name;
+        if (overrides.category != null) merged.category = overrides.category;
+        if (overrides.subtitle != null) merged.subtitle = overrides.subtitle;
+        if (overrides.description != null) merged.description = overrides.description;
+        if (overrides.usageAreas != null) merged.usageAreas = overrides.usageAreas;
+        if (overrides.features != null) merged.features = overrides.features;
+        if (overrides.technicalSpecs != null) merged.technicalSpecs = overrides.technicalSpecs;
+        if (overrides.mountingSafetyWarnings != null)
+          merged.mountingSafetyWarnings = overrides.mountingSafetyWarnings;
+        if (overrides.importantWarnings != null) merged.importantWarnings = overrides.importantWarnings;
+        if (overrides.warrantyTerms != null) merged.warrantyTerms = overrides.warrantyTerms;
+        if (overrides.downloads != null) merged.downloads = overrides.downloads;
+        if (overrides.bodyColorOptions != null) merged.bodyColorOptions = overrides.bodyColorOptions;
+        if (overrides.lightColorOptions != null) merged.lightColorOptions = overrides.lightColorOptions;
+      }
+      applyGlossaryToDetail(merged, loc);
+    }
+
+    return merged;
+  }
+
+  // Sıva Üstü: scraped yoksa (yeni eklenen ürünler) mevcut bir surface-mounted şablonunu baz al
+  // Böylece eski sıva üstü ürünlerindeki subtitle/description/uyarılar/garanti vb. alanlar da görünür.
+  if (categorySlug === "surface-mounted" && base && !scraped) {
+    const product = getProductById("surface-mounted", productSlug);
+    const surfaceMountedProducts = getProductsByCategory("surface-mounted");
+    const idx = surfaceMountedProducts.findIndex((p) => p.id === productSlug);
+    const relatedIds = surfaceMountedProducts
+      .filter((_, i) => i !== idx)
+      .slice(0, 6)
+      .map((p) => p.id);
+
+    const template = scrapedMap["surface-mounted/ms-700-70"] ?? scrapedMap["surface-mounted/ms-612-1-100"];
+    const merged: ProductDetail = {
+      ...base,
+      ...(template ?? {}),
+      id: productSlug,
+      name: product?.name ?? base.name,
+      category: product?.category ?? base.category ?? "Sıva Üstü",
+      categorySlug: "surface-mounted",
+      code: product?.code ?? base.code,
+      images: base.images ?? template?.images,
+      relatedIds,
+    };
+    merged.features = dedupeByLabel(merged.features ?? []);
+    merged.technicalSpecs = dedupeByLabel(merged.technicalSpecs ?? []);
+
+    const loc = locale === "en" || locale === "ar" ? locale : undefined;
+    if (loc) {
+      const overrides = productDetailTranslations[loc][key];
+      if (overrides) {
+        if (overrides.name != null) merged.name = overrides.name;
+        if (overrides.category != null) merged.category = overrides.category;
+        if (overrides.subtitle != null) merged.subtitle = overrides.subtitle;
+        if (overrides.description != null) merged.description = overrides.description;
+        if (overrides.usageAreas != null) merged.usageAreas = overrides.usageAreas;
+        if (overrides.features != null) merged.features = overrides.features;
+        if (overrides.technicalSpecs != null) merged.technicalSpecs = overrides.technicalSpecs;
+        if (overrides.mountingSafetyWarnings != null)
+          merged.mountingSafetyWarnings = overrides.mountingSafetyWarnings;
+        if (overrides.importantWarnings != null) merged.importantWarnings = overrides.importantWarnings;
+        if (overrides.warrantyTerms != null) merged.warrantyTerms = overrides.warrantyTerms;
+        if (overrides.downloads != null) merged.downloads = overrides.downloads;
+        if (overrides.bodyColorOptions != null) merged.bodyColorOptions = overrides.bodyColorOptions;
+        if (overrides.lightColorOptions != null) merged.lightColorOptions = overrides.lightColorOptions;
+      }
+      applyGlossaryToDetail(merged, loc);
+    }
+
+    return merged;
+  }
+
+  // Sıva Altı: scraped yoksa (yeni eklenen ürünler) mevcut bir recessed şablonunu baz al
+  // Böylece eski sıva altı ürünlerindeki subtitle/description/uyarılar/garanti vb. alanlar da görünür.
+  if (categorySlug === "recessed" && base && !scraped) {
+    const product = getProductById("recessed", productSlug);
+    const recessedProducts = getProductsByCategory("recessed");
+    const idx = recessedProducts.findIndex((p) => p.id === productSlug);
+    const relatedIds = recessedProducts
+      .filter((_, i) => i !== idx)
+      .slice(0, 6)
+      .map((p) => p.id);
+
+    const template = scrapedMap["recessed/md-010"];
+    const merged: ProductDetail = {
+      ...base,
+      ...(template ?? {}),
+      id: productSlug,
+      name: product?.name ?? base.name,
+      category: product?.category ?? base.category ?? "Sıva Altı",
+      categorySlug: "recessed",
+      code: product?.code ?? base.code,
+      images: base.images ?? template?.images,
+      relatedIds,
+    };
+    merged.features = dedupeByLabel(merged.features ?? []);
+    merged.technicalSpecs = dedupeByLabel(merged.technicalSpecs ?? []);
+
+    const loc = locale === "en" || locale === "ar" ? locale : undefined;
+    if (loc) {
+      const overrides = productDetailTranslations[loc][key];
+      if (overrides) {
+        if (overrides.name != null) merged.name = overrides.name;
+        if (overrides.category != null) merged.category = overrides.category;
+        if (overrides.subtitle != null) merged.subtitle = overrides.subtitle;
+        if (overrides.description != null) merged.description = overrides.description;
+        if (overrides.usageAreas != null) merged.usageAreas = overrides.usageAreas;
+        if (overrides.features != null) merged.features = overrides.features;
+        if (overrides.technicalSpecs != null) merged.technicalSpecs = overrides.technicalSpecs;
+        if (overrides.mountingSafetyWarnings != null)
+          merged.mountingSafetyWarnings = overrides.mountingSafetyWarnings;
+        if (overrides.importantWarnings != null) merged.importantWarnings = overrides.importantWarnings;
+        if (overrides.warrantyTerms != null) merged.warrantyTerms = overrides.warrantyTerms;
+        if (overrides.downloads != null) merged.downloads = overrides.downloads;
+        if (overrides.bodyColorOptions != null) merged.bodyColorOptions = overrides.bodyColorOptions;
+        if (overrides.lightColorOptions != null) merged.lightColorOptions = overrides.lightColorOptions;
+      }
+      applyGlossaryToDetail(merged, loc);
+    }
+
+    return merged;
+  }
 
   // Sarkıt: detailMap/scraped yoksa products listesinden detay oluştur (Masialux Özel Koleksiyon Sarkıt formatı + gövde renk seçenekleri)
   if (!base && !scraped && categorySlug === "pendant") {

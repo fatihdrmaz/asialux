@@ -18,6 +18,8 @@
 # misc
 .DS_Store
 *.pem
+*.tif
+*.tiff
 
 # debug
 npm-debug.log*

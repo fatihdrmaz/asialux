@@ -9,6 +9,8 @@ export interface Product {
   categorySlug: string;
   code?: string;
   listImagePath?: string;
+  /** UI badge: yeni ürün */
+  isNew?: boolean;
 }
 
 export const raySpotProducts: Product[] = [
@@ -20,11 +22,16 @@ export const raySpotProducts: Product[] = [
   { id: "mr-1020-118", name: "LANZO SERİSİ MR 1020-118 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 1020-118", listImagePath: "/images/products/ray-spot/MR%201020-118/001-lanzo-serisi-mr-1020-118-ray-spot.jpg" },
   { id: "mr-1020-60", name: "LANZO SERİSİ MR 1020-60 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 1020-60", listImagePath: "/images/products/ray-spot/MR%201020-60/001-lanzo-serisi-mr-1020-60-ray-spot.jpg" },
   { id: "mr-1020-85", name: "LANZO SERİSİ MR 1020-85 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 1020-85", listImagePath: "/images/products/ray-spot/MR%201020-85/001-lanzo-serisi-mr-1020-85-ray-spot.jpg" },
+  { id: "mr-1021-100", name: "ZENA SERİSİ MR 1021-100 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 1021-100", listImagePath: "/images/products/ray-spot/MR%201021-100/001-zena-serisi-mr-1021-100-ray-spot.jpg", isNew: true },
   { id: "mr-1030-100", name: "SENİTA SERİSİ MR 1030-100 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 1030-100", listImagePath: "/images/products/ray-spot/MR%201030-100/001-senita-serisi-mr-1030-100-ray-spot.jpg" },
   { id: "mr-1030-85", name: "SENİTA SERİSİ MR 1030-85 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 1030-85", listImagePath: "/images/products/ray-spot/MR%201030-85/001-senita-serisi-mr-1030-85-ray-spot.jpg" },
   { id: "mr-1040", name: "BERA SERİSİ MR 1040 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 1040", listImagePath: "/images/products/ray-spot/MR%201040/001-bera-serisi-mr-1040-ray-spot.jpg" },
   { id: "mr-1050-60", name: "LAİRO SERİSİ MR 1050-60 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 1050-60", listImagePath: "/images/products/ray-spot/MR%201050-60/001-lairo-serisi-mr-1050-60-ray-spot.jpg" },
   { id: "mr-1060", name: "BRUNA SERİSİ MR 1060 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 1060", listImagePath: "/images/products/ray-spot/MR%201060/005-bruna-serisi-mr-1060-ray-spot.jpg" },
+  { id: "mr-1070", name: "GRADO SERİSİ MR 1070 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 1070", listImagePath: "/images/products/ray-spot/MR%201070/001-grado-serisi-mr-1070-100-ray-spot.jpg", isNew: true },
+  { id: "mr-1071", name: "SHARK SERİSİ MR 1071 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 1071", listImagePath: "/images/products/ray-spot/MR%201071/001-shark-serisi-mr-1071-1-ray-spot.jpg", isNew: true },
+  { id: "mr-1081", name: "VİRA SERİSİ MR 1081 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 1081", listImagePath: "/images/products/ray-spot/MR%201081/001-vira-serisi-mr-1081-100-ray-spot.jpg", isNew: true },
+  { id: "mr-1090", name: "DORA SERİSİ MR 1090 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 1090", listImagePath: "/images/products/ray-spot/MR%201090/001-dora-serisi-mr-1090-100-ray-spot.jpg", isNew: true },
   { id: "mr-301", name: "GOLOBO SERİSİ MR 301 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 301", listImagePath: "/images/products/ray-spot/MR%20301/001-golobo-serisi-mr-301-ray-spot.jpg" },
   { id: "mr-307", name: "GOLOBO SERİSİ MR 307 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 307", listImagePath: "/images/products/ray-spot/MR%20307/001-golobo-serisi-mr-307-ray-spot.jpg" },
   { id: "mr-418", name: "NORA SERİSİ MR 418 RAY SPOT", category: "Ray Spot", categorySlug: "ray-spot", code: "MR 418", listImagePath: "/images/products/ray-spot/MR%20418/001-nora-serisi-mr-418-ray-spot.jpg" },
@@ -77,13 +84,16 @@ export const surfaceMountedProducts: Product[] = [
   { id: "ms-617-1", name: "TİNTA SERİSİ MS 617-1 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 617-1", listImagePath: "/images/products/siva-ustu/MS%20617-1/001-tinta-serisi-ms-617-1-siva-ustu-spot.jpg" },
   { id: "ms-617-2", name: "TİNTA SERİSİ MS 617-2 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 617-2", listImagePath: "/images/products/siva-ustu/MS%20617-2/001-tinta-serisi-ms-617-2-siva-ustu-spot.jpg" },
   { id: "ms-624", name: "BRUNA SERİSİ MS 624-4 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 624", listImagePath: "/images/products/siva-ustu/MS%20624/001-bruna-serisi-ms-624-4-siva-ustu-spot.jpg" },
-  { id: "ms-700-110", name: "ORNA SERİSİ MS 700-110 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 700-110", listImagePath: "/images/products/siva-ustu/MS%20700-110/001-orna-serisi-ms-700-110-siva-ustu-spot.jpg" },
-  { id: "ms-700-130", name: "ORNA SERİSİ MS 700-130 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 700-130", listImagePath: "/images/products/siva-ustu/MS%20700-130/001-orna-serisi-ms-700-130-siva-ustu-spot.jpg" },
-  { id: "ms-700-70", name: "ORNA SERİSİ MS 700-70 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 700-70", listImagePath: "/images/products/siva-ustu/MS%20700-70/001-orna-serisi-ms-700-70-siva-ustu-spot.jpg" },
-  { id: "ms-700-90", name: "ORNA SERİSİ MS 700-90 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 700-90", listImagePath: "/images/products/siva-ustu/MS%20700-90/001-orna-serisi-ms-700-90-siva-ustu-spot.jpg" },
-  { id: "ms-701-110", name: "ORNA SERİSİ MS 701-110 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 701-110", listImagePath: "/images/products/siva-ustu/MS%20701-110/001-orna-serisi-ms-701-110-siva-ustu-spot.jpg" },
-  { id: "ms-701-70", name: "ORNA SERİSİ MS 701-70 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 701-70", listImagePath: "/images/products/siva-ustu/MS%20701-70/001-orna-serisi-ms-701-70-siva-ustu-spot.jpg" },
-  { id: "ms-701-90", name: "ORNA SERİSİ MS 701-90 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 701-90", listImagePath: "/images/products/siva-ustu/MS%20701-90/001-orna-serisi-ms-701-90-siva-ustu-spot.jpg" },
+  { id: "ms-630", name: "TINTA SERİSİ MS 630 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 630", listImagePath: "/images/products/siva-ustu/MS%20630/001-tinta-serisi-ms-630-siva-ustu-spot.jpg", isNew: true },
+  { id: "ms-650", name: "REKTA SERİSİ MS 650 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 650", listImagePath: "/images/products/siva-ustu/ms%20650/001-rekta-serisi-ms-650-1-siva-ustu-spot.jpg", isNew: true },
+  { id: "ms-700-110", name: "ORNA SERİSİ MS 700-110 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 700-110", listImagePath: "/images/products/siva-ustu/MS%20700-110/001-orna-serisi-ms-700-110-siva-ustu-spot.jpg", isNew: true },
+  { id: "ms-700-130", name: "ORNA SERİSİ MS 700-130 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 700-130", listImagePath: "/images/products/siva-ustu/MS%20700-130/001-orna-serisi-ms-700-130-siva-ustu-spot.jpg", isNew: true },
+  { id: "ms-700-70", name: "ORNA SERİSİ MS 700-70 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 700-70", listImagePath: "/images/products/siva-ustu/MS%20700-70/001-orna-serisi-ms-700-70-siva-ustu-spot.jpg", isNew: true },
+  { id: "ms-700-90", name: "ORNA SERİSİ MS 700-90 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 700-90", listImagePath: "/images/products/siva-ustu/MS%20700-90/001-orna-serisi-ms-700-90-siva-ustu-spot.jpg", isNew: true },
+  { id: "ms-701-110", name: "ORNA SERİSİ MS 701-110 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 701-110", listImagePath: "/images/products/siva-ustu/MS%20701-110/001-orna-serisi-ms-701-110-siva-ustu-spot.jpg", isNew: true },
+  { id: "ms-701-70", name: "ORNA SERİSİ MS 701-70 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 701-70", listImagePath: "/images/products/siva-ustu/MS%20701-70/001-orna-serisi-ms-701-70-siva-ustu-spot.jpg", isNew: true },
+  { id: "ms-701-90", name: "ORNA SERİSİ MS 701-90 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 701-90", listImagePath: "/images/products/siva-ustu/MS%20701-90/001-orna-serisi-ms-701-90-siva-ustu-spot.jpg", isNew: true },
+  { id: "ms-702", name: "SHAIN SERİSİ MS 702 SIVA ÜSTÜ SPOT", category: "Sıva Üstü", categorySlug: "surface-mounted", code: "MS 702", listImagePath: "/images/products/siva-ustu/MS%20702/001-shain-serisi-ms-702-1-siva-ustu-spot.jpg", isNew: true },
 ];
 
 export const recessedProducts: Product[] = [
@@ -149,6 +159,7 @@ export const recessedProducts: Product[] = [
   { id: "md-125-118", name: "AVA SERİSİ MD 125-118 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 125-118", listImagePath: "/images/products/siva-alti/MD%20125-118/001-ava-serisi-md-125-118-siva-alti-spot.jpg" },
   { id: "md-125-60", name: "AVA SERİSİ MD 125-60 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 125-60", listImagePath: "/images/products/siva-alti/MD%20125-60/001-ava-serisi-md-125-60-siva-alti-spot.jpg" },
   { id: "md-125-85", name: "AVA SERİSİ MD 125-85 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 125-85", listImagePath: "/images/products/siva-alti/MD%20125-85/001-ava-serisi-md-125-85-siva-alti-spot.jpg" },
+  { id: "md-126", name: "LIVA SERİSİ MD 126 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 126", listImagePath: "/images/products/siva-alti/MD%20126/001-liva-serisi-md-126-100-siva-alti-spot.jpg", isNew: true },
   { id: "md-128-1-60", name: "MATTİA SERİSİ MD 128-1-60 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 128-1-60", listImagePath: "/images/products/siva-alti/MD%20128-1-60/001-mattia-serisi-md-128-1-60-siva-alti-spot.jpg" },
   { id: "md-129-1-60", name: "MATTİA SERİSİ MD 129-1-60 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 129-1-60", listImagePath: "/images/products/siva-alti/MD%20129-1-60/001-mattia-serisi-md-129-1-60-siva-alti-spot.jpg" },
   { id: "md-130-60", name: "AVA SERİSİ MD 130-60 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 130-60", listImagePath: "/images/products/siva-alti/MD%20130-60/001-ava-serisi-md-130-60-siva-alti-spot.jpg" },
@@ -157,6 +168,7 @@ export const recessedProducts: Product[] = [
   { id: "md-131-3-118", name: "RONA SERİSİ MD 131-3-118 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 131-3-118", listImagePath: "/images/products/siva-alti/MD%20131-3-118/001-rona-serisi-md-131-3-118-siva-alti-spot.jpg" },
   { id: "md-140", name: "DOLA SERİSİ MD 140  SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 140", listImagePath: "/images/products/siva-alti/MD%20140/001-dola-serisi-md-140-siva-alti-spot.jpg" },
   { id: "md-141", name: "SATURN SERİSİ MD 141 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 141", listImagePath: "/images/products/siva-alti/MD%20141/001-saturn-serisi-md-141-siva-alti-spot.jpg" },
+  { id: "md-151", name: "NOYA SERİSİ MD 151 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 151", listImagePath: "/images/products/siva-alti/MD%20151/001-noya-serisi-md-151-1-siva-alti-spot.jpg", isNew: true },
   { id: "md-160-1-100", name: "LORA SERİSİ MD 160-1-100 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 160-1-100", listImagePath: "/images/products/siva-alti/MD%20160-1-100/001-lora-serisi-md-160-1-100-siva-alti-spot.jpg" },
   { id: "md-160-1-118", name: "LORA SERİSİ MD 160-1-118 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 160-1-118", listImagePath: "/images/products/siva-alti/MD%20160-1-118/001-lora-serisi-md-160-1-118-siva-alti-spot.jpg" },
   { id: "md-160-1-60", name: "LORA SERİSİ MD 160-1-60 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 160-1-60", listImagePath: "/images/products/siva-alti/MD%20160-1-60/001-lora-serisi-md-160-1-60-siva-alti-spot.jpg" },
@@ -173,9 +185,14 @@ export const recessedProducts: Product[] = [
   { id: "md-163-1-118", name: "İRA SERİSİ MD 163-1-118 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 163-1-118", listImagePath: "/images/products/siva-alti/MD%20163-1-118/001-ira-serisi-md-163-1-118-siva-alti-spot.jpg" },
   { id: "md-163-1-60", name: "İRA SERİSİ MD 163-1-60SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 163-1-60", listImagePath: "/images/products/siva-alti/MD%20163-1-60/001-ira-serisi-md-163-1-60siva-alti-spot.jpg" },
   { id: "md-163-1-85", name: "İRA SERİSİ MD 163-1-85 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 163-1-85", listImagePath: "/images/products/siva-alti/MD%20163-1-85/001-ira-serisi-md-163-1-85-siva-alti-spot.jpg" },
+  { id: "md-164-55", name: "LUNA SERİSİ MD 164-55 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 164-55", listImagePath: "/images/products/siva-alti/MD%20164-55/001-luna-serisi-md-164-55-siva-alti-spot.jpg", isNew: true },
+  { id: "md-165-55", name: "QUTA SERİSİ MD 165-55 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 165-55", listImagePath: "/images/products/siva-alti/MD%20165-55/001-quta-serisi-md-165-55-siva-alti-spot.jpg", isNew: true },
+  { id: "md-170", name: "RETA SERİSİ MD 170 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 170", listImagePath: "/images/products/siva-alti/MD%20170/001-reta-serisi-md-170-1-100-siva-alti-spot.jpg", isNew: true },
+  { id: "md-171", name: "DIARA SERİSİ MD 171 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 171", listImagePath: "/images/products/siva-alti/MD%20171/001-diara-serisi-md-171-1-100-siva-alti-spot.jpg", isNew: true },
   { id: "md-200-1-60", name: "PANA SERİSİ MD 200-1-60 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 200-1-60", listImagePath: "/images/products/siva-alti/MD%20200-1-60/001-pana-serisi-md-200-1-60-siva-alti-spot.jpg" },
   { id: "md-200-2-60", name: "PANA SERİSİ MD 200-2-60 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 200-2-60", listImagePath: "/images/products/siva-alti/MD%20200-2-60/001-pana-serisi-md-200-2-60-siva-alti-spot.jpg" },
   { id: "md-601-1-100", name: "LORA SERİSİ MD 160-1-100 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 601-1-100", listImagePath: "/images/products/siva-alti/MD%20601-1-100/001-lora-serisi-md-160-1-100-siva-alti-spot.jpg" },
+  { id: "md-603", name: "LENA SERİSİ MD 603 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 603", listImagePath: "/images/products/siva-alti/MD%20603/001-lena-serisi-md-603-siva-alti-spot.jpg", isNew: true },
   { id: "md-604", name: "LENA SERİSİ MD 604 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 604", listImagePath: "/images/products/siva-alti/MD%20604/001-lena-serisi-md-604-siva-alti-spot.jpg" },
   { id: "md-605", name: "LENA SERİSİ MD 605 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 605", listImagePath: "/images/products/siva-alti/MD%20605/001-lena-serisi-md-605-siva-alti-spot.jpg" },
   { id: "md-616-1", name: "TİNTA SERİSİ MD 616-1 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 616-1", listImagePath: "/images/products/siva-alti/MD%20616-1/001-tinta-serisi-md-616-1-siva-alti-spot.jpg" },
@@ -208,6 +225,8 @@ export const recessedProducts: Product[] = [
   { id: "md-903-60", name: "VİGGO SERİSİ MD 903-60 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 903-60", listImagePath: "/images/products/siva-alti/MD%20903-60/001-viggo-serisi-md-903-60-siva-alti-spot.jpg" },
   { id: "md-903-85", name: "VİGGO SERİSİ MD 903-85 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 903-85", listImagePath: "/images/products/siva-alti/MD%20903-85/001-viggo-serisi-md-903-85-siva-alti-spot.jpg" },
   { id: "md150", name: " NOYA SERİSİ MD 150-1 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD150", listImagePath: "/images/products/siva-alti/MD150/001-noya-serisi-md-150-1-siva-alti-spot.jpg" },
+  { id: "md-1002", name: "VİGGO SERİSİ MD 1002 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 1002", listImagePath: "/images/products/siva-alti/md%201002/001-viggo-serisi-md-1002-100-siva-alti-spot.jpg", isNew: true },
+  { id: "md-1003", name: "VOKO SERİSİ MD 1003 SIVA ALTI SPOT", category: "Sıva Altı", categorySlug: "recessed", code: "MD 1003", listImagePath: "/images/products/siva-alti/MD%201003/001-voko-serisi-md-1003-100-siva-alti-spot.jpg", isNew: true },
 ];
 
 export const linearProducts: Product[] = [
@@ -322,6 +341,70 @@ export const outdoorProducts: Product[] = [
   { id: "mo-134", name: "JİWA SERİSİ MO 134 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 134", listImagePath: "/images/products/dis-mekan/MO%20134/001-jiwa-serisi-mo-134-dis-mekan-aplik.jpg" },
   { id: "mo-135", name: "JİWA SERİSİ MO 135 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 135", listImagePath: "/images/products/dis-mekan/MO%20135/001-jiwa-serisi-mo-135-dis-mekan-aplik.jpg" },
   { id: "mo-136", name: "JİWA SERİSİ MO 136 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 136", listImagePath: "/images/products/dis-mekan/MO%20136/001-jiwa-serisi-mo-136-dis-mekan-aplik.jpg" },
+  { id: "mo-000", name: "DORIKA SERİSİ MO 000 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 000", listImagePath: "/images/products/dis-mekan/MO%20000/001-dorika-serisi-mo-000-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-200", name: "DORIKA SERİSİ MO 200 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 200", listImagePath: "/images/products/dis-mekan/MO%20200/001-dorika-serisi-mo-200-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-201", name: "DORIKA SERİSİ MO 201 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 201", listImagePath: "/images/products/dis-mekan/MO%20201/001-dorika-serisi-mo-201-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-202", name: "DORIKA SERİSİ MO 202 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 202", listImagePath: "/images/products/dis-mekan/MO%20202/001-dorika-serisi-mo-202-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-203", name: "DORIKA SERİSİ MO 203 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 203", listImagePath: "/images/products/dis-mekan/MO%20203/001-dorika-serisi-mo-203-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-204", name: "DORIKA SERİSİ MO 204 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 204", listImagePath: "/images/products/dis-mekan/MO%20204/001-dorika-serisi-mo-204-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-204-1", name: "DORIKA SERİSİ MO 204-1 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 204-1", listImagePath: "/images/products/dis-mekan/MO%20204-1/001-dorika-serisi-mo-204-1-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-205", name: "DORIKA SERİSİ MO 205 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 205", listImagePath: "/images/products/dis-mekan/MO%20205/001-dorika-serisi-mo-205-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-206", name: "DORIKA SERİSİ MO 206 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 206", listImagePath: "/images/products/dis-mekan/MO%20206/001-dorika-serisi-mo-206-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-207", name: "DORIKA SERİSİ MO 207 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 207", listImagePath: "/images/products/dis-mekan/MO%20207/001-dorika-serisi-mo-207-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-208", name: "DORIKA SERİSİ MO 208 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 208", listImagePath: "/images/products/dis-mekan/MO%20208/001-dorika-serisi-mo-208-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-209", name: "DORIKA SERİSİ MO 209 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 209", listImagePath: "/images/products/dis-mekan/MO%20209/001-dorika-serisi-mo-209-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-209-1", name: "DORIKA SERİSİ MO 209-1 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 209-1", listImagePath: "/images/products/dis-mekan/MO%20209-1/001-dorika-serisi-mo-209-1-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-209-2", name: "DORIKA SERİSİ MO 209-2 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 209-2", listImagePath: "/images/products/dis-mekan/MO%20209-2/001-dorika-serisi-mo-209-2-ikili-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-210", name: "DORIKA SERİSİ MO 210 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 210", listImagePath: "/images/products/dis-mekan/MO%20210/001-dorika-serisi-mo-210-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-210-1", name: "DORIKA SERİSİ MO 210-1 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 210-1", listImagePath: "/images/products/dis-mekan/MO%20210-1/001-dorika-serisi-mo-210-1-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-211", name: "DORIKA SERİSİ MO 211 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 211", listImagePath: "/images/products/dis-mekan/MO%20211/001-dorika-serisi-mo-211-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-212", name: "DORIKA SERİSİ MO 212 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 212", listImagePath: "/images/products/dis-mekan/MO%20212/001-dorika-serisi-mo-212-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-213", name: "DORIKA SERİSİ MO 213 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 213", listImagePath: "/images/products/dis-mekan/MO%20213/001-dorika-serisi-mo-213-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-214", name: "DORIKA SERİSİ MO 214 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 214", listImagePath: "/images/products/dis-mekan/MO%20214/001-dorika-serisi-mo-214-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-215", name: "DORIKA SERİSİ MO 215 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 215", listImagePath: "/images/products/dis-mekan/MO%20215/001-dorika-serisi-mo-215-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-216", name: "DORIKA SERİSİ MO 216 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 216", listImagePath: "/images/products/dis-mekan/MO%20216/001-dorika-serisi-mo-216-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-217", name: "DORIKA SERİSİ MO 217 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 217", listImagePath: "/images/products/dis-mekan/MO%20217/001-dorika-serisi-mo-217-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-218", name: "DORIKA SERİSİ MO 218 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 218", listImagePath: "/images/products/dis-mekan/MO%20218/001-dorika-serisi-mo-218-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-219", name: "DORIKA SERİSİ MO 219 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 219", listImagePath: "/images/products/dis-mekan/MO%20219/001-dorika-serisi-mo-219-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-220", name: "DORIKA SERİSİ MO 220 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 220", listImagePath: "/images/products/dis-mekan/MO%20220/001-dorika-serisi-mo-220-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-221", name: "DORIKA SERİSİ MO 221 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 221", listImagePath: "/images/products/dis-mekan/MO%20221/001-dorika-serisi-mo-221-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-222", name: "DORIKA SERİSİ MO 222 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 222", listImagePath: "/images/products/dis-mekan/MO%20222/001-dorika-serisi-mo-222-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-223", name: "DORIKA SERİSİ MO 223 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 223", listImagePath: "/images/products/dis-mekan/MO%20223/001-dorika-serisi-mo-223-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-224", name: "DORIKA SERİSİ MO 224 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 224", listImagePath: "/images/products/dis-mekan/MO%20224/001-dorika-serisi-mo-224-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-225", name: "DORIKA SERİSİ MO 225 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 225", listImagePath: "/images/products/dis-mekan/MO%20225/001-dorika-serisi-mo-225-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-226", name: "DORIKA SERİSİ MO 226 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 226", listImagePath: "/images/products/dis-mekan/MO%20226/001-dorika-serisi-mo-226-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-227", name: "DORIKA SERİSİ MO 227 DIŞ MEKAN APLİK", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 227", listImagePath: "/images/products/dis-mekan/MO%20227/001-dorika-serisi-mo-227-dis-mekan-aplik.jpg", isNew: true },
+  { id: "mo-228", name: "DORIKA SERİSİ MO 228 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 228", listImagePath: "/images/products/dis-mekan/MO%20228/001-dorika-serisi-mo-228-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-229", name: "DORIKA SERİSİ MO 229 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 229", listImagePath: "/images/products/dis-mekan/MO%20229/001-dorika-serisi-mo-229-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-230", name: "DORIKA SERİSİ MO 230 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 230", listImagePath: "/images/products/dis-mekan/MO%20230/001-dorika-serisi-mo-230-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-231", name: "DORIKA SERİSİ MO 231 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 231", listImagePath: "/images/products/dis-mekan/MO%20231/001-dorika-serisi-mo-231-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-232", name: "DORIKA SERİSİ MO 232 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 232", listImagePath: "/images/products/dis-mekan/MO%20232/001-dorika-serisi-mo-232-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-233", name: "DORIKA SERİSİ MO 233 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 233", listImagePath: "/images/products/dis-mekan/MO%20233/001-dorika-serisi-mo-233-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-234", name: "DORIKA SERİSİ MO 234 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 234", listImagePath: "/images/products/dis-mekan/MO%20234/001-dorika-serisi-mo-234-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-235", name: "DORIKA SERİSİ MO 235 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 235", listImagePath: "/images/products/dis-mekan/MO%20235/001-dorika-serisi-mo-235-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-236", name: "DORIKA SERİSİ MO 236 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 236", listImagePath: "/images/products/dis-mekan/MO%20236/001-dorika-serisi-mo-236-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-237", name: "DORIKA SERİSİ MO 237 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 237", listImagePath: "/images/products/dis-mekan/MO%20237/001-dorika-serisi-mo-237-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-238", name: "DORIKA SERİSİ MO 238 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 238", listImagePath: "/images/products/dis-mekan/MO%20238/001-dorika-serisi-mo-238-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-239", name: "DORIKA SERİSİ MO 239 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 239", listImagePath: "/images/products/dis-mekan/MO%20239/001-dorika-serisi-mo-239-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-240", name: "DORIKA SERİSİ MO 240 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 240", listImagePath: "/images/products/dis-mekan/MO%20240/001-dorika-serisi-mo-240-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-241", name: "DORIKA SERİSİ MO 241 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 241", listImagePath: "/images/products/dis-mekan/MO%20241/001-dorika-serisi-mo-241-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-242", name: "DORIKA SERİSİ MO 242 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 242", listImagePath: "/images/products/dis-mekan/MO%20242/001-dorika-serisi-mo-242-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-243", name: "DORIKA SERİSİ MO 243 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 243", listImagePath: "/images/products/dis-mekan/MO%20243/001-dorika-serisi-mo-243-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-244", name: "DORIKA SERİSİ MO 244 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 244", listImagePath: "/images/products/dis-mekan/MO%20244/001-dorika-serisi-mo-244-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-245", name: "DORIKA SERİSİ MO 245 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 245", listImagePath: "/images/products/dis-mekan/MO%20245/001-dorika-serisi-mo-245-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-246", name: "DORIKA SERİSİ MO 246 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 246", listImagePath: "/images/products/dis-mekan/MO%20246/001-dorika-serisi-mo-246-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-247", name: "DORIKA SERİSİ MO 247 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 247", listImagePath: "/images/products/dis-mekan/MO%20247/001-dorika-serisi-mo-247-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-248", name: "DORIKA SERİSİ MO 248 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 248", listImagePath: "/images/products/dis-mekan/MO%20248/001-dorika-serisi-mo-248-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-248-2", name: "DORIKA SERİSİ MO 248-2 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 248-2", listImagePath: "/images/products/dis-mekan/MO%20248-2/003-dorika-serisi-mo-248-2-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-248-3", name: "DORIKA SERİSİ MO 248-3 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 248-3", listImagePath: "/images/products/dis-mekan/MO%20248-3/001-dorika-serisi-mo-248-3-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-249", name: "DORIKA SERİSİ MO 249 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 249", listImagePath: "/images/products/dis-mekan/MO%20249/002-dorika-serisi-mo-249-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-249-1", name: "DORIKA SERİSİ MO 249-1 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 249-1", listImagePath: "/images/products/dis-mekan/MO%20249-1/001-dorika-serisi-mo-249-1-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-249-2", name: "DORIKA SERİSİ MO 249-2 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 249-2", listImagePath: "/images/products/dis-mekan/MO%20249-2/001-dorika-serisi-mo-249-2-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-249-3", name: "DORIKA SERİSİ MO 249-3 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 249-3", listImagePath: "/images/products/dis-mekan/MO%20249-3/001-dorika-serisi-mo-249-3-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-250", name: "DORIKA SERİSİ MO 250 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 250", listImagePath: "/images/products/dis-mekan/MO%20250/001-dorika-serisi-mo-250-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-250-1", name: "DORIKA SERİSİ MO 250-1 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 250-1", listImagePath: "/images/products/dis-mekan/MO%20250-1/001-dorika-serisi-mo-250-1-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-250-2", name: "DORIKA SERİSİ MO 250-2 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 250-2", listImagePath: "/images/products/dis-mekan/MO%20250-2/001-dorika-serisi-mo-250-2-dis-mekan-lambader.jpg", isNew: true },
+  { id: "mo-250-3", name: "DORIKA SERİSİ MO 250-3 DIŞ MEKAN LAMBADER", category: "Dış Mekan", categorySlug: "outdoor", code: "MO 250-3", listImagePath: "/images/products/dis-mekan/MO%20250-3/001-dorika-serisi-mo-250-3-dis-mekan-lambader.jpg", isNew: true },
 ];
 
 /** Aplik (wall-light): public/images/products/aplik — Masialux Özel Koleksiyon Aplik ile eşleşir */
@@ -593,15 +676,131 @@ export const lampShadeProducts: Product[] = [
   { id: "me-301", name: "Lambader ME 301", category: "Abajur ve Lambader", categorySlug: "lamp-shade", code: "ME 301", listImagePath: lambaderListImagePath("ME 301", "001-me-1.jpg") },
 ];
 
+const NEW_RAY_SPOT_IDS = new Set([
+  "mr-1021-100",
+  "mr-1070",
+  "mr-1071",
+  "mr-1081",
+  "mr-1090",
+]);
+
+const NEW_RECESSED_IDS = new Set([
+  "md-126",
+  "md-151",
+  "md-164-55",
+  "md-165-55",
+  "md-170",
+  "md-171",
+  "md-603",
+  "md-1002",
+  "md-1003",
+]);
+
+const NEW_SURFACE_MOUNTED_IDS = new Set([
+  "ms-630",
+  "ms-650",
+  "ms-700-70",
+  "ms-700-90",
+  "ms-700-110",
+  "ms-700-130",
+  "ms-701-70",
+  "ms-701-90",
+  "ms-701-110",
+  "ms-702",
+]);
+
+const NEW_OUTDOOR_IDS = new Set([
+  "mo-000",
+  "mo-200",
+  "mo-201",
+  "mo-202",
+  "mo-203",
+  "mo-204",
+  "mo-204-1",
+  "mo-205",
+  "mo-206",
+  "mo-207",
+  "mo-208",
+  "mo-209",
+  "mo-209-1",
+  "mo-209-2",
+  "mo-210",
+  "mo-210-1",
+  "mo-211",
+  "mo-212",
+  "mo-213",
+  "mo-214",
+  "mo-215",
+  "mo-216",
+  "mo-217",
+  "mo-218",
+  "mo-219",
+  "mo-220",
+  "mo-221",
+  "mo-222",
+  "mo-223",
+  "mo-224",
+  "mo-225",
+  "mo-226",
+  "mo-227",
+  "mo-228",
+  "mo-229",
+  "mo-230",
+  "mo-231",
+  "mo-232",
+  "mo-233",
+  "mo-234",
+  "mo-235",
+  "mo-236",
+  "mo-237",
+  "mo-238",
+  "mo-239",
+  "mo-240",
+  "mo-241",
+  "mo-242",
+  "mo-243",
+  "mo-244",
+  "mo-245",
+  "mo-246",
+  "mo-247",
+  "mo-248",
+  "mo-248-2",
+  "mo-248-3",
+  "mo-249",
+  "mo-249-1",
+  "mo-249-2",
+  "mo-249-3",
+  "mo-250",
+  "mo-250-1",
+  "mo-250-2",
+  "mo-250-3",
+]);
+
 /** Kategori slug'ına göre ürün listesi */
 export function getProductsByCategory(categorySlug: string): Product[] {
-  if (categorySlug === "ray-spot") return raySpotProducts;
-  if (categorySlug === "surface-mounted") return surfaceMountedProducts;
-  if (categorySlug === "recessed") return recessedProducts;
+  if (categorySlug === "ray-spot") {
+    const featured = raySpotProducts.filter((p) => NEW_RAY_SPOT_IDS.has(p.id));
+    const rest = raySpotProducts.filter((p) => !NEW_RAY_SPOT_IDS.has(p.id));
+    return [...featured, ...rest];
+  }
+  if (categorySlug === "surface-mounted") {
+    const featured = surfaceMountedProducts.filter((p) => NEW_SURFACE_MOUNTED_IDS.has(p.id));
+    const rest = surfaceMountedProducts.filter((p) => !NEW_SURFACE_MOUNTED_IDS.has(p.id));
+    return [...featured, ...rest];
+  }
+  if (categorySlug === "recessed") {
+    const featured = recessedProducts.filter((p) => NEW_RECESSED_IDS.has(p.id));
+    const rest = recessedProducts.filter((p) => !NEW_RECESSED_IDS.has(p.id));
+    return [...featured, ...rest];
+  }
   if (categorySlug === "linear") return linearProducts;
   if (categorySlug === "magnet") return magnetProducts;
   if (categorySlug === "industrial-lighting") return industrialLightingProducts;
-  if (categorySlug === "outdoor") return outdoorProducts;
+  if (categorySlug === "outdoor") {
+    const featured = outdoorProducts.filter((p) => NEW_OUTDOOR_IDS.has(p.id));
+    const rest = outdoorProducts.filter((p) => !NEW_OUTDOOR_IDS.has(p.id));
+    return [...featured, ...rest];
+  }
   if (categorySlug === "emergency-lighting") return emergencyLightingProducts;
   if (categorySlug === "wall-light") return wallLightProducts;
   if (categorySlug === "bronze-collection") return bronzeCollectionProducts;
