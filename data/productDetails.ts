@@ -172,12 +172,11 @@ const BRONZ_COLLECTION_SHARED: Pick<
     { label: "Kullanım Şekli", value: "Ray Spot" },
   ],
   technicalSpecs: [
-    { label: "Sürücü Akımı", value: "500 mA – 800 mA seçenekleriyle" },
     { label: "Gerilim", value: "220V" },
     { label: "Frekans", value: "50 Hz" },
-    { label: "Aktif Güç", value: "20W – 30W seçenekleriyle" },
-    { label: "Lümen", value: "1774 lm – 2938 lm seçenekleriyle" },
-    { label: "Işık Kaynağı", value: "Mid Power LED" },
+    { label: "Aktif Güç", value: "10W" },
+    { label: "Lümen", value: "1165 lm" },
+    { label: "Işık Kaynağı", value: "Mid Power LED veya GU 10 Ampul" },
   ],
   usageAreas: ["Dekorasyon", "Süpermarketler", "Mağazalar", "Evler"],
   description:
@@ -1372,6 +1371,10 @@ export function getProductDetail(
   };
   merged.features = dedupeByLabel(merged.features ?? []);
   merged.technicalSpecs = dedupeByLabel(merged.technicalSpecs ?? []);
+  if (merged.categorySlug === "bronze-collection") {
+    // Bronz Koleksiyon: tüm ürünlerde teknik kartlar aynı şablondan gelsin
+    merged.technicalSpecs = [...BRONZ_COLLECTION_SHARED.technicalSpecs];
+  }
   if (scrapedKey !== key && scraped?.name) {
     const modelFromSlug = productSlug.toUpperCase().replace(/-/g, " ");
     merged.name = (merged.name || "").replace(/\bMS\s*619\b/gi, modelFromSlug);
