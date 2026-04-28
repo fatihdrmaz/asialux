@@ -123,6 +123,8 @@ export default async function ProductDetailPage({ params }: Props) {
   );
 
   const baseUrl = getBaseUrl();
+  const hasFeatures = !!detail?.features?.length;
+  const hasTechnicalSpecs = !!detail?.technicalSpecs?.length;
   const productUrl = locale === "tr"
     ? `${baseUrl}/products/${categorySlug}/${slug}`
     : `${baseUrl}/${locale}/products/${categorySlug}/${slug}`;
@@ -239,8 +241,12 @@ export default async function ProductDetailPage({ params }: Props) {
           )}
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
-            {detail!.features.length > 0 && (
-              <section className="bg-white rounded-2xl border border-gray-100 p-6 md:p-8 shadow-sm">
+            {hasFeatures && (
+              <section
+                className={`bg-white rounded-2xl border border-gray-100 p-6 md:p-8 shadow-sm ${
+                  !hasTechnicalSpecs ? "lg:col-span-2" : ""
+                }`}
+              >
                 <h2 className="text-lg font-semibold uppercase tracking-wider text-primary-600 mb-1">{t("product")}</h2>
                 <h3 className="text-xl font-display font-bold text-dark-950 mb-6">{t("features")}</h3>
                 <ul className="space-y-4">
@@ -256,13 +262,17 @@ export default async function ProductDetailPage({ params }: Props) {
                 </ul>
               </section>
             )}
-            {detail!.technicalSpecs.length > 0 && (
-              <section className="bg-white rounded-2xl border border-gray-100 p-6 md:p-8 shadow-sm">
+            {hasTechnicalSpecs && (
+              <section
+                className={`bg-white rounded-2xl border border-gray-100 p-6 md:p-8 shadow-sm ${
+                  !hasFeatures ? "lg:col-span-2" : ""
+                }`}
+              >
                 <h2 className="text-lg font-semibold uppercase tracking-wider text-primary-600 mb-1">{t("technical")}</h2>
                 <h3 className="text-xl font-display font-bold text-dark-950 mb-6">
                   {t("technicalSpecs")}
                 </h3>
-                <ul className="space-y-4">
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-4">
                   {detail!.technicalSpecs.map((s) => (
                     <li
                       key={s.label}
