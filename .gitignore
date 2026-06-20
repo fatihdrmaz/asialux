@@ -18,8 +18,15 @@
 # misc
 .DS_Store
 *.pem
+
+# kaynak/çöp dosyalar — public/ altında deploy olmamalı
 *.tif
 *.tiff
+*.psd
+*.xlsx
+*.skill
+desktop.ini
+Thumbs.db
 
 # debug
 npm-debug.log*
